@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cherry Studio 主题库
 
-## Getting Started
+Cherry Studio 中国风主题库
 
-First, run the development server:
+## 主题来源
+- 在逛L站时看见的主题分享：https://linux.do/t/topic/325119
+- 当时想做成一个网页版的编辑器。技术所限，先做成CSS复制器，后续再实现。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ 技术栈
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js - React 框架
+- TypeScript - 类型安全
+- Tailwind CSS - 样式系统
+- Lucide Icons - 图标库
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 使用方法
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 浏览主题库中的各种主题
+2. 点击喜欢的主题卡片或复制按钮
+3. CSS 代码会自动复制到剪贴板
+4. 将复制的 CSS 应用到设置-显示设置-自定义CSS
 
-## Learn More
+## 🤝 贡献指南
 
-To learn more about Next.js, take a look at the following resources:
+欢迎提交 PR 来贡献新主题！请确保：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. 主题预览图清晰展示主题效果
+2. CSS 代码经过优化和测试
+3. 提供简明的主题描述
+4. 遵循项目代码规范
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 许可证
 
-## Deploy on Vercel
+MIT License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👥 联系方式
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+如有问题或建议，欢迎：
+
+- 提交 Issue
+- 发起 Pull Request
+- 通过 Email 联系我们
+
+---
+
+💡 持续更新中，欢迎 Star 和 Fork！
