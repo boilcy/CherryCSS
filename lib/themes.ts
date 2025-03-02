@@ -8,7 +8,7 @@ export const themes: Theme[] = [
     previewUrl: "/chang-an.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2C2420;
-  --color-background-soft: #3D312A;
+  --color-background-soft: #4A3D34;
   --color-background-mute: #332A24;
   --navbar-background: #2C2420;
   --chat-background: #2C2420;
@@ -33,6 +33,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #F6EBDC !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #CDB9A2;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #D9C7B1;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #574839;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #4A3D34;
 }`,
   },
   {
@@ -42,7 +54,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/xuan-zhi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2C2C2C;
-  --color-background-soft: #454545;
+  --color-background-soft: #515151;
   --color-background-mute: #333333;
   --navbar-background: #2C2C2C;
   --chat-background: #2C2C2C;
@@ -67,6 +79,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #F9F6ED !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #D8D2C6;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #E2DCD0;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #636363;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #515151;
 }`,
   },
   {
@@ -76,7 +100,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/yang-pi-zhi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #32281A;
-  --color-background-soft: #463524;
+  --color-background-soft: #594633;
   --color-background-mute: #3D2E1F;
   --navbar-background: #32281A;
   --chat-background: #32281A;
@@ -101,6 +125,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #F7EAC9 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #D8C095;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #E0CAA0;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #6C5742;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #594633;
 }`,
   },
   {
@@ -110,7 +146,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/jin-xiang-yu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2A2420;
-  --color-background-soft: #463C35;
+  --color-background-soft: #4A423C;
   --color-background-mute: #2F2925;
   --navbar-background: #2A2420;
   --chat-background: #2A2420;
@@ -135,6 +171,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #FBF7ED !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #D9CEB1;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #E8DFC8;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #574E47;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #4A423C;
 }`,
   },
   {
@@ -144,7 +192,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/pi-pa.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2B1F1C;
-  --color-background-soft: #463933;
+  --color-background-soft: #4A3C37;
   --color-background-mute: #302320;
   --navbar-background: #2B1F1C;
   --chat-background: #2B1F1C;
@@ -169,6 +217,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #F8F2ED !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #D9C4B5;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #E5D6CA;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #574740;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #4A3C37;
 }`,
   },
   {
@@ -178,7 +238,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/yan-yu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #283339;
-  --color-background-soft: #364550;
+  --color-background-soft: #465761;
   --color-background-mute: #2F3B43;
   --navbar-background: #283339;
   --chat-background: #283339;
@@ -203,6 +263,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #EDF4F6 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #B7C8CE;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #C9D9DE;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #566873;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #465761;
 }`,
   },
   {
@@ -212,7 +284,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/tian-shui.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a3059;
-  --color-background-soft: #264573;
+  --color-background-soft: #345a96;
   --color-background-mute: #1f3966;
   --navbar-background: #1a3059;
   --chat-background: #1a3059;
@@ -237,6 +309,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f7fafd !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #cad8e8;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #d9e3ef;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #3c6aac;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #345a96;
 }`,
   },
   {
@@ -246,7 +330,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/shan-shui.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2c2c2c88;
-  --color-background-soft: #4A4A4A;
+  --color-background-soft: #5a5a5a;
   --color-background-mute: #2c2c2c66;
   --navbar-background: #2c2c2c;
   --chat-background: #2c2c2c;
@@ -271,6 +355,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #ffffff !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #C9C9C9;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #DADADA;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #6a6a6a;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #5a5a5a;
 }`,
   },
   {
@@ -280,7 +376,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/yu-shi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1c382988;
-  --color-background-soft: #2a5b43;
+  --color-background-soft: #3d7f5e;
   --color-background-mute: #326b4f66;
   --navbar-background: #1c3829;
   --chat-background: #1c3829;
@@ -305,6 +401,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f3f9f4 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #abcead;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #c0dbc3;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #489369;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #3d7f5e;
 }`,
   },
   {
@@ -314,12 +422,12 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/zi-tao.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4a314d88;
-  --color-background-soft: #735475;
+  --color-background-soft: #7C5980;
   --color-background-mute: #4a314d66;
   --navbar-background: #4a314d;
   --chat-background: #4a314d;
   --chat-background-user: #614464;
-  --chat-background-assistant: #735f76;
+  --chat-background-assistant: #583B5B;
 }
 body[theme-mode="dark"] #content-container {
   background-color: #614464 !important;
@@ -339,6 +447,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f9f6fa !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #c2b0c6;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #d5c6d8;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #7C5980;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #6A4A6D;
 }`
   },
   {
@@ -348,7 +468,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/qing-wu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4c584488;
-  --color-background-soft: #697a60;
+  --color-background-soft: #4a5443;
   --color-background-mute: #55614d66;
   --navbar-background: #4c5844;
   --chat-background: #4c5844;
@@ -373,6 +493,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f4f6f2 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #bec4b9;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #d0d6cb;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #576350;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #4a5443;
 }`,
   },
   {
@@ -382,7 +514,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/su-xuan.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1F2428;
-  --color-background-soft: #2A3035;
+  --color-background-soft: #353B41;
   --color-background-mute: #242A2E;
   --navbar-background: #1F2428;
   --chat-background: #1F2428;
@@ -407,6 +539,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #FFFAF5 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #E8DFD2;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #EFE7DD;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #414950;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #353B41;
 }`,
   },
   {
@@ -416,7 +560,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/yan-zhi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2C2123;
-  --color-background-soft: #4A3634;
+  --color-background-soft: #5C3E41;
   --color-background-mute: #352528;
   --navbar-background: #2C2123;
   --chat-background: #2C2123;
@@ -441,6 +585,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #FCFAFA !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #E0C8C8;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #E8D8D8;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #6E4A4E;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #5C3E41;
 }`,
   },
   {
@@ -450,7 +606,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/yan-hui.png",
     css: `body[theme-mode="dark"] {
   --color-background: #282A36;
-  --color-background-soft: #454857;
+  --color-background-soft: #525569;
   --color-background-mute: #2F3240;
   --navbar-background: #282A36;
   --chat-background: #282A36;
@@ -475,6 +631,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f7f8f9 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #c6c7c8;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #d6d7d8;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #5F6378;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #525569;
 }`},
   {
     id: "yao-huo",
@@ -483,7 +651,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/yao-huo.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2c1810;
-  --color-background-soft: #6b4435;
+  --color-background-soft: #6B4636;
   --color-background-mute: #443026;
   --navbar-background: #2c1810;
   --chat-background: #2c1810;
@@ -508,6 +676,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #faf0dd !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #deb57e;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #e8c696;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #664A3A;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #553C30;
 }`,
   },
   {
@@ -517,7 +697,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/nai-cha.png",
     css: `body[theme-mode="dark"] {
   --color-background: #463229AA;
-  --color-background-soft: #5D443A;
+  --color-background-soft: #6B5044;
   --color-background-mute: #46322966;
   --navbar-background: #382720;
   --chat-background: #463229;
@@ -542,6 +722,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #ffffff !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #D4BA9C;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #DEC7AD;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #7A5D50;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #6B5044;
 }`
   },
   {
@@ -576,6 +768,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f5f9f7 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #c8d6d1;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #dae5e1;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #2a3534;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #374544;
 }`
   },
   {
@@ -585,7 +789,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/liu-yun.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a3c6188;
-  --color-background-soft: #234875;
+  --color-background-soft: #23496b;
   --color-background-mute: #15294466;
   --navbar-background: #1a3c61;
   --chat-background: #152944;
@@ -610,6 +814,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #ffffff !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #c5d3e3;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #e0e9f2;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #2a5377;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #23496b;
 }`
   },
   {
@@ -619,7 +835,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/ru-yao-lan.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a2c3d;
-  --color-background-soft: #2D5A7A;
+  --color-background-soft: #355d80;
   --color-background-mute: #2d5475;
   --navbar-background: #1a2c3d;
   --chat-background: #1a2c3d;
@@ -644,6 +860,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f2f7f8 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #b1cad0;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #c5d8dd;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #3e678b;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #355d80;
 }`
   },
   {
@@ -653,7 +881,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/ru-yao-lv.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a3937;
-  --color-background-soft: #3a5f5c;
+  --color-background-soft: #3a706c;
   --color-background-mute: #315f5c;
   --navbar-background: #1a3937;
   --chat-background: #1a3937;
@@ -678,6 +906,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f0f6f6 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #b4c8c5;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #c8d8d6;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #44817d;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #3a706c;
 }`
   },
   {
@@ -687,7 +927,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/han-bai-yu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2b2926ee;
-  --color-background-soft: #353331;
+  --color-background-soft: #4A4845;
   --color-background-mute: #2b292666;
   --navbar-background: #2b2926;
   --chat-background: #2b2926;
@@ -712,6 +952,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #fdfcfa !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #dedad5;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #e8e6e1;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #5F5D5A;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #4A4845;
 }`
   },
   {
@@ -721,7 +973,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/mo-nai.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4c768688;
-  --color-background-soft: #3d6273;
+  --color-background-soft: #5a8296;
   --color-background-mute: #4c768666;
   --navbar-background: #4c7686;
   --chat-background: #4c7686;
@@ -746,6 +998,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f4fafb !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #94cad8;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #b0d8e6;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #5a8296;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #4b7183;
 }`
   },
   {
@@ -755,7 +1019,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/hu-guang.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2a525488;
-  --color-background-soft: #264f57;
+  --color-background-soft: #3e7a83;
   --color-background-mute: #2f616b66;
   --navbar-background: #2a5254;
   --chat-background: #2a5254;
@@ -780,6 +1044,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #f0f7f8 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #a9d5d7;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #bfe0e1;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #2d5a61;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #254e54;
 }`
   },
   {
@@ -789,7 +1065,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/chun-mei.png",
     css: `body[theme-mode="dark"] {
   --color-background: #8c435688;
-  --color-background-soft: #a85f6f;
+  --color-background-soft: #B4657A;
   --color-background-mute: #94505f66;
   --navbar-background: #8c4356;
   --chat-background: #8c4356;
@@ -814,6 +1090,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #fff6f9 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #ffc6d4;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #ffd6e0;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #9F5669;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #8A4759;
 }`
   },
   {
@@ -823,7 +1111,7 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/dan-xia.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4a1c1c88;
-  --color-background-soft: #873636;
+  --color-background-soft: #a03c3c;
   --color-background-mute: #8b343466;
   --navbar-background: #4a1c1c;
   --chat-background: #4a1c1c;
@@ -848,6 +1136,18 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #fffafa !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #ffd0d0;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #ffe0e0;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #b54545;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #a03c3c;
 }`
   },
   {
@@ -857,12 +1157,12 @@ body[theme-mode="light"] #content-container {
     previewUrl: "/chan-zong.png",
     css: `body[theme-mode="dark"] {
   --color-background: #5d403788;
-  --color-background-soft: #6d4c41;
+  --color-background-soft: #8A665F;
   --color-background-mute: #5d403766;
   --navbar-background: #5d4037;
   --chat-background: #5d4037;
   --chat-background-user: #795548;
-  --chat-background-assistant: #8d6e63;
+  --chat-background-assistant: #795650;
 }
 body[theme-mode="dark"] #content-container {
   background-color: #4e342e !important;
@@ -882,6 +1182,64 @@ body[theme-mode="light"] {
 }
 body[theme-mode="light"] #content-container {
   background-color: #faf8f7 !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #b3a49f;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #c5b8b4;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #9B7670;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #8A665F;
+}`
+  },
+  {
+    id: "qing-hua",
+    name: "青花",
+    description: "Light theme inspired by blue and traditional pottery",
+    previewUrl: "/qing-hua.png",
+    css: `body[theme-mode="dark"] {
+  --color-background: #10234988;
+  --color-background-soft: #275983;
+  --color-background-mute: #1b4b7766;
+  --navbar-background: #102349;
+  --chat-background: #102349;
+  --chat-background-user: #1e3f66;
+  --chat-background-assistant: #1b4b77;
+}
+body[theme-mode="dark"] #content-container {
+  background-color: #1e3f66 !important;
+}
+:root {
+  --color-black-soft: #102349;
+}
+body[theme-mode="light"] {
+  --color-background: #f2f7ff;
+  --color-background-soft: #d4e5ff;
+  --color-background-mute: #b9d7ff;
+  --navbar-background: #e6f0ff;
+  --chat-background: #f7fbff;
+  --chat-background-user: #d4e5ff;
+  --chat-background-assistant: #e6f0ff;
+  --color-white: #f7fbff;
+}
+body[theme-mode="light"] #content-container {
+  background-color: #f7fbff !important;
+}
+body[theme-mode="light"] .ant-collapse {
+  background-color: #b3d1ff;
+}
+body[theme-mode="light"] .ant-collapse-content {
+  background-color: #cce0ff;
+}
+body[theme-mode="dark"] .ant-collapse {
+  background-color: #336790;
+}
+body[theme-mode="dark"] .ant-collapse-content {
+  background-color: #275983;
 }`
   }
 ]
