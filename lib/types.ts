@@ -2,7 +2,8 @@ export interface Theme {
   id: string
   name: string
   description: string
-  previewUrl: string
+  lightPreviewUrl: string
+  darkPreviewUrl: string
   css: string
 }
 

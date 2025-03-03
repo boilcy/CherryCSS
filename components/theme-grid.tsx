@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { Check, Copy } from "lucide-react"
 import type { Theme } from "@/lib/types"
+import { ThemePreviewSwitch } from "@/components/theme-preview-switch"
 
 interface ThemeGridProps {
   themes: Theme[]
@@ -11,6 +12,7 @@ interface ThemeGridProps {
 
 export default function ThemeGrid({ themes }: ThemeGridProps) {
   const [copiedTheme, setCopiedTheme] = useState<string | null>(null)
+  const [isDarkPreview, setIsDarkPreview] = useState(false)
 
   const copyToClipboard = async (css: string, themeId: string) => {
     try {
@@ -23,6 +25,10 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
   }
 
   return (
+    <>
+    <div className="flex justify-end mb-4 sticky top-4 z-10">
+        <ThemePreviewSwitch onToggle={setIsDarkPreview} />
+    </div>
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
       {themes.map((theme) => (
         <div
@@ -32,7 +38,7 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
         >
           <div className="relative overflow-hidden">
             <Image
-              src={theme.previewUrl || "/placeholder.svg"}
+              src={isDarkPreview ? "/dark/" + theme.darkPreviewUrl : "/light/" + theme.lightPreviewUrl || "/placeholder.svg"}
               alt={`${theme.name} theme preview`}
               width={540}
               height={300}
@@ -59,6 +65,7 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
         </div>
       ))}
     </div>
+    </>
   )
 }
 

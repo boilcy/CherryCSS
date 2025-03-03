@@ -9,7 +9,7 @@ export default function ThemePreview({ theme }: ThemePreviewProps) {
   return (
     <div className="relative overflow-hidden">
       <Image
-        src={theme.previewUrl || "/placeholder.svg"}
+        src={theme.lightPreviewUrl || "/placeholder.svg"}
         alt={`${theme.name} theme preview`}
         width={540}
         height={300}
