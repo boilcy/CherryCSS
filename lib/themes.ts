@@ -5,7 +5,8 @@ export const themes: Theme[] = [
     id: "chang-an",
     name: "长安",
     description: "Light theme inspired by traditional Chinese aesthetics",
-    previewUrl: "/chang-an.png",
+    lightPreviewUrl: "/chang-an.png",
+    darkPreviewUrl: "/chang-an.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2C2420;
   --color-background-soft: #4A3D34;
@@ -51,7 +52,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "xuan-zhi",
     name: "宣纸",
     description: "Light theme inspired by traditional Chinese paper",
-    previewUrl: "/xuan-zhi.png",
+    lightPreviewUrl: "/xuan-zhi.png",
+    darkPreviewUrl: "/xuan-zhi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2C2C2C;
   --color-background-soft: #515151;
@@ -97,7 +99,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "sheepskin",
     name: "羊皮纸",
     description: "Light theme inspired by ancient parchment",
-    previewUrl: "/yang-pi-zhi.png",
+    lightPreviewUrl: "/yang-pi-zhi.png",
+    darkPreviewUrl: "/yang-pi-zhi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #32281A;
   --color-background-soft: #594633;
@@ -143,7 +146,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "gold-jade",
     name: "金镶玉",
     description: "Light theme inspired by gold and jade ornaments",
-    previewUrl: "/jin-xiang-yu.png",
+    lightPreviewUrl: "/jin-xiang-yu.png",
+    darkPreviewUrl: "/jin-xiang-yu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2A2420;
   --color-background-soft: #4A423C;
@@ -189,7 +193,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "bamboo",
     name: "琵琶",
     description: "Light theme inspired by bamboo and traditional instruments",
-    previewUrl: "/pi-pa.png",
+    lightPreviewUrl: "/pi-pa.png",
+    darkPreviewUrl: "/pi-pa.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2B1F1C;
   --color-background-soft: #4A3C37;
@@ -235,7 +240,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "smoke-rain",
     name: "烟雨",
     description: "Light theme inspired by misty rain landscapes",
-    previewUrl: "/yan-yu.png",
+    lightPreviewUrl: "/yan-yu.png",
+    darkPreviewUrl: "/yan-yu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #283339;
   --color-background-soft: #465761;
@@ -281,7 +287,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "tian-shui",
     name: "天水",
     description: "Light theme inspired by misty rain landscapes",
-    previewUrl: "/tian-shui.png",
+    lightPreviewUrl: "/tian-shui.png",
+    darkPreviewUrl: "/tian-shui.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a3059;
   --color-background-soft: #345a96;
@@ -327,7 +334,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "shan-shui",
     name: "山水",
     description: "Light theme inspired by misty rain landscapes",
-    previewUrl: "/shan-shui.png",
+    lightPreviewUrl: "/shan-shui.png",
+    darkPreviewUrl: "/shan-shui.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2c2c2c88;
   --color-background-soft: #5a5a5a;
@@ -373,7 +381,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "yu-shi",
     name: "玉石",
     description: "Light theme inspired by jade and traditional ornaments",
-    previewUrl: "/yu-shi.png",
+    lightPreviewUrl: "/yu-shi.png",
+    darkPreviewUrl: "/yu-shi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1c382988;
   --color-background-soft: #3d7f5e;
@@ -419,7 +428,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "zi-tao",
     name: "紫陶",
     description: "Light theme inspired by purple and traditional pottery",
-    previewUrl: "/zi-tao.png",
+    lightPreviewUrl: "/zi-tao.png",
+    darkPreviewUrl: "/zi-tao.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4a314d88;
   --color-background-soft: #7C5980;
@@ -465,7 +475,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "qing-wu",
     name: "青雾",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/qing-wu.png",
+    lightPreviewUrl: "/qing-wu.png",
+    darkPreviewUrl: "/qing-wu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4c584488;
   --color-background-soft: #4a5443;
@@ -511,7 +522,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "su-xuan",
     name: "素宣",
     description: "Light theme inspired by white and traditional paper",
-    previewUrl: "/su-xuan.png",
+    lightPreviewUrl: "/su-xuan.png",
+    darkPreviewUrl: "/su-xuan.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1F2428;
   --color-background-soft: #353B41;
@@ -557,7 +569,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "yan-zhi",
     name: "胭脂",
     description: "Light theme inspired by red and traditional pottery",
-    previewUrl: "/yan-zhi.png",
+    lightPreviewUrl: "/yan-zhi.png",
+    darkPreviewUrl: "/yan-zhi.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2C2123;
   --color-background-soft: #5C3E41;
@@ -603,7 +616,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "yan-hui",
     name: "雁灰",
     description: "Light theme inspired by gray and traditional pottery",
-    previewUrl: "/yan-hui.png",
+    lightPreviewUrl: "/yan-hui.png",
+    darkPreviewUrl: "/yan-hui.png",
     css: `body[theme-mode="dark"] {
   --color-background: #282A36;
   --color-background-soft: #525569;
@@ -648,7 +662,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "yao-huo",
     name: "窑火",
     description: "Light theme inspired by brown and traditional pottery",
-    previewUrl: "/yao-huo.png",
+    lightPreviewUrl: "/yao-huo.png",
+    darkPreviewUrl: "/yao-huo.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2c1810;
   --color-background-soft: #6B4636;
@@ -694,7 +709,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "nai-cha",
     name: "奶茶",
     description: "Light theme inspired by brown and traditional pottery",
-    previewUrl: "/nai-cha.png",
+    lightPreviewUrl: "/nai-cha.png",
+    darkPreviewUrl: "/nai-cha.png",
     css: `body[theme-mode="dark"] {
   --color-background: #463229AA;
   --color-background-soft: #6B5044;
@@ -740,7 +756,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "qing-ci",
     name: "青瓷",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/qing-ci.png",
+    lightPreviewUrl: "/qing-ci.png",
+    darkPreviewUrl: "/qing-ci.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2c3635;
   --color-background-soft: #4a5755;
@@ -786,7 +803,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "liu-yun",
     name: "流云",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/liu-yun.png",
+    lightPreviewUrl: "/liu-yun.png",
+    darkPreviewUrl: "/liu-yun.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a3c6188;
   --color-background-soft: #23496b;
@@ -832,7 +850,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "ru-yao-lan",
     name: "汝窑蓝",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/ru-yao-lan.png",
+    lightPreviewUrl: "/ru-yao-lan.png",
+    darkPreviewUrl: "/ru-yao-lan.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a2c3d;
   --color-background-soft: #355d80;
@@ -878,7 +897,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "ru-yao-lv",
     name: "汝窑绿",
     description: "Light theme inspired by green and traditional pottery",
-    previewUrl: "/ru-yao-lv.png",
+    lightPreviewUrl: "/ru-yao-lv.png",
+    darkPreviewUrl: "/ru-yao-lv.png",
     css: `body[theme-mode="dark"] {
   --color-background: #1a3937;
   --color-background-soft: #3a706c;
@@ -924,7 +944,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "han-bai-yu",
     name: "汉白玉",
     description: "Light theme inspired by white and traditional pottery",
-    previewUrl: "/han-bai-yu.png",
+    lightPreviewUrl: "/han-bai-yu.png",
+    darkPreviewUrl: "/han-bai-yu.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2b2926ee;
   --color-background-soft: #4A4845;
@@ -970,7 +991,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "mo-nai",
     name: "莫奈",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/mo-nai.png",
+    lightPreviewUrl: "/mo-nai.png",
+    darkPreviewUrl: "/mo-nai.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4c768688;
   --color-background-soft: #5a8296;
@@ -1016,7 +1038,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "hu-guang",
     name: "湖光",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/hu-guang.png",
+    lightPreviewUrl: "/hu-guang.png",
+    darkPreviewUrl: "/hu-guang.png",
     css: `body[theme-mode="dark"] {
   --color-background: #2a525488;
   --color-background-soft: #3e7a83;
@@ -1062,7 +1085,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "chun-mei",
     name: "春梅",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/chun-mei.png",
+    lightPreviewUrl: "/chun-mei.png",
+    darkPreviewUrl: "/chun-mei.png",
     css: `body[theme-mode="dark"] {
   --color-background: #8c435688;
   --color-background-soft: #B4657A;
@@ -1108,7 +1132,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "dan-xia",
     name: "丹霞",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/dan-xia.png",
+    lightPreviewUrl: "/dan-xia.png",
+    darkPreviewUrl: "/dan-xia.png",
     css: `body[theme-mode="dark"] {
   --color-background: #4a1c1c88;
   --color-background-soft: #a03c3c;
@@ -1154,7 +1179,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "chan-zong",
     name: "禅棕",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/chan-zong.png",
+    lightPreviewUrl: "/chan-zong.png",
+    darkPreviewUrl: "/chan-zong.png",
     css: `body[theme-mode="dark"] {
   --color-background: #5d403788;
   --color-background-soft: #8A665F;
@@ -1200,7 +1226,8 @@ body[theme-mode="dark"] .ant-collapse-content {
     id: "qing-hua",
     name: "青花",
     description: "Light theme inspired by blue and traditional pottery",
-    previewUrl: "/qing-hua.png",
+    lightPreviewUrl: "/qing-hua.png",
+    darkPreviewUrl: "/qing-hua.png",
     css: `body[theme-mode="dark"] {
   --color-background: #10234988;
   --color-background-soft: #275983;
@@ -1240,6 +1267,98 @@ body[theme-mode="dark"] .ant-collapse {
 }
 body[theme-mode="dark"] .ant-collapse-content {
   background-color: #275983;
+}`
+  },
+  {
+    id: "claude",
+    name: "Claude",
+    description: "Theme inspired by Claude",
+    lightPreviewUrl: "/claude.png",
+    darkPreviewUrl: "/claude.png",
+    css: `/* Claude Theme */
+/* Theme variables */
+:root {
+  --color-black-soft: #2A2B2A;
+  --color-white-soft: #F8F7F2;
+}
+
+/* Dark theme */
+body[theme-mode="dark"] {
+  /* Colors */
+  --color-background: #2B2B2B;
+  --color-background-soft: #303030;
+  --color-background-mute: #282C34;
+  --navbar-background: var(--color-black-soft);
+  --chat-background: var(--color-black-soft);
+  --chat-background-user: #323332;
+  --chat-background-assistant: #2D2E2D;
+}
+
+/* Dark theme specific styles */
+body[theme-mode="dark"] {
+  #content-container {
+    background-color: var(--chat-background-assistant) !important;
+  }
+
+  #content-container #messages {
+    background-color: var(--chat-background-assistant);
+  }
+
+  .inputbar-container {
+    background-color: #3D3D3A;
+    border: 1px solid #5E5D5940;
+    border-radius: 8px;
+  }
+
+  /* Code styling */
+  code {
+    background-color: #E5E5E20D;
+    color: #EA928A;
+  }
+
+  pre code {
+    color: #ABB2BF;
+  }
+}
+
+/* Light theme */
+body[theme-mode="light"] {
+  /* Colors */
+  --color-white: #FFFFFF;
+  --color-background: #EBE8E2;
+  --color-background-soft: #CBC7BE;
+  --color-background-mute: #E4E1D7;
+  --navbar-background: var(--color-white-soft);
+  --chat-background: var(--color-white-soft);
+  --chat-background-user: #F8F7F2;
+  --chat-background-assistant: #F6F4EC;
+}
+
+/* Light theme specific styles */
+body[theme-mode="light"] {
+  #content-container {
+    background-color: var(--chat-background-assistant) !important;
+  }
+
+  #content-container #messages {
+    background-color: var(--chat-background-assistant);
+  }
+
+  .inputbar-container {
+    background-color: #FFFFFF;
+    border: 1px solid #87867F40;
+    border-radius: 8px;
+  }
+
+  /* Code styling */
+  code {
+    background-color: #3D39290D;
+    color: #7C1B13;
+  }
+
+  pre code {
+    color: #000000;
+  }
 }`
   }
 ]
