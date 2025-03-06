@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Cherry Studio Theme Gallery",
   description: "选择并复制你喜欢的主题",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -19,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon-light.ico" type="image/x-icon" sizes="64x64"></link>
       <body className={inter.className}>
         {children}
         <Analytics />

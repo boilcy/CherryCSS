@@ -13,7 +13,7 @@ export default function Home() {
           className="absolute left-1 top-1 flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
         >
           <Github className="w-6 h-6" />
-          <span className="hidden sm:inline">See on GitHub</span>
+          <span className="hidden sm:inline">GitHub</span>
         </a>
 
         <header className="mb-8 text-center">
