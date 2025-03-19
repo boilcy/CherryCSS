@@ -1,6 +1,6 @@
 # Cherry Studio 主题库
 
-Cherry Studio 中国风主题库
+Cherry Studio 自定义主题库, 点击复制即用!
 
 ## 主题来源
 - 在逛L站时看见的主题分享：https://linux.do/t/topic/325119
