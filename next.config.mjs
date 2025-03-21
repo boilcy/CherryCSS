@@ -1,3 +1,9 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin(
+  './i18n/request.ts'
+);
+
 let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
@@ -45,4 +51,4 @@ function mergeConfig(nextConfig, userConfig) {
   }
 }
 
-export default nextConfig
+export default withNextIntl(nextConfig)

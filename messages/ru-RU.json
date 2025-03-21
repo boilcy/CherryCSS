@@ -1,0 +1,16 @@
+{
+    "navigation": {
+        "github": "GitHub"
+    },
+    "home": {
+        "title": "Галерея тем Cherry Studio",
+        "description": "Выберите и скопируйте понравившуюся тему Cherry Studio!"
+    },
+    "locale": {
+        "select": "Выберите язык",
+        "en-US": "English",
+        "ja-JP": "日本語",
+        "ru-RU": "Русский",
+        "zh-CN": "简体中文"
+    }
+}

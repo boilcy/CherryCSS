@@ -1,0 +1,16 @@
+{
+    "navigation": {
+        "github": "GitHub"
+    },
+    "home": {
+        "title": "Cherry Studio 主题库",
+        "description": "选择并复制你喜欢的Cherry Studio主题!"
+    },
+    "locale": {
+        "select": "选择语言",
+        "en-US": "English",
+        "ja-JP": "日本語",
+        "ru-RU": "Русский",
+        "zh-CN": "简体中文"
+    }
+}
