@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import type { Theme } from "@/lib/types"
-import { useDarkPreview } from "@/hooks/useDarkPreview"
 import { ThemeCard } from "@/components/theme-preview-card"
 import { toast } from "sonner"
 interface ThemeGridProps {
@@ -11,7 +10,6 @@ interface ThemeGridProps {
 
 export default function ThemeGrid({ themes }: ThemeGridProps) {
   const [copiedTheme, setCopiedTheme] = useState<string | null>(null)
-  const { isDarkPreview } = useDarkPreview()
 
   const copyToClipboard = async (css: string, themeId: string, themeName: string) => {
     try {
@@ -31,7 +29,6 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
         <ThemeCard
           key={theme.id}
           theme={theme}
-          isDarkPreview={isDarkPreview}
           copiedTheme={copiedTheme}
           onCopy={copyToClipboard}
         />

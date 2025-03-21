@@ -1,0 +1,16 @@
+{
+    "navigation": {
+        "github": "GitHub"
+    },
+    "home": {
+        "title": "Cherry Studioのライブラリです",
+        "description": "Cherry Studioの好きなテーマを選んでコピーします!"
+    },
+    "locale": {
+        "select": "選択語",
+        "en-US": "英語",
+        "ja-JP": "日本語",
+        "ru-RU": "ロシア語",
+        "zh-CN": "中国語"
+    }
+}

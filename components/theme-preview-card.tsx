@@ -4,15 +4,18 @@ import { useState } from "react"
 import Image from "next/image"
 import type { Theme } from "@/lib/types"
 import { Icon } from "@iconify/react"
+import { useDarkPreview } from "@/hooks/useDarkPreview"
 
 interface ThemeCardProps {
   theme: Theme
-  isDarkPreview: boolean
   copiedTheme: string | null
   onCopy: (css: string, themeId: string, themeName: string) => void
 }
 
-export function ThemeCard({ theme, isDarkPreview, copiedTheme, onCopy }: ThemeCardProps) {
+export function ThemeCard({ theme, copiedTheme, onCopy }: ThemeCardProps) {
+  const { isDarkPreview } = useDarkPreview()
+  const lightSrc = `/light/${theme.lightPreviewUrl}` || "/placeholder.svg";
+  const darkSrc = `/dark/${theme.darkPreviewUrl}` || "/placeholder.svg";
   return (
     <div
       onClick={() => onCopy(theme.css, theme.id, theme.name)}
@@ -21,7 +24,7 @@ export function ThemeCard({ theme, isDarkPreview, copiedTheme, onCopy }: ThemeCa
     >
       <div className="relative overflow-hidden">
         <Image
-          src={isDarkPreview ? `/dark/${theme.darkPreviewUrl}` : `/light/${theme.lightPreviewUrl}` || "/placeholder.svg"}
+          src={isDarkPreview ? darkSrc : lightSrc}
           alt={`${theme.name} theme preview`}
           width={540}
           height={300}
