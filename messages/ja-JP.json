@@ -7,10 +7,10 @@
         "description": "Cherry Studioの好きなテーマを選んでコピーします!"
     },
     "locale": {
-        "select": "選択語",
-        "en-US": "英語",
+        "select": "言語を選択",
+        "en-US": "English",
         "ja-JP": "日本語",
-        "ru-RU": "ロシア語",
-        "zh-CN": "中国語"
+        "ru-RU": "Русский",
+        "zh-CN": "简体中文"
     }
 }

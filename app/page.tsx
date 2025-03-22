@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="min-h-screen p-4 md:p-8 bg-gray-50">
       <div className="max-w-full mx-auto relative">
-        <div className="flex items-center justify-center lg:justify-end gap-4 sticky top-8 z-50 backdrop-blur bg-white/50">
+        <div className="flex items-center justify-center lg:justify-end gap-4 sticky top-0 z-50 backdrop-blur bg-white/50">
           <LocaleSelect />
           <a
             href="https://github.com/boilcy/cherrycss"
