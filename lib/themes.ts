@@ -1239,6 +1239,7 @@ body[theme-mode="light"] .ant-collapse-content {
   --chat-background: #1F2428;
   --chat-background-user: #272D32;
   --chat-background-assistant: #2A3035;
+  --chat-text-user: rgba(230, 240, 242, 0.95);
 }
 body[theme-mode="dark"] #content-container {
   background-color: #272D32 !important;
