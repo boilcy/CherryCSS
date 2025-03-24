@@ -138,6 +138,10 @@
         "dracula": {
             "name": "Dracula",
             "description": "Dracula style"
+        },
+        "dopamine": {
+            "name": "Dopamine",
+            "description": "Vibrant yellow-led theme with energetic colorful accents"
         }
     }
 }
