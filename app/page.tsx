@@ -2,7 +2,7 @@ import GradientText from "@/components/GradientText"
 import { Toaster } from "@/components/ui/sonner"
 import ThemeGrid from "@/components/theme-preview-grid"
 import { ThemePreviewSwitch } from "@/components/theme-preview-switch"
-import { themes } from "@/lib/themes"
+import { themesWithBugfixes } from "@/lib/themes"
 import { Icon } from "@iconify/react"
 import { useTranslations } from 'next-intl';
 import LocaleSelect from "@/components/locale-select"
@@ -38,7 +38,7 @@ export default function Home() {
           <p className="text-gray-600">{t('home.description')}</p>
         </header>
 
-        <ThemeGrid themes={themes} />
+        <ThemeGrid themes={themesWithBugfixes} />
         <Toaster />
       </div>
     </main>
