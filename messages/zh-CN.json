@@ -15,7 +15,7 @@
         "ar-SA": "العربية"
     },
     "toast": {
-        "copy-success": "{{themeName}} 主题已复制到剪贴板!",
+        "copy-success": "{themeName} 主题已复制到剪贴板!",
         "copy-error": "复制失败, 您可前往Github仓库手动复制!"
     },
     "themes": {

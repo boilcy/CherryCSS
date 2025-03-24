@@ -6,6 +6,7 @@ import type { Theme } from "@/lib/types"
 import { Icon } from "@iconify/react"
 import { useDarkPreview } from "@/hooks/useDarkPreview"
 import { useTranslations } from 'next-intl'
+import { ThemePalette } from "./theme-preview-palette"
 
 interface ThemeCardProps {
   theme: Theme
@@ -21,7 +22,7 @@ export function ThemeCard({ theme, copiedTheme, onCopy }: ThemeCardProps) {
   return (
     <div
       onClick={() => onCopy(theme.css, theme.id)}
-      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 mx-auto w-full max-w-[540px] lg:max-w-full h-auto cursor-pointer text-left"
+      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 mx-auto w-full max-w-[540px] lg:max-w-full h-auto cursor-pointer text-left hover:scale-[1.01]"
       aria-label={`Copy ${t(`${theme.id}.name`)} theme`}
     >
       <div className="relative overflow-hidden">
@@ -30,13 +31,16 @@ export function ThemeCard({ theme, copiedTheme, onCopy }: ThemeCardProps) {
           alt={`${t(`${theme.id}.name`)} theme preview`}
           width={540}
           height={300}
-          className="w-full h-auto"
+          className="w-full h-auto scale-[1.01] -m-[1px]"
         />
       </div>
 
       <div className="p-4">
         <div className="flex justify-between items-center mb-2">
-          <h3 className="font-medium text-lg">{t(`${theme.id}.name`)}</h3>
+          <div className="flex-1 flex items-center gap-2">
+            <h3 className="font-medium text-lg">{t(`${theme.id}.name`)}</h3>
+            <ThemePalette theme={theme} isDarkMode={isDarkPreview} />
+          </div>
           <button
             type="button"
             onClick={(e) => {
@@ -50,6 +54,7 @@ export function ThemeCard({ theme, copiedTheme, onCopy }: ThemeCardProps) {
           </button>
         </div>
         <p className="text-sm text-gray-500">{t(`${theme.id}.description`)}</p>
+
       </div>
     </div>
   )

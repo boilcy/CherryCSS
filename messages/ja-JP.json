@@ -15,7 +15,7 @@
         "ar-SA": "العربية"
     },
     "toast": {
-        "copy-success": "{{themeName}} のテーマをコピーしました!",
+        "copy-success": "{themeName} のテーマをコピーしました!",
         "copy-error": "コピーに失敗しました。Githubリポジトリから手動でコピーしてください!"
     },
     "themes": {

@@ -15,7 +15,7 @@
         "ar-SA": "العربية"
     },
     "toast": {
-        "copy-success": "تم نسخ سمة {{themeName}} إلى الحافظة!",
+        "copy-success": "تم نسخ سمة {themeName} إلى الحافظة!",
         "copy-error": "تعطيل النسخ, يمكنك الذهاب إلى مستودع Github والنسخ يدويا!"
     },
     "themes": {
