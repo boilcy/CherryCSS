@@ -116,35 +116,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #D9C7B1; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Optional Tang Dynasty inspired embellishments */
-.message-content-container {
-    border-radius: 8px !important;
-    border-top: 1px solid var(--color-border) !important;
-    border-left: 1px solid var(--color-border) !important;
-}
-
-.message-assistant .message-content-container {
-    border-top-right-radius: 2px !important;
-    border-bottom-left-radius: 2px !important;
-}
-
-.message-user .message-content-container {
-    border-top-left-radius: 2px !important;
-    border-bottom-right-radius: 2px !important;
-}
-
-/* Subtly styling scrollbars to match theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-background-soft);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 10px;
 }`,
   },
   {
@@ -255,33 +226,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #E2DCD0; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Paper texture inspired embellishments */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    transition: box-shadow 0.2s ease;
-}
-
-.message-assistant .message-content-container {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
-}
-
-.message-user .message-content-container {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
-}
-
-/* Subtle scrollbar styling to match paper texture theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-background-soft);
-    border-radius: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 8px;
 }`,
   },
   {
@@ -391,32 +335,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #E0CAA0; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Parchment-inspired embellishments */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 1px 3px rgba(95, 75, 50, 0.08) !important;
-}
-
-/* Subtle texture effect for message containers */
-.message-user .message-content-container {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.01) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(0,0,0,0.01) 1px, transparent 1px) !important;
-    background-size: 12px 12px !important;
-}
-
-/* Subtle scrollbar styling to match parchment theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-background-soft);
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 6px;
 }`,
   },
   {
@@ -526,34 +444,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #E8DFC8; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Gold and jade inspired embellishments */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(90, 74, 56, 0.04) !important;
-}
-
-/* Add a subtle gold highlight to message containers */
-.message-assistant .message-content-container {
-    border-left: 2px solid rgba(198, 167, 92, 0.4) !important;
-}
-
-.message-user .message-content-container {
-    border-right: 2px solid rgba(198, 167, 92, 0.3) !important;
-}
-
-/* Scrollbar styling to complement theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 6px;
 }`,
   },
   {
@@ -663,57 +553,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #E5D6CA; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Musical instrument inspired embellishments */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
-}
-
-/* String-like accent lines on message containers */
-.message-user .message-content-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 1px;
-    background: linear-gradient(to bottom, 
-        transparent 0%, 
-        var(--color-primary-soft) 30%, 
-        var(--color-primary-soft) 70%, 
-        transparent 100%);
-    opacity: 0.4;
-}
-
-/* Subtle curved detail for assistant messages */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 2px;
-    border-radius: 1px;
-    background: linear-gradient(to bottom, 
-        transparent 10%, 
-        var(--color-primary-soft) 50%, 
-        transparent 90%);
-    opacity: 0.3;
-}
-
-/* Scrollbar styling to match wooden instrument theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 6px;
 }`,
   },
   {
@@ -824,64 +663,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #C9D9DE; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Misty rain inspired embellishments */
-.message-content-container {
-    border-radius: 8px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 12px rgba(40, 51, 57, 0.06) !important;
-    transition: all 0.3s ease;
-}
-
-/* Subtle top/left border highlight to suggest light filtering through mist */
-.message-user .message-content-container {
-    border-top: 1px solid rgba(239, 245, 247, 0.15) !important;
-    border-left: 1px solid rgba(239, 245, 247, 0.15) !important;
-}
-
-/* Add a subtle blue-tinted overlay to assistant messages */
-.message-assistant .message-content-container {
-    position: relative;
-    overflow: hidden;
-}
-
-/* Add soft shadow to create depth without using gradients */
-body[theme-mode="dark"] .message-content-container {
-    box-shadow: 0 2px 10px rgba(20, 28, 32, 0.15) !important;
-}
-
-body[theme-mode="light"] .message-content-container {
-    box-shadow: 0 2px 8px rgba(187, 212, 223, 0.15) !important;
-}
-
-/* Scrollbar styling to match misty theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 8px;
-}
-
-/* Add a subtle vignette effect to the content container to suggest mist at the edges */
-#messages {
-    position: relative;
-}
-
-#messages::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.03);
-    z-index: 1;
 }`,
   },
   {
@@ -991,52 +772,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #C6E0E2; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Tang Dynasty inspired embellishments */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(29, 78, 90, 0.08) !important;
-}
-
-/* Tang Dynasty-inspired border details */
-.message-assistant .message-content-container {
-    border-top: 2px solid rgba(90, 164, 173, 0.3) !important;
-}
-
-.message-user .message-content-container {
-    border-bottom: 2px solid rgba(90, 164, 173, 0.25) !important;
-}
-
-/* Scrollbar styling to match watery theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 6px;
-}
-
-/* Add a subtle dot pattern reminiscent of Tang Dynasty porcelain */
-body[theme-mode="light"] .ant-collapse {
-    position: relative;
-    overflow: hidden;
-}
-
-body[theme-mode="light"] .ant-collapse::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(rgba(29, 78, 90, 0.07) 1px, transparent 1px);
-    background-size: 12px 12px;
-    pointer-events: none;
 }`,
   },
   {
@@ -1146,36 +881,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #CEDBE0; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Tang Dynasty landscape painting inspired embellishments */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 6px rgba(26, 48, 56, 0.08) !important;
-}
-
-/* Ink-wash inspired borders reminiscent of brush strokes */
-.message-assistant .message-content-container {
-    border-left: 2px solid rgba(47, 84, 93, 0.25) !important;
-    border-bottom: 1px solid rgba(47, 84, 93, 0.15) !important;
-}
-
-.message-user .message-content-container {
-    border-right: 2px solid rgba(47, 84, 93, 0.25) !important;
-    border-top: 1px solid rgba(47, 84, 93, 0.15) !important;
-}
-
-/* Scrollbar styling to match mountain-water theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 4px;
 }`,
   },
   {
@@ -1286,81 +991,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #C7E5D6; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Jade carving inspired embellishments */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 3px 10px rgba(22, 50, 41, 0.05) !important;
-}
-
-/* Add subtle jade-like translucency to message containers */
-.message-content-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid transparent;
-    border-bottom-color: rgba(56, 142, 112, 0.06);
-    border-right-color: rgba(56, 142, 112, 0.06);
-    pointer-events: none;
-    border-radius: 4px;
-}
-
-/* Add ornamental corner details inspired by jade carvings */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid rgba(56, 142, 112, 0.25);
-    border-left: 2px solid rgba(56, 142, 112, 0.25);
-    border-top-left-radius: 3px;
-    pointer-events: none;
-}
-
-.message-user .message-content-container::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid rgba(56, 142, 112, 0.25);
-    border-right: 2px solid rgba(56, 142, 112, 0.25);
-    border-bottom-right-radius: 3px;
-    pointer-events: none;
-}
-
-/* Scrollbar styling to match jade theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 4px;
-}
-
-/* Add subtle circular pattern reminiscent of bi (璧) jade discs */
-body[theme-mode="light"] .ant-collapse-header::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 40px;
-    width: 12px;
-    height: 12px;
-    border: 1px solid rgba(56, 142, 112, 0.2);
-    border-radius: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
 }`,
   },
   {
@@ -1471,56 +1101,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #D5C6D8; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Purple pottery inspired embellishments */
-.message-content-container {
-    border-radius: 5px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(58, 42, 61, 0.05) !important;
-}
-
-/* Add subtle pottery trim details to message containers */
-.message-assistant .message-content-container::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    right: 10%;
-    height: 1px;
-    background: linear-gradient(to right, 
-        transparent 0%, 
-        var(--color-primary-soft) 20%, 
-        var(--color-primary-soft) 80%, 
-        transparent 100%);
-    opacity: 0.2;
-    pointer-events: none;
-}
-
-/* Scrollbar styling to match pottery theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 6px;
-}
-
-/* Add subtle "wheel thrown" circular marks in the background */
-body[theme-mode="dark"] .ant-collapse-header::before {
-    content: "";
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 1px solid rgba(140, 93, 145, 0.2);
-    transform: translateY(-50%);
-    pointer-events: none;
 }`
   },
   {
@@ -1643,132 +1223,6 @@ body[theme-mode="light"] .ant-collapse-content {
     background-color: rgba(205, 222, 226, 0.8); /* More transparent medium blue */
     backdrop-filter: blur(3px);                 /* Light frosted effect */
     -webkit-backdrop-filter: blur(3px);
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Misty inspired embellishments */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 3px 20px rgba(41, 66, 74, 0.1) !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
-    background-color: rgba(255, 255, 255, 0.05) !important;
-}
-
-/* Add misty edges and blur to message containers */
-.message-content-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to right, 
-        rgba(76, 140, 153, 0.03) 0%, 
-        rgba(76, 140, 153, 0.00) 20%,
-        rgba(76, 140, 153, 0.00) 80%,
-        rgba(76, 140, 153, 0.03) 100%);
-    pointer-events: none;
-    border-radius: 6px;
-    filter: blur(2px);
-}
-
-/* Add subtle vertical "rain drop" details reminiscent of misty rain in Tang paintings */
-.message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 5%;
-    bottom: 5%;
-    right: 1%;
-    width: 1px;
-    background: linear-gradient(to bottom, 
-        transparent 0%, 
-        rgba(76, 140, 153, 0.1) 30%, 
-        rgba(76, 140, 153, 0.1) 70%, 
-        transparent 100%);
-    pointer-events: none;
-    filter: blur(1px);
-}
-
-/* Add floating mist elements to create layered depth */
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(76, 140, 153, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 60%, rgba(76, 140, 153, 0.03) 0%, transparent 60%);
-    pointer-events: none;
-    z-index: 0;
-    animation: mistFloat 60s infinite alternate ease-in-out;
-}
-
-/* Add a swirling mist animation */
-@keyframes mistFloat {
-    0% { 
-        background-position: 0% 0%;
-        opacity: 0.5;
-    }
-    50% { 
-        background-position: 2% 10%; 
-        opacity: 0.7;
-    }
-    100% { 
-        background-position: 0% 0%; 
-        opacity: 0.5;
-    }
-}
-
-/* Scrollbar styling to match misty theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 6px;
-    opacity: 0.8;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(41, 66, 74, 0.1);
-    border-radius: 6px;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-}
-
-/* Add a subtle vignette to create a misty atmosphere */
-#messages {
-    position: relative;
-}
-
-#messages::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    box-shadow: inset 0 0 150px rgba(76, 140, 153, 0.08);
-    z-index: 1;
-}
-
-/* Enhance nav elements with misty translucency */
-.nav-item {
-    background-color: rgba(76, 140, 153, 0.05) !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
-    transition: all 0.3s ease;
-}
-
-.nav-item:hover {
-    background-color: rgba(76, 140, 153, 0.1) !important;
-}
-
-/* Add a subtle misty glow to buttons */
-button {
-    box-shadow: 0 0 5px rgba(76, 140, 153, 0.2) !important;
 }`,
   },
   {
@@ -1926,77 +1380,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #FFE0E4; /* Between ant-collapse and background-soft */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Rouge-inspired embellishments */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(140, 72, 81, 0.05) !important;
-}
-
-/* Add subtle rouge-like patterns inspired by traditional cosmetic containers */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 8px;
-    height: 8px;
-    border: 1px solid rgba(228, 112, 124, 0.2);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-/* Add delicate flower-like patterns reminiscent of rouge boxes */
-.message-user .message-content-container::after {
-    content: "";
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    width: 6px;
-    height: 6px;
-    background: radial-gradient(circle at center,
-        rgba(228, 112, 124, 0.1) 0%,
-        transparent 70%);
-    pointer-events: none;
-}
-
-/* Scrollbar styling to match rouge theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 4px;
-}
-
-/* Add subtle patterns inspired by traditional rouge containers */
-.ant-collapse-header {
-    position: relative;
-}
-
-.ant-collapse-header::after {
-    content: "";
-    position: absolute;
-    right: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    background: 
-        linear-gradient(45deg, transparent 45%, var(--color-primary-mute) 45%, var(--color-primary-mute) 55%, transparent 55%),
-        linear-gradient(-45deg, transparent 45%, var(--color-primary-mute) 45%, var(--color-primary-mute) 55%, transparent 55%);
-    opacity: 0.6;
-}
-
-/* Add a subtle rouge-like glow to active elements */
-button:active, 
-.nav-item:active {
-    box-shadow: 0 0 10px rgba(228, 112, 124, 0.2);
 }`,
   },
   {
@@ -2107,73 +1490,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #CDD1D9;    /* Clear mid-tone */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES ===== */
-/* Enhanced contrast elements inspired by wild goose plumage */
-.message-content-container {
-    border-radius: 3px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(31, 41, 55, 0.08) !important;
-}
-
-
-/* Feather-like layered effect */
-.message-user .message-content-container::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    right: 4px;
-    height: 1px;
-    background: var(--color-primary-soft);
-    opacity: 0.3;
-    box-shadow: 
-        0 4px 0 var(--color-primary-mute),
-        0 8px 0 var(--color-primary-mute);
-}
-
-/* Scrollbar with enhanced contrast */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 3px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 3px;
-}
-
-/* Wing pattern in headers */
-.ant-collapse-header {
-    position: relative;
-    overflow: hidden;
-}
-
-.ant-collapse-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 100%;
-    background: 
-        linear-gradient(135deg,
-            transparent 20%,
-            var(--color-primary-mute) 21%,
-            transparent 22%,
-            transparent 30%,
-            var(--color-primary-mute) 31%,
-            transparent 32%
-        );
-    opacity: 0.5;
-}
-
-/* Enhanced contrast for interactive elements */
-button:hover,
-.nav-item:hover {
-    background-color: var(--color-hover) !important;
-    box-shadow: 0 2px 4px rgba(31, 41, 55, 0.1);
 }`},
   {
     id: "yao-huo",
@@ -2283,226 +1599,6 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #E8C696; /* Rich clay tone */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* 
-========================
-窑火 (Yao-huo)
-========================
-Theme inspired by the rich colors of traditional Chinese kilns,
-featuring the warm browns and amber tones created by wood-firing.
-The palette captures both the intense heat of the kiln fire and
-the resulting earthen glazes of Tang Dynasty ceramics.
-*/
-
-/* Root variables (global across light/dark modes) */
-:root {
-    --color-white-soft: #FAF0DD;
-    --color-black-soft: #2C1810;  /* Deep ember brown */
-
-    /* Primary color (accent color) and variants */
-    --color-primary: #C85F3C;     /* Kiln fire red-orange */
-    --color-primary-soft: rgba(200, 95, 60, 0.6);  /* Softer ember */
-    --color-primary-mute: rgba(200, 95, 60, 0.2);  /* Subtle ember */
-}
-
-/* ===== DARK MODE VARIABLES ===== */
-body[theme-mode="dark"] {
-    /* Main background colors - from darkest to lightest */
-    --color-background: #2C1810;       /* Deep ember brown like kiln shadows */
-    --color-background-mute: #443026;  /* Slightly lighter ember */
-    --color-background-soft: #6B4636;  /* Medium fired clay */
-
-    /* Chat interface colors */
-    --navbar-background-mac: rgba(44, 24, 16, 0.85);  /* Semi-transparent navbar */
-    --navbar-background: #2C1810;      /* Navigation bar background */
-    --chat-background: #2C1810;        /* Main chat area background */
-    --chat-background-user: #5C392C;   /* User message bubble - warm ember */
-    --chat-background-assistant: #443026; /* Assistant message - rich clay */
-
-    /* Text colors */
-    --chat-text-user: #F8E3C4;         /* Warm light like kiln glow */
-    --color-text: #F8E3C4;             /* General text color */
-
-    /* Interactive states */
-    --color-hover: #6D4234;            /* Hover state - glowing ember */
-    --color-active: #7D4C3D;           /* Active/selected state - hot ember */
-
-    /* Border colors */
-    --color-border: rgba(248, 227, 196, 0.15);     /* Visible but subtle border */
-    --color-border-soft: rgba(248, 227, 196, 0.08); /* Very subtle border */
-}
-
-/* Content container background - important! */
-body[theme-mode="dark"] #content-container {
-    background-color: #5C392C !important; /* Matches chat-background-user */
-}
-
-/* Collapsible components styling */
-body[theme-mode="dark"] .ant-collapse {
-    background-color: #664A3A; /* Rich fired clay */
-}
-
-body[theme-mode="dark"] .ant-collapse-content {
-    background-color: #553C30; /* Deep clay tone */
-}
-
-/* ===== LIGHT MODE VARIABLES ===== */
-body[theme-mode="light"] {
-    /* Main background colors - from lightest to medium */
-    --color-background: #F8E3C4;       /* Light clay color */
-    --color-background-mute: #D4B176;  /* Slightly darker clay */
-    --color-background-soft: #E6C89B;  /* Medium clay tone */
-
-    /* Chat interface colors */
-    --navbar-background: #F1D6AE;      /* Warm clay navbar */
-    --chat-background: #FAF0DD;        /* Main chat area - bright clay */
-    --chat-background-user: #E6C89B;   /* User message - standard clay */
-    --chat-background-assistant: #F1D6AE; /* Assistant message - warm clay */
-
-    /* Text colors */
-    --color-text: #2C1810;             /* Deep ember text color */
-
-    /* Interactive states */
-    --color-hover: #F3DDB8;            /* Hover state - warm highlight */
-    --color-active: #EBCD9E;           /* Active/selected state */
-
-    /* Border colors */
-    --color-border: rgba(44, 24, 16, 0.12);       /* Subtle border */
-    --color-border-soft: rgba(44, 24, 16, 0.06);  /* Very subtle border */
-
-    /* White variable (often used for backgrounds) */
-    --color-white: #FAF0DD;            /* Lightest clay tone */
-}
-
-/* Content container background - important! */
-body[theme-mode="light"] #content-container {
-    background-color: #FAF0DD !important; /* Matches chat-background */
-}
-
-/* Collapsible components styling */
-body[theme-mode="light"] .ant-collapse {
-    background-color: #DEB57E; /* Deeper clay */
-}
-
-body[theme-mode="light"] .ant-collapse-content {
-    background-color: #E8C696; /* Rich clay tone */
-}
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Add subtle glaze-like effects to message containers */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(to right,
-        transparent,
-        var(--color-primary-soft) 40%,
-        var(--color-primary-soft) 60%,
-        transparent
-    );
-    opacity: 0.3;
-}
-
-/* Add firing marks reminiscent of wood-fired pottery */
-.message-user .message-content-container::after {
-    content: "";
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(
-        circle at center,
-        var(--color-primary-mute) 0%,
-        transparent 70%
-    );
-    opacity: 0.6;
-}
-
-/* Scrollbar styling to match pottery theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 4px;
-}
-
-/* Add subtle texture reminiscent of fired clay */
-.ant-collapse-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcqRVCAAAAGnRSTlMAAwgJEBk0TVheY2R5eoWGh4iJiouMjY6PtI4vbO8AAADJSURBVHja7dXLDoMgEIXhQRgQL1jrpVrP+79np0YTlRrSuGjjv/xWfAsDkJVFRssB4JXqnHtfVSz93qnvPnV36qwkQNoDmGJ3wwEwxdEGr1TrgHfqb/BK3fs0LVTnA5pQSdIbgEZS/gYtKANShLIghdqDnNeVSg/leKEsyBUDZJheSjQvVLDFo4VKll5I9C+k4zRJht1hsCBm8lvXpRuQw2FBLoeBgllSGO4STTjNOaRR4USj6nLEp0bETVrEEIs4orGANLSVRUZLs0MxAcDWcqiRAAAAAElFTkSuQmCC");
-    opacity: 0.03;
-    pointer-events: none;
-}
-
-/* Add subtle glaze-like effects to message containers */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(to right,
-        transparent,
-        var(--color-primary-soft) 40%,
-        var(--color-primary-soft) 60%,
-        transparent
-    );
-    opacity: 0.3;
-}
-
-/* Add firing marks reminiscent of wood-fired pottery */
-.message-user .message-content-container::after {
-    content: "";
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(
-        circle at center,
-        var(--color-primary-mute) 0%,
-        transparent 70%
-    );
-    opacity: 0.6;
-}
-
-/* Scrollbar styling to match pottery theme */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-soft);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-mute);
-    border-radius: 4px;
-}
-
-/* Add subtle texture reminiscent of fired clay */
-.ant-collapse-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcqRVCAAAAGnRSTlMAAwgJEBk0TVheY2R5eoWGh4iJiouMjY6PtI4vbO8AAADJSURBVHja7dXLDoMgEIXhQRgQL1jrpVrP+79np0YTlRrSuGjjv/xWfAsDkJVFRssB4JXqnHtfVSz93qnvPnV36qwkQNoDmGJ3wwEwxdEGr1TrgHfqb/BK3fs0LVTnA5pQSdIbgEZS/gYtKANShLIghdqDnNeVSg/leKEsyBUDZJheSjQvVLDFo4VKll5I9C+k4zRJht1hsCBm8lvXpRuQw2FBLoeBgllSGO4STTjNOaRR4USj6nLEp0bETVrEEIs4orGANLSVRUZLs0MxAcDWcqiRAAAAAElFTkSuQmCC");
-    opacity: 0.03;
-    pointer-events: none;
 }`,
   },
   {
@@ -2574,26 +1670,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(56, 39, 32, 0.06);
 
     --color-white: #FBF7F2;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(56, 39, 32, 0.06) !important;
-}
-
-/* Tea swirl effect on message containers */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 100%;
-    border-right: 1px solid var(--color-primary-soft);
-    border-radius: 0 6px 6px 0;
-    opacity: 0.3;
 }`
   },
   {
@@ -2669,25 +1745,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(44, 54, 53, 0.06);
 
     --color-white: #F5F9F7;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 10px rgba(44, 54, 53, 0.05) !important;
-}
-
-/* Crackle glaze effect on message containers */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--color-primary-soft);
-    opacity: 0.2;
 }`
   },
   {
@@ -2764,26 +1821,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(21, 41, 68, 0.06);
 
     --color-white: #F7FAFD;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 8px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 12px rgba(21, 41, 68, 0.08) !important;
-}
-
-/* Cloud-like border effects */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    border-radius: 2px;
-    background: var(--color-primary-soft);
-    opacity: 0.3;
 }`
   },
   {
@@ -2859,25 +1896,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(26, 44, 61, 0.06);
 
     --color-white: #F2F7F8;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 10px rgba(26, 44, 61, 0.06) !important;
-}
-
-/* Ru glaze crackle effect */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--color-primary-soft);
-    opacity: 0.2;
 }`
   },
   {
@@ -2949,25 +1967,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(26, 57, 55, 0.06);
 
     --color-white: #F0F6F6;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 10px rgba(26, 57, 55, 0.06) !important;
-}
-
-/* Ru glaze effect on message containers */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--color-primary-soft);
-    opacity: 0.3;
 }`
   },
   {
@@ -3044,25 +2043,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(43, 41, 38, 0.06);
 
     --color-white: #FFFFFF;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(43, 41, 38, 0.05) !important;
-}
-
-/* Jade-like polish effect */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: var(--color-primary-soft);
-    opacity: 0.2;
 }`
   },
   {
@@ -3139,25 +2119,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(76, 118, 134, 0.06);
 
     --color-white: #F4FAFB;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 8px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 12px rgba(76, 118, 134, 0.08) !important;
-}
-
-/* Water-inspired border effect */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--color-primary-soft);
-    opacity: 0.3;
 }`
   },
   {
@@ -3234,25 +2195,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(42, 82, 84, 0.06);
 
     --color-white: #F0F7F8;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 10px rgba(42, 82, 84, 0.06) !important;
-}
-
-/* Lake ripple effect */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--color-primary-soft);
-    opacity: 0.3;
 }`
   },
   {
@@ -3324,25 +2266,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(140, 67, 86, 0.06);
 
     --color-white: #FFF6F9;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 6px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(140, 67, 86, 0.05) !important;
-}
-
-/* Plum blossom branch effect */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 12px;
-    width: 2px;
-    height: 12px;
-    background: var(--color-primary-soft);
-    opacity: 0.4;
 }`
   },
   {
@@ -3419,25 +2342,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(74, 28, 28, 0.06);
 
     --color-white: #FFFAFA;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 4px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(74, 28, 28, 0.06) !important;
-}
-
-/* Sunset glow effect */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--color-primary-soft);
-    opacity: 0.3;
 }`
   },
   {
@@ -3514,25 +2418,6 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(93, 64, 55, 0.06);
 
     --color-white: #FAF8F7;
-}
-
-/* Additional custom styles */
-.message-content-container {
-    border-radius: 2px !important;
-    border: 1px solid var(--color-border) !important;
-    box-shadow: 0 2px 8px rgba(93, 64, 55, 0.05) !important;
-}
-
-/* Zen-inspired simple line detail */
-.message-assistant .message-content-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 8px;
-    width: 2px;
-    height: 100%;
-    background: var(--color-primary-soft);
-    opacity: 0.2;
 }`
   },
   {
@@ -3541,45 +2426,69 @@ body[theme-mode="light"] {
     description: "Light theme inspired by blue and traditional pottery",
     lightPreviewUrl: "/qing-hua.png",
     darkPreviewUrl: "/qing-hua.png",
-    css: `body[theme-mode="dark"] {
-  --color-background: #10234988;
-  --color-background-soft: #275983;
-  --color-background-mute: #1b4b7766;
-  --navbar-background: #102349;
-  --chat-background: #102349;
-  --chat-background-user: #1e3f66;
-  --chat-background-assistant: #1b4b77;
-}
-body[theme-mode="dark"] #content-container {
-  background-color: #1e3f66 !important;
-}
+    css: `/* 
+========================
+青花 (Qing-hua)
+========================
+Theme inspired by traditional blue and white porcelain,
+featuring the distinctive cobalt blue designs on pristine
+white backgrounds that characterize this iconic style of
+Chinese ceramics.
+*/
+
+/* Root variables */
 :root {
-  --color-black-soft: #102349;
+    --color-white-soft: #F7FBFF;
+    --color-black-soft: #102349;  /* Deep cobalt blue */
+
+    /* Primary color (accent color) and variants */
+    --color-primary: #1E3F66;     /* Classic cobalt blue */
+    --color-primary-soft: rgba(30, 63, 102, 0.6);
+    --color-primary-mute: rgba(30, 63, 102, 0.2);
 }
+
+/* Dark mode */
+body[theme-mode="dark"] {
+    --color-background: #102349;       /* Deep cobalt */
+    --color-background-mute: #1B4B77;  /* Rich cobalt */
+    --color-background-soft: #275983;  /* Medium cobalt */
+
+    --navbar-background-mac: rgba(16, 35, 73, 0.85);
+    --navbar-background: #102349;
+    --chat-background: #102349;
+    --chat-background-user: #1E3F66;
+    --chat-background-assistant: #1B4B77;
+
+    --chat-text-user: #F2F7FF;
+    --color-text: #F2F7FF;
+
+    --color-hover: #336790;
+    --color-active: #3D7BAD;
+
+    --color-border: rgba(242, 247, 255, 0.15);
+    --color-border-soft: rgba(242, 247, 255, 0.08);
+}
+
+/* Light mode */
 body[theme-mode="light"] {
-  --color-background: #f2f7ff;
-  --color-background-soft: #d4e5ff;
-  --color-background-mute: #b9d7ff;
-  --navbar-background: #e6f0ff;
-  --chat-background: #f7fbff;
-  --chat-background-user: #d4e5ff;
-  --chat-background-assistant: #e6f0ff;
-  --color-white: #f7fbff;
-}
-body[theme-mode="light"] #content-container {
-  background-color: #f7fbff !important;
-}
-body[theme-mode="light"] .ant-collapse {
-  background-color: #b3d1ff;
-}
-body[theme-mode="light"] .ant-collapse-content {
-  background-color: #cce0ff;
-}
-body[theme-mode="dark"] .ant-collapse {
-  background-color: #336790;
-}
-body[theme-mode="dark"] .ant-collapse-content {
-  background-color: #275983;
+    --color-background: #F2F7FF;       /* Porcelain white */
+    --color-background-mute: #B9D7FF;  /* Soft blue */
+    --color-background-soft: #D4E5FF;  /* Medium light blue */
+
+    --navbar-background: #E6F0FF;
+    --chat-background: #F7FBFF;
+    --chat-background-user: #D4E5FF;
+    --chat-background-assistant: #E6F0FF;
+
+    --color-text: #102349;
+
+    --color-hover: #EBF3FF;
+    --color-active: #E0ECFF;
+
+    --color-border: rgba(16, 35, 73, 0.12);
+    --color-border-soft: rgba(16, 35, 73, 0.06);
+
+    --color-white: #F7FBFF;
 }`
   },
   {
