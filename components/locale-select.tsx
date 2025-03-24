@@ -23,6 +23,7 @@ export default function LocaleSelect() {
                 <SelectItem value="ja-JP">{t('ja-JP')}</SelectItem>
                 <SelectItem value="ru-RU">{t('ru-RU')}</SelectItem>
                 <SelectItem value="zh-CN">{t('zh-CN')}</SelectItem>
+                <SelectItem value="ar-SA">{t('ar-SA')}</SelectItem>
             </SelectContent>
         </Select>
     )

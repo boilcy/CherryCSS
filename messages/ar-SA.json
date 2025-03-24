@@ -1,0 +1,143 @@
+{
+    "navigation": {
+        "github": "GitHub"
+    },
+    "home": {
+        "title": "معرض سمات Cherry Studio",
+        "description": "اختر وانسخ سمة Cherry Studio المفضلة لديك!"
+    },
+    "locale": {
+        "select": "اختر اللغة",
+        "en-US": "English",
+        "ja-JP": "日本語",
+        "ru-RU": "Русский",
+        "zh-CN": "简体中文",
+        "ar-SA": "العربية"
+    },
+    "toast": {
+        "copy-success": "تم نسخ سمة {{themeName}} إلى الحافظة!",
+        "copy-error": "تعطيل النسخ, يمكنك الذهاب إلى مستودع Github والنسخ يدويا!"
+    },
+    "themes": {
+        "chang-an": {
+            "name": "تشانغآن",
+            "description": "نمط صيني: تشانغآن"
+        },
+        "xuan-zhi": {
+            "name": "شوان تشي",
+            "description": "نمط صيني: شوان تشي"
+        },
+        "yang-pi-zhi": {
+            "name": "الرق",
+            "description": "نمط صيني: الرق"
+        },
+        "jin-xiang-yu": {
+            "name": "الذهب واليشم",
+            "description": "نمط صيني: الذهب واليشم"
+        },
+        "pi-pa": {
+            "name": "البيبا",
+            "description": "نمط صيني: البيبا"
+        },
+        "yan-yu": {
+            "name": "الضباب والمطر",
+            "description": "نمط صيني: الضباب والمطر"
+        },
+        "tian-shui": {
+            "name": "السماء والماء",
+            "description": "نمط صيني: السماء والماء"
+        },
+        "shan-shui": {
+            "name": "الجبال والماء",
+            "description": "نمط صيني: الجبال والماء"
+        },
+        "yu-shi": {
+            "name": "اليشم",
+            "description": "نمط صيني: اليشم"
+        },
+        "zi-tao": {
+            "name": "السيراميك البنفسجي",
+            "description": "نمط صيني: السيراميك البنفسجي"
+        },
+        "qing-wu": {
+            "name": "الضباب الأزرق",
+            "description": "نمط صيني: الضباب الأزرق"
+        },
+        "su-xuan": {
+            "name": "الورق البسيط",
+            "description": "نمط صيني: الورق البسيط"
+        },
+        "yan-zhi": {
+            "name": "الخدود",
+            "description": "نمط صيني: الخدود"
+        },
+        "yan-hui": {
+            "name": "الإوزة الرمادية",
+            "description": "نمط صيني: الإوزة الرمادية"
+        },
+        "yao-huo": {
+            "name": "نار الفرن",
+            "description": "نمط صيني: نار الفرن"
+        },
+        "nai-cha": {
+            "name": "الشاي بالحليب",
+            "description": "نمط صيني: الشاي بالحليب"
+        },
+        "qing-ci": {
+            "name": "السيلادون",
+            "description": "نمط صيني: السيلادون"
+        },
+        "liu-yun": {
+            "name": "السحب المتدفقة",
+            "description": "نمط صيني: السحب المتدفقة"
+        },
+        "ru-yao-lan": {
+            "name": "رو ياو الأزرق",
+            "description": "نمط صيني: رو ياو الأزرق"
+        },
+        "ru-yao-lv": {
+            "name": "رو ياو الأخضر",
+            "description": "نمط صيني: رو ياو الأخضر"
+        },
+        "han-bai-yu": {
+            "name": "يشم هان الأبيض",
+            "description": "نمط صيني: يشم هان الأبيض"
+        },
+        "mo-nai": {
+            "name": "مونيه",
+            "description": "نمط مونيه"
+        },
+        "hu-guang": {
+            "name": "ضوء البحيرة",
+            "description": "نمط صيني: ضوء البحيرة"
+        },
+        "chun-mei": {
+            "name": "البرقوق الربيعي",
+            "description": "نمط صيني: البرقوق الربيعي"
+        },
+        "dan-xia": {
+            "name": "دانشيا",
+            "description": "نمط صيني: دانشيا"
+        },
+        "chan-zong": {
+            "name": "البن البوذي",
+            "description": "نمط صيني: البن البوذي"
+        },
+        "qing-hua": {
+            "name": "الخزف الأزرق والأبيض",
+            "description": "نمط صيني: الخزف الأزرق والأبيض"
+        },
+        "claude": {
+            "name": "كلود",
+            "description": "نمط كلود"
+        },
+        "gladiia": {
+            "name": "جلاديا-العودة",
+            "description": "سمة جلاديا-العودة"
+        },
+        "dracula": {
+            "name": "دراكولا",
+            "description": "نمط دراكولا"
+        }
+    }
+}
