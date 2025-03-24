@@ -6,6 +6,10 @@
         "title": "Cherry Studio 主题库",
         "description": "选择并复制你喜欢的Cherry Studio主题!"
     },
+    "filters": {
+        "colors": "颜色",
+        "no-results": "没有符合你选择过滤器的主题。"
+    },
     "locale": {
         "select": "选择语言",
         "en-US": "English",

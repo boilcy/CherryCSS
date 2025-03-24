@@ -6,6 +6,10 @@
         "title": "Галерея тем Cherry Studio",
         "description": "Выберите и скопируйте понравившуюся тему Cherry Studio!"
     },
+    "filters": {
+        "colors": "Цвета",
+        "no-results": "Нет тем, соответствующих вашим выбранным фильтрам."
+    },
     "locale": {
         "select": "Выберите язык",
         "en-US": "English",

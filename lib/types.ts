@@ -5,5 +5,6 @@ export interface Theme {
   lightPreviewUrl: string
   darkPreviewUrl: string
   css: string
+  colors?: string[] // Array of color names that represent this theme
 }
 

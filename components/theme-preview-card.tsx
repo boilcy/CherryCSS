@@ -12,9 +12,10 @@ interface ThemeCardProps {
   theme: Theme
   copiedTheme: string | null
   onCopy: (css: string, themeId: string) => void
+  showColors?: boolean
 }
 
-export function ThemeCard({ theme, copiedTheme, onCopy }: ThemeCardProps) {
+export function ThemeCard({ theme, copiedTheme, onCopy, showColors = false }: ThemeCardProps) {
   const { isDarkPreview } = useDarkPreview()
   const t = useTranslations('themes');
   const lightSrc = `/light/${theme.lightPreviewUrl}` || "/placeholder.svg";
@@ -55,6 +56,18 @@ export function ThemeCard({ theme, copiedTheme, onCopy }: ThemeCardProps) {
         </div>
         <p className="text-sm text-gray-500">{t(`${theme.id}.description`)}</p>
 
+        {showColors && theme.colors && theme.colors.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {theme.colors.map(color => (
+              <span 
+                key={color}
+                className="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-700"
+              >
+                {color}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

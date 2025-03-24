@@ -6,6 +6,10 @@
         "title": "Cherry Studioのライブラリです",
         "description": "Cherry Studioの好きなテーマを選んでコピーします!"
     },
+    "filters": {
+        "colors": "色",
+        "no-results": "選択したフィルターに一致するテーマはありません。"
+    },
     "locale": {
         "select": "言語を選択",
         "en-US": "English",

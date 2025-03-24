@@ -6,6 +6,10 @@
         "title": "Cherry Studio Theme Gallery",
         "description": "Select and copy your favorite Cherry Studio theme!"
     },
+    "filters": {
+        "colors": "Colors",
+        "no-results": "No themes match your selected filters."
+    },
     "locale": {
         "select": "Select Language",
         "en-US": "English",
