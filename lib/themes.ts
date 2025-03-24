@@ -1285,13 +1285,14 @@ body[theme-mode="dark"] .ant-collapse-content {
 /* Dark theme */
 body[theme-mode="dark"] {
   /* Colors */
-  --color-background: #2B2B2B;
+  --color-background: #30302e;
   --color-background-soft: #303030;
   --color-background-mute: #282C34;
   --navbar-background: var(--color-black-soft);
-  --chat-background: var(--color-black-soft);
+  --chat-background: #30302e;
   --chat-background-user: #323332;
-  --chat-background-assistant: #2D2E2D;
+  --chat-background-assistant: #3b3b39;
+  --chat-text-user: var(--color-white-soft);
 }
 
 /* Dark theme specific styles */
@@ -1301,13 +1302,16 @@ body[theme-mode="dark"] {
   }
 
   #content-container #messages {
-    background-color: var(--chat-background-assistant);
+    background-color: #30302e;
   }
 
   .inputbar-container {
     background-color: #3D3D3A;
     border: 1px solid #5E5D5940;
     border-radius: 8px;
+  }
+  .bubble #inputbar {
+    background-color: #3d3d3a;
   }
 
   /* Code styling */
@@ -1329,25 +1333,28 @@ body[theme-mode="light"] {
   --color-background-soft: #CBC7BE;
   --color-background-mute: #E4E1D7;
   --navbar-background: var(--color-white-soft);
-  --chat-background: var(--color-white-soft);
-  --chat-background-user: #F8F7F2;
-  --chat-background-assistant: #F6F4EC;
+  --chat-background: #EBE8E2;
+  --chat-background-user: #e8e6dc;
+  --chat-background-assistant: #fefefd;
 }
 
 /* Light theme specific styles */
 body[theme-mode="light"] {
   #content-container {
-    background-color: var(--chat-background-assistant) !important;
+    background-color: #EBE8E2 !important;
   }
 
   #content-container #messages {
-    background-color: var(--chat-background-assistant);
+    background-color: #EBE8E2;
   }
 
   .inputbar-container {
     background-color: #FFFFFF;
     border: 1px solid #87867F40;
     border-radius: 8px;
+  }
+  .bubble #inputbar {
+    background-color: #ffffff;
   }
 
   /* Code styling */
