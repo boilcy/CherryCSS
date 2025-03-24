@@ -11,6 +11,133 @@
         "en-US": "English",
         "ja-JP": "日本語",
         "ru-RU": "Русский",
-        "zh-CN": "简体中文"
+        "zh-CN": "简体中文",
+        "ar-SA": "العربية"
+    },
+    "toast": {
+        "copy-success": "{{themeName}} 主题已复制到剪贴板!",
+        "copy-error": "复制失败, 您可前往Github仓库手动复制!"
+    },
+    "themes": {
+        "chang-an": {
+            "name": "长安",
+            "description": "中国风配色: 长安"
+        },
+        "xuan-zhi": {
+            "name": "宣纸",
+            "description": "中国风配色: 宣纸"
+        },
+        "yang-pi-zhi": {
+            "name": "羊皮纸",
+            "description": "中国风配色: 羊皮纸"
+        },
+        "jin-xiang-yu": {
+            "name": "金镶玉",
+            "description": "中国风配色: 金镶玉"
+        },
+        "pi-pa": {
+            "name": "琵琶",
+            "description": "中国风配色: 琵琶"
+        },
+        "yan-yu": {
+            "name": "烟雨",
+            "description": "中国风配色: 烟雨"
+        },
+        "tian-shui": {
+            "name": "天水",
+            "description": "中国风配色: 天水"
+        },
+        "shan-shui": {
+            "name": "山水",
+            "description": "中国风配色: 山水"
+        },
+        "yu-shi": {
+            "name": "玉石",
+            "description": "中国风配色: 玉石"
+        },
+        "zi-tao": {
+            "name": "紫陶",
+            "description": "中国风配色: 紫陶"
+        },
+        "qing-wu": {
+            "name": "青雾",
+            "description": "中国风配色: 青雾"
+        },
+        "su-xuan": {
+            "name": "素宣",
+            "description": "中国风配色: 素宣"
+        },
+        "yan-zhi": {
+            "name": "胭脂",
+            "description": "中国风配色: 胭脂"
+        },
+        "yan-hui": {
+            "name": "雁灰",
+            "description": "中国风配色: 雁灰"
+        },
+        "yao-huo": {
+            "name": "窑火",
+            "description": "中国风配色: 窑火"
+        },
+        "nai-cha": {
+            "name": "奶茶",
+            "description": "中国风配色: 奶茶"
+        },
+        "qing-ci": {
+            "name": "青瓷",
+            "description": "中国风配色: 青瓷"
+        },
+        "liu-yun": {
+            "name": "流云",
+            "description": "中国风配色: 流云"
+        },
+        "ru-yao-lan": {
+            "name": "汝窑蓝",
+            "description": "中国风配色: 汝窑蓝"
+        },
+        "ru-yao-lv": {
+            "name": "汝窑绿",
+            "description": "中国风配色: 汝窑绿"
+        },
+        "han-bai-yu": {
+            "name": "汉白玉",
+            "description": "中国风配色: 汉白玉"
+        },
+        "mo-nai": {
+            "name": "莫奈",
+            "description": "莫奈风格"
+        },
+        "hu-guang": {
+            "name": "湖光",
+            "description": "中国风配色: 湖光"
+        },
+        "chun-mei": {
+            "name": "春梅",
+            "description": "中国风配色: 春梅"
+        },
+        "dan-xia": {
+            "name": "丹霞",
+            "description": "中国风配色: 丹霞"
+        },
+        "chan-zong": {
+            "name": "禅棕",
+            "description": "中国风配色: 禅棕"
+        },
+        "qing-hua": {
+            "name": "青花",
+            "description": "中国风配色: 青花"
+        },
+        "claude": {
+            "name": "Claude",
+            "description": "Claude风格"
+        },
+        "gladiia": {
+            "name": "歌蕾蒂娅-返航",
+            "description": "歌蕾蒂娅-返航 主题"
+        },
+        "dracula": {
+            "name": "Dracula",
+            "description": "Dracula风格"
+        }
     }
 }

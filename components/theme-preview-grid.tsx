@@ -4,22 +4,24 @@ import { useState } from "react"
 import type { Theme } from "@/lib/types"
 import { ThemeCard } from "@/components/theme-preview-card"
 import { toast } from "sonner"
+import { useTranslations } from "next-intl"
 interface ThemeGridProps {
   themes: Theme[]
 }
 
 export default function ThemeGrid({ themes }: ThemeGridProps) {
   const [copiedTheme, setCopiedTheme] = useState<string | null>(null)
+  const t = useTranslations();
 
-  const copyToClipboard = async (css: string, themeId: string, themeName: string) => {
+  const copyToClipboard = async (css: string, themeId: string) => {
     try {
       await navigator.clipboard.writeText(css)
       setCopiedTheme(themeId)
-      toast.success(`${themeName} 主题已复制到剪贴板!`)
+      toast.success(t('toast.copy-success', { themeName: t(`themes.${themeId}.name`) }))
       setTimeout(() => setCopiedTheme(null), 1000)
     } catch (err) {
       console.error("Failed to copy: ", err)
-      toast.error("复制失败，请手动复制!")
+      toast.error(t('toast.copy-error'))
     }
   }
 

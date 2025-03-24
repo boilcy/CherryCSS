@@ -96,7 +96,7 @@ body[theme-mode="dark"] .ant-collapse-content {
 }`,
   },
   {
-    id: "sheepskin",
+    id: "yang-pi-zhi",
     name: "羊皮纸",
     description: "Light theme inspired by ancient parchment",
     lightPreviewUrl: "/yang-pi-zhi.png",
@@ -143,7 +143,7 @@ body[theme-mode="dark"] .ant-collapse-content {
 }`,
   },
   {
-    id: "gold-jade",
+    id: "jin-xiang-yu",
     name: "金镶玉",
     description: "Light theme inspired by gold and jade ornaments",
     lightPreviewUrl: "/jin-xiang-yu.png",
@@ -190,7 +190,7 @@ body[theme-mode="dark"] .ant-collapse-content {
 }`,
   },
   {
-    id: "bamboo",
+    id: "pi-pa",
     name: "琵琶",
     description: "Light theme inspired by bamboo and traditional instruments",
     lightPreviewUrl: "/pi-pa.png",
@@ -237,7 +237,7 @@ body[theme-mode="dark"] .ant-collapse-content {
 }`,
   },
   {
-    id: "smoke-rain",
+    id: "yan-yu",
     name: "烟雨",
     description: "Light theme inspired by misty rain landscapes",
     lightPreviewUrl: "/yan-yu.png",

@@ -11,6 +11,133 @@
         "en-US": "English",
         "ja-JP": "日本語",
         "ru-RU": "Русский",
-        "zh-CN": "简体中文"
+        "zh-CN": "简体中文",
+        "ar-SA": "العربية"
+    },
+    "toast": {
+        "copy-success": "{{themeName}} theme copied to clipboard!",
+        "copy-error": "Copy failed, you can manually copy from the Github repository!"
+    },
+    "themes": {
+        "chang-an": {
+            "name": "Chang'an",
+            "description": "Chinese style: Chang'an"
+        },
+        "xuan-zhi": {
+            "name": "Chinese art paper",
+            "description": "Chinese style: Art paper"
+        },
+        "yang-pi-zhi": {
+            "name": "Sheepskin",
+            "description": "Chinese style: Sheepskin"
+        },
+        "jin-xiang-yu": {
+            "name": "Gold inlaid with jade",
+            "description": "Chinese style: Gold inlaid with jade"
+        },
+        "pi-pa": {
+            "name": "Chinese lute",
+            "description": "Chinese style: Chinese lute"
+        },
+        "yan-yu": {
+            "name": "Mist and rain",
+            "description": "Chinese style: Mist and rain"
+        },
+        "tian-shui": {
+            "name": "Sky and water",
+            "description": "Chinese style: Sky and water"
+        },
+        "shan-shui": {
+            "name": "Landscape",
+            "description": "Chinese style: Landscape"
+        },
+        "yu-shi": {
+            "name": "Jade",
+            "description": "Chinese style: Jade"
+        },
+        "zi-tao": {
+            "name": "Purple Pottery",
+            "description": "Chinese style: Purple Pottery"
+        },
+        "qing-wu": {
+            "name": "Misty Blue",
+            "description": "Chinese style: Misty Blue"
+        },
+        "su-xuan": {
+            "name": "Plain Rice Paper",
+            "description": "Chinese style: Plain Rice Paper"
+        },
+        "yan-zhi": {
+            "name": "Rouge",
+            "description": "Chinese style: Rouge"
+        },
+        "yan-hui": {
+            "name": "Wild Goose Gray",
+            "description": "Chinese style: Wild Goose Gray"
+        },
+        "yao-huo": {
+            "name": "Kiln Fire",
+            "description": "Chinese style: Kiln Fire"
+        },
+        "nai-cha": {
+            "name": "Milk Tea",
+            "description": "Chinese style: Milk Tea"
+        },
+        "qing-ci": {
+            "name": "Celadon",
+            "description": "Chinese style: Celadon"
+        },
+        "liu-yun": {
+            "name": "Flowing Clouds",
+            "description": "Chinese style: Flowing Clouds"
+        },
+        "ru-yao-lan": {
+            "name": "Ru Kiln Blue",
+            "description": "Chinese style: Ru Kiln Blue"
+        },
+        "ru-yao-lv": {
+            "name": "Ru Kiln Green",
+            "description": "Chinese style: Ru Kiln Green"
+        },
+        "han-bai-yu": {
+            "name": "Han Dynasty White Jade",
+            "description": "Chinese style: Han Dynasty White Jade"
+        },
+        "mo-nai": {
+            "name": "Monet",
+            "description": "Monet style"
+        },
+        "hu-guang": {
+            "name": "Lake Light",
+            "description": "Chinese style: Lake Light"
+        },
+        "chun-mei": {
+            "name": "Spring Plum",
+            "description": "Chinese style: Spring Plum"
+        },
+        "dan-xia": {
+            "name": "Danxia",
+            "description": "Chinese style: Danxia (Red Cloud)"
+        },
+        "chan-zong": {
+            "name": "Zen Brown",
+            "description": "Chinese style: Zen Brown"
+        },
+        "qing-hua": {
+            "name": "Blue and White",
+            "description": "Chinese style: Blue and White Porcelain"
+        },
+        "claude": {
+            "name": "Claude",
+            "description": "Claude style"
+        },
+        "gladiia": {
+            "name": "Gladiia-Return",
+            "description": "Gladiia-Return theme"
+        },
+        "dracula": {
+            "name": "Dracula",
+            "description": "Dracula style"
+        }
     }
 }
