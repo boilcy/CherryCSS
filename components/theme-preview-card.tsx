@@ -22,7 +22,7 @@ export function ThemeCard({ theme, copiedTheme, onCopy }: ThemeCardProps) {
   return (
     <div
       onClick={() => onCopy(theme.css, theme.id)}
-      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 mx-auto w-full max-w-[540px] lg:max-w-full h-auto cursor-pointer text-left hover:scale-[1.01]"
+      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 mx-auto w-full max-w-[540px] lg:max-w-full h-auto cursor-pointer text-left hover:scale-[1.01]"
       aria-label={`Copy ${t(`${theme.id}.name`)} theme`}
     >
       <div className="relative overflow-hidden">

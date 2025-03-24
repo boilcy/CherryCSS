@@ -138,6 +138,10 @@
         "dracula": {
             "name": "Dracula",
             "description": "Dracula风格"
+        },
+        "dopamine": {
+            "name": "ドーパミン",
+            "description": "鮮やかな黄色を中心とした活気あふれるカラフルなテーマ"
         }
     }
 }
