@@ -6,6 +6,10 @@
         "title": "معرض سمات Cherry Studio",
         "description": "اختر وانسخ سمة Cherry Studio المفضلة لديك!"
     },
+    "filters": {
+        "colors": "الألوان",
+        "no-results": "لا توجد سمات تطابق المرشحات المختارة."
+    },
     "locale": {
         "select": "اختر اللغة",
         "en-US": "English",
