@@ -2,7 +2,7 @@ import GradientText from "@/components/GradientText"
 import { Toaster } from "@/components/ui/sonner"
 import ThemeGrid from "@/components/theme-preview-grid"
 import { ThemePreviewSwitch } from "@/components/theme-preview-switch"
-import { themesWithBugfixes } from "@/lib/themes"
+import { themes } from "@/lib/themes"
 import { Icon } from "@iconify/react"
 import { useTranslations } from 'next-intl';
 import LocaleSelect from "@/components/locale-select"
@@ -26,7 +26,7 @@ export default function Home() {
           <ThemePreviewSwitch />
         </div>
 
-        <header className="mb-8 text-center">
+        <header className="mt-8 mb-8 text-center">
           <GradientText
             colors={["#ff0000", "#ff7f00", "#ffff00", "#00ff00", "#0000ff", "#4b0082", "#8b00ff"]}
             animationSpeed={2}
@@ -38,7 +38,7 @@ export default function Home() {
           <p className="text-gray-600">{t('home.description')}</p>
         </header>
 
-        <ThemeGrid themes={themesWithBugfixes} />
+        <ThemeGrid themes={themes} />
         <Toaster />
       </div>
     </main>

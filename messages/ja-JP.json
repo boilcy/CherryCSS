@@ -8,7 +8,26 @@
     },
     "filters": {
         "colors": "色",
-        "no-results": "選択したフィルターに一致するテーマはありません。"
+        "styles": "スタイル",
+        "no-results": "選択したフィルターに一致するテーマはありません。",
+        "style": {
+            "chineseStyle": "中国風",
+            "others": "その他"
+        },
+        "color": {
+            "red": "赤",
+            "orange": "オレンジ",
+            "brown": "茶色",
+            "yellow": "黄色",
+            "green": "緑",
+            "turquoise": "ターコイズ",
+            "blue": "青",
+            "violet": "紫",
+            "pink": "ピンク",
+            "gray": "グレー",
+            "black": "黒",
+            "white": "白"
+        }
     },
     "locale": {
         "select": "言語を選択",

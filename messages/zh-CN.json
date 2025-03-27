@@ -8,7 +8,26 @@
     },
     "filters": {
         "colors": "颜色",
-        "no-results": "没有符合你选择过滤器的主题。"
+        "styles": "风格",
+        "no-results": "没有符合你选择过滤器的主题。",
+        "style": {
+            "chineseStyle": "中国风",
+            "others": "其他"
+        },
+        "color": {
+            "red": "红色",
+            "orange": "橙色",
+            "brown": "棕色",
+            "yellow": "黄色",
+            "green": "绿色",
+            "turquoise": "青色",
+            "blue": "蓝色",
+            "violet": "紫色",
+            "pink": "粉色",
+            "gray": "灰色",
+            "black": "黑色",
+            "white": "白色"
+        }
     },
     "locale": {
         "select": "选择语言",

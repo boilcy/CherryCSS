@@ -8,7 +8,26 @@
     },
     "filters": {
         "colors": "Colors",
-        "no-results": "No themes match your selected filters."
+        "styles": "Styles",
+        "no-results": "No themes match your selected filters.",
+        "style": {
+            "chineseStyle": "Chinese Style",
+            "others": "Others"
+        },
+        "color": {
+            "red": "Red",
+            "orange": "Orange",
+            "brown": "Brown",
+            "yellow": "Yellow",
+            "green": "Green",
+            "turquoise": "Turquoise",
+            "blue": "Blue",
+            "violet": "Violet",
+            "pink": "Pink",
+            "gray": "Gray",
+            "black": "Black",
+            "white": "White"
+        }
     },
     "locale": {
         "select": "Select Language",
