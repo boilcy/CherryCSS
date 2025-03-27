@@ -5,18 +5,18 @@ import { useTranslations } from "next-intl"
 
 // Define color options
 const colorOptions = [
-  { name: "Red", value: "red", bgColor: "#FF3B30" },
-  { name: "Orange", value: "orange", bgColor: "#FF9500" },
-  { name: "Brown", value: "brown", bgColor: "#8B572A" },
-  { name: "Yellow", value: "yellow", bgColor: "#FFCC00" },
-  { name: "Green", value: "green", bgColor: "#34C759" },
-  { name: "Turquoise", value: "turquoise", bgColor: "#5AC8FA" },
-  { name: "Blue", value: "blue", bgColor: "#007AFF" },
-  { name: "Violet", value: "violet", bgColor: "#AF52DE" },
-  { name: "Pink", value: "pink", bgColor: "#FF2D55" },
-  { name: "Gray", value: "gray", bgColor: "#8E8E93" },
-  { name: "Black", value: "black", bgColor: "#000000" },
-  { name: "White", value: "white", bgColor: "#FFFFFF" }
+  { value: "red", bgColor: "#FF3B30" },
+  { value: "orange", bgColor: "#FF9500" },
+  { value: "brown", bgColor: "#8B572A" },
+  { value: "yellow", bgColor: "#FFCC00" },
+  { value: "green", bgColor: "#34C759" },
+  { value: "turquoise", bgColor: "#5AC8FA" },
+  { value: "blue", bgColor: "#007AFF" },
+  { value: "violet", bgColor: "#AF52DE" },
+  { value: "pink", bgColor: "#FF2D55" },
+  { value: "gray", bgColor: "#8E8E93" },
+  { value: "black", bgColor: "#000000" },
+  { value: "white", bgColor: "#FFFFFF" }
 ]
 
 interface ThemeColorFilterProps {
@@ -57,7 +57,7 @@ export function ThemeColorFilter({ selectedColors, onChange }: ThemeColorFilterP
                       border: color.value === "white" ? "1px solid #e5e5e5" : "none" 
                     }}
             />
-            {color.name}
+            {t(`filters.color.${color.value}`)}
           </button>
         ))}
       </div>
