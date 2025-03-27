@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 import { Locale, NextIntlClientProvider } from 'next-intl';
@@ -34,6 +35,7 @@ export default async function RootLayout({
         </NextIntlClientProvider>
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-2J36NNXMM1" />
     </html>
   )
 }
