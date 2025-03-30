@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from "@/lib/types";
 
 export const gladiia: Theme = {
-    id: "gladiia",
-        name: "歌蕾蒂娅-返航",
-            description: "歌蕾蒂娅-返航 主题",
-                lightPreviewUrl: "/gladiia.png",
-                    darkPreviewUrl: "/gladiia.png",
-                        css: `/*** 歌蕾蒂娅-返航 ***/
+  id: "gladiia",
+  name: "歌蕾蒂娅-返航",
+  description: "歌蕾蒂娅-返航 主题",
+  lightPreviewUrl: "/gladiia.png",
+  darkPreviewUrl: "/gladiia.png",
+  css: `/*** 歌蕾蒂娅-返航 ***/
 :root {
   --chat-background-white: #fff;
   --color-border: rgba(120,120,120,0.08) !important;
@@ -28,9 +28,9 @@ export const gladiia: Theme = {
 }
 
 #inputbar {
-  margin: -15px 10px 15px 0px;
+  margin: -15px 10px 15px 10px;
   background: rgba(255,255,255,0.96) !important;
-  border: 1px solid var(--color-border) !important;
+  border: 2px solid var(--color-border) !important;
   border-radius: 20px !important;
   box-shadow: 0 8px 32px -12px rgba(0,0,0,0.03) !important;
   backdrop-filter: blur(8px) !important;
@@ -80,5 +80,5 @@ body[theme-mode='dark'] #inputbar {
 * {
   font-family: "LXGW WenKai" !important;
   font-weight: 800;
-}`
-}
+}`,
+};
