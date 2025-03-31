@@ -165,6 +165,10 @@
         "dopamine": {
             "name": "ドーパミン",
             "description": "鮮やかな黄色を中心とした活気あふれるカラフルなテーマ"
+        },
+        "starry-night": {
+            "name": "Mac-星月夜",
+            "description": "Macスタイルのモックアップ"
         }
     }
 }

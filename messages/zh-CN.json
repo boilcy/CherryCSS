@@ -165,6 +165,10 @@
         "dopamine": {
             "name": "多巴胺",
             "description": "主题以五彩缤纷的多巴胺色彩板为灵感，采用鲜活的黄色、蓝色、绿色、粉色和红色"
+        },
+        "starry-night": {
+            "name": "星月夜",
+            "description": "星月夜风格"
         }
     }
 }
