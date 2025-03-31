@@ -44,47 +44,47 @@
     "themes": {
         "chang-an": {
             "name": "Chang'an",
-            "description": "Chinese style: Chang'an"
+            "description": "Theme inspired by Tang Dynasty aesthetics and the ancient capital Chang'an, featuring warm earth tones reminiscent of traditional Chinese architecture, calligraphy, and silk paintings"
         },
         "xuan-zhi": {
             "name": "Chinese art paper",
-            "description": "Chinese style: Art paper"
+            "description": "Theme inspired by traditional Chinese Xuan paper, renowned for its soft texture, distinctive warm tones, and lasting quality. Xuan paper has been used for  calligraphy and painting since the Tang Dynasty, valued for its perfect balance of ink absorption and durability."
         },
         "yang-pi-zhi": {
             "name": "Sheepskin",
-            "description": "Chinese style: Sheepskin"
+            "description": "Theme inspired by ancient parchment manuscripts, featuring warm amber tones and rich browns that evoke the texture and appearance of traditional animal skin parchment used in historical documents"
         },
         "jin-xiang-yu": {
             "name": "Gold inlaid with jade",
-            "description": "Chinese style: Gold inlaid with jade"
+            "description": "Theme inspired by traditional Chinese gold and jade ornaments, featuring elegant cream tones and rich browns that evoke the luxurious combination of precious metals and fine jade seen in imperial craftsmanship"
         },
         "pi-pa": {
             "name": "Chinese lute",
-            "description": "Chinese style: Chinese lute"
+            "description": "Theme inspired by traditional Chinese musical instruments, particularly the pipa lute,  featuring warm golden-brown tones reminiscent of aged wood and bamboo used intraditional instruments, with delicate accents suggesting instrument strings and curves"
         },
         "yan-yu": {
             "name": "Mist and rain",
-            "description": "Chinese style: Mist and rain"
+            "description": "Theme inspired by traditional Chinese misty rain landscapes, featuring soft blue-gray tones that evoke the tranquil beauty of mountains shrouded in mist and rain, capturing the poetic essence of classical Chinese landscape painting"
         },
         "tian-shui": {
             "name": "Sky and water",
-            "description": "Chinese style: Sky and water"
+            "description": "Theme inspired by Tang Dynasty aquatic aesthetics, featuring the interplay between sky and water. The teal-blue tones evoke the serenity of ancient Chinese gardens and the glazed pottery that captured the essence of water."
         },
         "shan-shui": {
             "name": "Landscape",
-            "description": "Chinese style: Landscape"
+            "description": "Theme inspired by Tang Dynasty landscape paintings, featuring deep teal and ink tones that evoke the majesty of mountains and waters in traditional Chinese art. The colors reflect the timeless elegance of brush and ink capturing nature's essence."
         },
         "yu-shi": {
             "name": "Jade",
-            "description": "Chinese style: Jade"
+            "description": "Theme inspired by classical Chinese jade artifacts, featuring rich emerald and celadon greens that capture the distinctive color and translucent quality of fine jade. The aesthetic reflects the intricate carvings and smooth polished surfaces of traditional jade ornaments."
         },
         "zi-tao": {
             "name": "Purple Pottery",
-            "description": "Chinese style: Purple Pottery"
+            "description": "Theme inspired by traditional Chinese purple clay pottery, featuring deep aubergine and warm violet tones reminiscent of the prized Yixing clay teapots and vessels. The colors and textures evoke the earthy richness and subtle luster of hand-crafted pottery."
         },
         "qing-wu": {
             "name": "Misty Blue",
-            "description": "Chinese style: Misty Blue"
+            "description": "Theme inspired by the ethereal blue mist that shrouds Tang Dynasty landscape paintings. The cyan-blue tones and transparent effects evoke the delicate veil of morning fog over mountains and waters, capturing the poetic atmosphere of classical Chinese nature scenes."
         },
         "su-xuan": {
             "name": "Plain Rice Paper",
@@ -92,67 +92,67 @@
         },
         "yan-zhi": {
             "name": "Rouge",
-            "description": "Chinese style: Rouge"
+            "description": "Theme inspired by traditional Chinese rouge (胭脂), featuring the elegant red hues used in classical cosmetics and paintings. The colors reflect the subtle gradations of rouge made from safflower and other natural pigments prized during the Tang Dynasty."
         },
         "yan-hui": {
             "name": "Wild Goose Gray",
-            "description": "Chinese style: Wild Goose Gray"
+            "description": "Theme inspired by the striking contrast of wild geese plumage, featuring the interplay between light silver-grey breast feathers and darker slate-grey wing feathers. The design captures the dramatic transitions seen in traditional Chinese paintings of geese."
         },
         "yao-huo": {
             "name": "Kiln Fire",
-            "description": "Chinese style: Kiln Fire"
+            "description": "Theme inspired by the rich colors of traditional Chinese kilns, featuring the warm browns and amber tones created by wood-firing. The palette captures both the intense heat of the kiln fire and the resulting earthen glazes of Tang Dynasty ceramics."
         },
         "nai-cha": {
             "name": "Milk Tea",
-            "description": "Chinese style: Milk Tea"
+            "description": "Theme inspired by traditional Chinese milk tea, featuring rich, warm browns and creamy tones that evoke the layered colors of perfectly brewed tea with milk. The aesthetic reflects both the translucent amber of tea and the soft, creamy swirls of milk."
         },
         "qing-ci": {
             "name": "Celadon",
-            "description": "Chinese style: Celadon"
+            "description": "Theme inspired by classical Chinese celadon pottery, featuring the distinctive blue-green glazes that made this porcelain famous. The colors reflect both the subtle variations in celadon glazes and the refined elegance of Song Dynasty ceramics."
         },
         "liu-yun": {
             "name": "Flowing Clouds",
-            "description": "Chinese style: Flowing Clouds"
+            "description": "Theme inspired by flowing clouds in traditional Chinese paintings, featuring ethereal blue tones that capture the dynamic movement of clouds across mountain landscapes. The colors reflect the various states of clouds from dawn to dusk."
         },
         "ru-yao-lan": {
             "name": "Ru Kiln Blue",
-            "description": "Chinese style: Ru Kiln Blue"
+            "description": "Theme inspired by the legendary Ru kiln ceramics of the Song Dynasty, featuring their distinctive sky-blue glaze. The colors capture the subtle variations in this most precious of Chinese ceramic glazes."
         },
         "ru-yao-lv": {
             "name": "Ru Kiln Green",
-            "description": "Chinese style: Ru Kiln Green"
+            "description": "Theme inspired by the green variations of Ru kiln glazes, featuring the subtle jade-like green tones achieved in Song Dynasty ceramics. The colors reflect the precious emerald-tinted glazes that were highly prized by the imperial court."
         },
         "han-bai-yu": {
             "name": "Han Dynasty White Jade",
-            "description": "Chinese style: Han Dynasty White Jade"
+            "description": "Theme inspired by the pristine white marble used in classical Chinese architecture. The colors capture the subtle variations in white jade, from pure snow-white to warm cream tones, reflecting the material's natural elegance and cultural significance."
         },
         "mo-nai": {
             "name": "Monet",
-            "description": "Monet style"
+            "description": "Theme inspired by the impressionistic blues of water lilies, featuring soft, luminous tones that capture the interplay of light and water. The colors reflect the ethereal quality of traditional Chinese water-ink paintings merged with impressionism."
         },
         "hu-guang": {
             "name": "Lake Light",
-            "description": "Chinese style: Lake Light"
+            "description": "Theme inspired by the shimmering light on lake surfaces, featuring crystalline blue-green tones that capture the interplay of sunlight and water. The colors evoke the tranquil beauty of traditional Chinese lake gardens."
         },
         "chun-mei": {
             "name": "Spring Plum",
-            "description": "Chinese style: Spring Plum"
+            "description": "Theme inspired by plum blossoms in early spring, featuring delicate pink tones that capture the first blooms against winter snow. The colors reflect both the subtle and vibrant hues of plum blossoms, a symbol of resilience in Chinese art."
         },
         "dan-xia": {
             "name": "Danxia",
-            "description": "Chinese style: Danxia (Red Cloud)"
+            "description": "Theme inspired by the glowing red clouds at sunset and the cinnabar red commonly used in traditional Chinese art. The colors capture both the intensity of sunset clouds and the rich vermillion of classical Chinese paintings."
         },
         "chan-zong": {
             "name": "Zen Brown",
-            "description": "Chinese style: Zen Brown"
+            "description": "Theme inspired by Zen Buddhist aesthetics, featuring warm browns reminiscent of wooden temple architecture and meditation halls. The colors reflect the natural materials and serene atmosphere of traditional Chan Buddhist spaces."
         },
         "qing-hua": {
             "name": "Blue and White",
-            "description": "Chinese style: Blue and White Porcelain"
+            "description": "Theme inspired by traditional blue and white porcelain,featuring the distinctive cobalt blue designs on pristine white backgrounds that characterize this iconic style of Chinese ceramics."
         },
         "claude": {
             "name": "Claude",
-            "description": "Claude style"
+            "description": "Theme inspired by Claude's distinctive aesthetic with soft whites and neutral grays"
         },
         "gladiia": {
             "name": "Gladiia-Return",
@@ -164,7 +164,7 @@
         },
         "dopamine": {
             "name": "Dopamine",
-            "description": "Vibrant yellow-led theme with energetic colorful accents"
+            "description": "Theme inspired by colorful dopamine color palette with vibrant yellows, blues, greens, pinks, and reds. The design aims to create a visually stimulating environment with high-contrast energetic colors that evoke the pleasure and reward systems of the brain."
         }
     }
 }
