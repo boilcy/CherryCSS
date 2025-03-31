@@ -169,6 +169,10 @@
         "starry-night": {
             "name": "Starry Night",
             "description": "Starry Night style"
+        },
+        "mint": {
+            "name": "Mint",
+            "description": "Mint style"
         }
     }
 }

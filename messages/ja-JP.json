@@ -169,6 +169,10 @@
         "starry-night": {
             "name": "Mac-星月夜",
             "description": "Macスタイルのモックアップ"
+        },
+        "mint": {
+            "name": "ミント",
+            "description": "ミント緑スタイル"
         }
     }
 }

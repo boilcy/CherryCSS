@@ -169,6 +169,10 @@
         "starry-night": {
             "name": "星月夜",
             "description": "星月夜风格"
+        },
+        "mint": {
+            "name": "薄荷",
+            "description": "薄荷绿风格"
         }
     }
 }
