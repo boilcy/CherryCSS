@@ -6,6 +6,7 @@ import { dracula } from './dracula'
 import { gladiia } from './gladiia'
 import { moNai } from './moNai'
 import { naiCha } from './naiCha'
+import { starryNight } from './starryNight'
 
 // 为所有其他风格主题设置style属性
 const othersThemes = [
@@ -14,7 +15,8 @@ const othersThemes = [
   dracula,
   gladiia,
   moNai,
-  naiCha
+  naiCha,
+  starryNight
 ]
 
 // 为每个主题添加style属性
@@ -29,4 +31,5 @@ export const dopamineWithStyle = { ...dopamine, style: STYLE }
 export const draculaWithStyle = { ...dracula, style: STYLE }
 export const gladiiaWithStyle = { ...gladiia, style: STYLE }
 export const moNaiWithStyle = { ...moNai, style: STYLE }
-export const naiChaWithStyle = { ...naiCha, style: STYLE } 
+export const naiChaWithStyle = { ...naiCha, style: STYLE }
+export const starryNightWithStyle = { ...starryNight, style: STYLE }
