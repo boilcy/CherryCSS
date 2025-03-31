@@ -6,269 +6,269 @@ A short description of your theme inspiration
 */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-		sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* 深度思考展开字体颜色 */
 .ant-collapse-content-box .markdown {
-	color: red;
+  color: red;
 }
 
 /* Root variables (global across light/dark modes) */
 :root {
-	--color-white-soft: #f8f8f2;
-	--color-black-soft: #2c2420;
-	/* Dark background color, visible in some UI elements */
+  --color-white-soft: #f8f8f2;
+  --color-black-soft: #2c2420;
+  /* Dark background color, visible in some UI elements */
 
-	/* Primary color (accent color) and variants */
-	--color-primary: #bd93f9;
-	/* Main accent color for buttons, links, etc. */
-	--color-primary-soft: rgba(189, 147, 249, 0.6);
-	/* Softer version (60% opacity) */
-	--color-primary-mute: rgba(189, 147, 249, 0.2);
-	/* Subtle version (20% opacity) */
+  /* Primary color (accent color) and variants */
+  --color-primary: #bd93f9;
+  /* Main accent color for buttons, links, etc. */
+  --color-primary-soft: rgba(189, 147, 249, 0.6);
+  /* Softer version (60% opacity) */
+  --color-primary-mute: rgba(189, 147, 249, 0.2);
+  /* Subtle version (20% opacity) */
 }
 
 /* ===== DARK MODE VARIABLES ===== */
 body[theme-mode="dark"] {
-	/* Main background colors - from darkest to lightest */
-	--color-background: #2c2420;
-	/* Main background color */
-	--color-background-mute: #332a24;
-	/* Slightly lighter background */
-	--color-background-soft: #4a3d34;
-	/* Even lighter background for contrast elements */
+  /* Main background colors - from darkest to lightest */
+  --color-background: #2c2420;
+  /* Main background color */
+  --color-background-mute: #332a24;
+  /* Slightly lighter background */
+  --color-background-soft: #4a3d34;
+  /* Even lighter background for contrast elements */
 
-	/* Chat interface colors */
-	--navbar-background-mac: rgba(20, 20, 20, 0.55);
-	/* macOS-style navbar background */
-	--navbar-background: #2c2420;
-	/* Navigation bar background */
-	--chat-background: #2c2420;
-	/* Main chat area background */
-	--chat-background-user: #362d26;
-	/* User message bubble background */
-	--chat-background-assistant: #3d312a;
-	/* Assistant message bubble background */
+  /* Chat interface colors */
+  --navbar-background-mac: rgba(20, 20, 20, 0.55);
+  /* macOS-style navbar background */
+  --navbar-background: #2c2420;
+  /* Navigation bar background */
+  --chat-background: #2c2420;
+  /* Main chat area background */
+  --chat-background-user: #362d26;
+  /* User message bubble background */
+  --chat-background-assistant: #3d312a;
+  /* Assistant message bubble background */
 
-	/* Text colors */
-	--chat-text-user: #f8f8f2;
-	/* User message text color */
-	--color-text: #f8f8f2;
-	/* General text color */
+  /* Text colors */
+  --chat-text-user: #f8f8f2;
+  /* User message text color */
+  --color-text: #f8f8f2;
+  /* General text color */
 
-	/* Interactive states */
-	--color-hover: #413529;
-	/* Hover state background color */
-	--color-active: #524436;
-	/* Active/selected state color */
+  /* Interactive states */
+  --color-hover: #413529;
+  /* Hover state background color */
+  --color-active: #524436;
+  /* Active/selected state color */
 
-	/* Border colors */
-	--color-border: rgba(248, 248, 242, 0.1);
-	/* Standard border color */
-	--color-border-soft: rgba(248, 248, 242, 0.05);
-	/* Subtle border color */
+  /* Border colors */
+  --color-border: rgba(248, 248, 242, 0.1);
+  /* Standard border color */
+  --color-border-soft: rgba(248, 248, 242, 0.05);
+  /* Subtle border color */
 }
 
 /* Content container background - important! */
 body[theme-mode="dark"] {
-	#content-container {
-		background-color: var(--chat-background-assistant) !important;
-		/* Usually matches chat-background-user */
-	}
+  #content-container {
+    background-color: var(--chat-background-assistant) !important;
+    /* Usually matches chat-background-user */
+  }
 
-	#content-container #messages {
-		background-color: var(--chat-background-assistant);
-		/* 消息背景色 */
-	}
+  #content-container #messages {
+    background-color: var(--chat-background-assistant);
+    /* 消息背景色 */
+  }
 
-	.inputbar-container {
-		background-color: #3d3d3a;
-		/* 输入框背景色 */
-		border: 1px solid #5e5d5940;
-		/* 输入框边框颜色 */
-		border-radius: 8px;
-		/* 输入框边框圆角 */
-	}
+  .inputbar-container {
+    background-color: #3d3d3a;
+    /* 输入框背景色 */
+    border: 1px solid #5e5d5940;
+    /* 输入框边框颜色 */
+    border-radius: 8px;
+    /* 输入框边框圆角 */
+  }
 
-	.ant-collapse {
-		background-color: #574839;
-		/* Darker than background-soft */
-	}
+  .ant-collapse {
+    background-color: #574839;
+    /* Darker than background-soft */
+  }
 
-	.ant-collapse-content {
-		background-color: #4a3d34;
-		/* Usually matches background-soft */
-	}
+  .ant-collapse-content {
+    background-color: #4a3d34;
+    /* Usually matches background-soft */
+  }
 
-	code {
-		background-color: #e5e5e20d;
-		/* 代码背景色 */
-		color: #ea928a;
-		/* 代码文字颜色 */
-	}
+  code {
+    background-color: #e5e5e20d;
+    /* 代码背景色 */
+    color: #ea928a;
+    /* 代码文字颜色 */
+  }
 
-	pre code {
-		color: #abb2bf;
-		/* 预格式化代码文字颜色 */
-	}
+  pre code {
+    color: #abb2bf;
+    /* 预格式化代码文字颜色 */
+  }
 }
 
 body[theme-mode="dark"] {
-	.bubble {
-		background-color: var(--chat-background);
+  .bubble {
+    background-color: var(--chat-background);
 
-		#chat-main {
-			background-color: var(--chat-background);
-		}
+    #chat-main {
+      background-color: var(--chat-background);
+    }
 
-		#messages {
-			background-color: var(--chat-background);
-		}
+    #messages {
+      background-color: var(--chat-background);
+    }
 
-		.system-prompt {
-			background-color: var(--chat-background-assistant);
-		}
+    .system-prompt {
+      background-color: var(--chat-background-assistant);
+    }
 
-		.group-message-wrapper {
-			background-color: var(--color-background);
+    .group-message-wrapper {
+      background-color: var(--color-background);
 
-			.message-content-container {
-				width: 100%;
-				border: 1px solid var(--color-background-mute);
-			}
-		}
+      .message-content-container {
+        width: 100%;
+        border: 1px solid var(--color-background-mute);
+      }
+    }
 
-		.group-menu-bar {
-			background-color: var(--color-background);
-		}
+    .group-menu-bar {
+      background-color: var(--color-background);
+    }
 
-		code {
-			color: var(--color-text);
-		}
-	}
+    code {
+      color: var(--color-text);
+    }
+  }
 }
 
 /* ===== LIGHT MODE VARIABLES ===== */
 body[theme-mode="light"] {
-	/* Main background colors - from lightest to medium */
-	--color-background: #f2e6d5;
-	/* Main background color */
-	--color-background-mute: #dfcbb3;
-	/* Slightly darker background */
-	--color-background-soft: #e6d5c0;
-	/* Medium background for contrast elements */
+  /* Main background colors - from lightest to medium */
+  --color-background: #f2e6d5;
+  /* Main background color */
+  --color-background-mute: #dfcbb3;
+  /* Slightly darker background */
+  --color-background-soft: #e6d5c0;
+  /* Medium background for contrast elements */
 
-	/* Chat interface colors */
-	--navbar-background: #ede0cc;
-	/* Navigation bar background */
-	--chat-background: #f6ebdc;
-	/* Main chat area background */
-	--chat-background-user: #f2e6d5;
-	/* User message bubble background */
-	--chat-background-assistant: #e6d5c0;
-	/* Assistant message bubble background */
+  /* Chat interface colors */
+  --navbar-background: #ede0cc;
+  /* Navigation bar background */
+  --chat-background: #f6ebdc;
+  /* Main chat area background */
+  --chat-background-user: #f2e6d5;
+  /* User message bubble background */
+  --chat-background-assistant: #e6d5c0;
+  /* Assistant message bubble background */
 
-	/* Text colors */
-	--color-text: #2c2420;
-	/* General text color */
+  /* Text colors */
+  --color-text: #2c2420;
+  /* General text color */
 
-	/* Interactive states */
-	--color-hover: #eedbbc;
-	/* Hover state background color */
-	--color-active: #e8d0a9;
-	/* Active/selected state color */
+  /* Interactive states */
+  --color-hover: #eedbbc;
+  /* Hover state background color */
+  --color-active: #e8d0a9;
+  /* Active/selected state color */
 
-	/* Border colors */
-	--color-border: rgba(44, 36, 32, 0.1);
-	/* Standard border color */
-	--color-border-soft: rgba(44, 36, 32, 0.05);
-	/* Subtle border color */
+  /* Border colors */
+  --color-border: rgba(44, 36, 32, 0.1);
+  /* Standard border color */
+  --color-border-soft: rgba(44, 36, 32, 0.05);
+  /* Subtle border color */
 
-	/* White variable (often used for backgrounds) */
-	--color-white: #f6ebdc;
-	/* Should be lightest color in palette */
+  /* White variable (often used for backgrounds) */
+  --color-white: #f6ebdc;
+  /* Should be lightest color in palette */
 }
 
 /* Content container background - important! */
 body[theme-mode="light"] {
-	#content-container {
-		background-color: #f6ebdc !important;
-		/* Usually matches chat-background or slightly lighter */
-	}
+  #content-container {
+    background-color: #f6ebdc !important;
+    /* Usually matches chat-background or slightly lighter */
+  }
 
-	#content-container #messages {
-		background-color: var(-–chat-background-assistant);
-		/* 消息背景色 */
-	}
+  #content-container #messages {
+    background-color: var(--chat-background-assistant);
+    /* 消息背景色 */
+  }
 
-	.inputbar-container {
-		background-color: #ffffff;
-		/* 输入框背景色 */
-		border: 1px solid #87867f40;
-		/* 输入框边框颜色 */
-		border-radius: 8px;
-		/* 输入框边框圆角，修改为您喜欢的大小 */
-	}
+  .inputbar-container {
+    background-color: #ffffff;
+    /* 输入框背景色 */
+    border: 1px solid #87867f40;
+    /* 输入框边框颜色 */
+    border-radius: 8px;
+    /* 输入框边框圆角，修改为您喜欢的大小 */
+  }
 
-	.ant-collapse {
-		background-color: #cdb9a2;
-		/* Darker than background-soft */
-	}
+  .ant-collapse {
+    background-color: #cdb9a2;
+    /* Darker than background-soft */
+  }
 
-	.ant-collapse-content {
-		background-color: #d9c7b1;
-		/* Between ant-collapse and background-soft */
-	}
+  .ant-collapse-content {
+    background-color: #d9c7b1;
+    /* Between ant-collapse and background-soft */
+  }
 
-	/* 代码样式 */
-	code {
-		background-color: #3d39290d;
-		/* 代码背景色 */
-		color: #7c1b13;
-		/* 代码文字颜色 */
-	}
+  /* 代码样式 */
+  code {
+    background-color: #3d39290d;
+    /* 代码背景色 */
+    color: #7c1b13;
+    /* 代码文字颜色 */
+  }
 
-	pre code {
-		color: #000000;
-		/* 预格式化代码文字颜色 */
-	}
+  pre code {
+    color: #000000;
+    /* 预格式化代码文字颜色 */
+  }
 }
 
 body[theme-mode="light"] {
-	.bubble {
-		background-color: var(--chat-background);
+  .bubble {
+    background-color: var(--chat-background);
 
-		#chat-main {
-			background-color: var(--chat-background);
-		}
+    #chat-main {
+      background-color: var(--chat-background);
+    }
 
-		#messages {
-			background-color: var(--chat-background);
-		}
+    #messages {
+      background-color: var(--chat-background);
+    }
 
-		.system-prompt {
-			background-color: var(--chat-background-assistant);
-		}
+    .system-prompt {
+      background-color: var(--chat-background-assistant);
+    }
 
-		.group-message-wrapper {
-			background-color: var(--color-background);
+    .group-message-wrapper {
+      background-color: var(--color-background);
 
-			.message-content-container {
-				width: 100%;
-				border: 1px solid var(--color-background-mute);
-			}
-		}
+      .message-content-container {
+        width: 100%;
+        border: 1px solid var(--color-background-mute);
+      }
+    }
 
-		.group-menu-bar {
-			background-color: var(--color-background);
-		}
+    .group-menu-bar {
+      background-color: var(--color-background);
+    }
 
-		code {
-			color: var(--color-text);
-		}
-	}
+    code {
+      color: var(--color-text);
+    }
+  }
 }
 
 /* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
