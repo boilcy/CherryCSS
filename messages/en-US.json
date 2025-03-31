@@ -165,6 +165,14 @@
         "dopamine": {
             "name": "Dopamine",
             "description": "Theme inspired by colorful dopamine color palette with vibrant yellows, blues, greens, pinks, and reds. The design aims to create a visually stimulating environment with high-contrast energetic colors that evoke the pleasure and reward systems of the brain."
+        },
+        "starry-night": {
+            "name": "Starry Night",
+            "description": "Starry Night style"
+        },
+        "mint": {
+            "name": "Mint",
+            "description": "Mint style"
         }
     }
 }
