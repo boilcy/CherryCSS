@@ -169,6 +169,10 @@
         "starry-night": {
             "name": "Старый Mac-Звездный небо",
             "description": "Стиль Мак-Звездное небо"
+        },
+        "mint": {
+            "name": "Мята",
+            "description": "Стиль Мята"
         }
     }
 }
