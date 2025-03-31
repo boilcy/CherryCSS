@@ -10,3 +10,7 @@ node_modules/
 .DS_Store
 
 archive/
+
+lib/themes/inbox
+
+tmp/
