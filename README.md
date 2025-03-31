@@ -4,10 +4,27 @@
 
 Cherry Studio 自定义主题库, 点击复制即用!
 
+## 🌟 Features
+
+- **一键复制**: 一键复制CSS主题到剪贴板
+- **主题预览**: 每个主题的视觉展示
+- **整理集合**: 分类主题以便于浏览
+
+## 🗺️ Roadmap
+
+### Theme Renderer (In Progress)
+- [ ] 实时 CSS 预览渲染器
+- [ ] 实时主题编辑
+
+### Stateful Web (Planned)
+- [ ] 用户登录
+- [ ] 个人主题合集
+- [ ] 主题点赞和收藏
+- [ ] 社交分享功能
+
 ## 主题来源
 
 - 在逛 L 站时看见的主题分享：https://linux.do/t/topic/325119
-- 当时想做成一个网页版的编辑器。技术所限，先做成 CSS 复制器，后续再实现。
 
 ## 🛠️ 技术栈
 
@@ -30,7 +47,16 @@ Cherry Studio 自定义主题库, 点击复制即用!
 1. 主题预览图清晰展示主题效果
 2. CSS 代码经过优化和测试
 3. 提供简明的主题描述
-4. 遵循项目代码规范
+
+### 贡献步骤
+1. Fork 仓库
+2. 创建你的功能分支（`git checkout -b feature/AmazingTheme`）
+    - 在lib/themes/*/下添加你的主题, 注意在index.ts中import
+    - 添加预览图片到public/light, public/dark下
+    - 添加i18n(messages文件夹下)
+3. 提交你的更改（`git commit -m 'add new AmazingTheme'`）
+4. 推送到分支（`git push origin feature/AmazingTheme`）
+5. 提交Pull Request
 
 ## 📄 许可证
 
