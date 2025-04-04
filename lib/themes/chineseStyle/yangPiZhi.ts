@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const yangPiZhi: Theme = {
-    id: "yang-pi-zhi",
-    name: "羊皮纸",
-    description: "Light theme inspired by ancient parchment",
-    lightPreviewUrl: "/yang-pi-zhi.png",
-    darkPreviewUrl: "/yang-pi-zhi.png",
-    css: `/* 
+  id: 'yang-pi-zhi',
+  name: '羊皮纸',
+  description: 'Light theme inspired by ancient parchment',
+  lightPreviewUrl: '/yang-pi-zhi.png',
+  darkPreviewUrl: '/yang-pi-zhi.png',
+  css: `/* 
 ========================
 羊皮纸 (Yang-pi-zhi)
 ========================

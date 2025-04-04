@@ -1,3 +1,13 @@
 {
-  "extends": "next"
+  "extends": "next",
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.property.name='forEach']",
+        "message": "forEach is not allowed, use for...of loop instead"
+      }
+    ],
+    "prefer-const": "error"
+  }
 }

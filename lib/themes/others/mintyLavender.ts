@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const mint: Theme = {
-    id: "mint",
-    name: "Mint",
-    description: "Refreshing theme with teal-mint tones",
-    lightPreviewUrl: "/mint.png",
-    darkPreviewUrl: "/mint.png",
-    css: `/* 
+  id: 'mint',
+  name: 'Mint',
+  description: 'Refreshing theme with teal-mint tones',
+  lightPreviewUrl: '/mint.png',
+  darkPreviewUrl: '/mint.png',
+  css: `/* 
   ========================
   Mint
   ========================
@@ -106,5 +106,5 @@ export const mint: Theme = {
   
   body[theme-mode="light"] .ant-collapse-content {
       background-color: #b0dedc; /* Between ant-collapse and background-soft */
-  }`
-} 
+  }`,
+}

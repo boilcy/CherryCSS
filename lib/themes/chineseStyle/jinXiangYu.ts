@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const jinXiangYu: Theme = {
-    id: "jin-xiang-yu",
-    name: "金镶玉",
-    description: "Light theme inspired by gold and jade ornaments",
-    lightPreviewUrl: "/jin-xiang-yu.png",
-    darkPreviewUrl: "/jin-xiang-yu.png",
-    css: `/* 
+  id: 'jin-xiang-yu',
+  name: '金镶玉',
+  description: 'Light theme inspired by gold and jade ornaments',
+  lightPreviewUrl: '/jin-xiang-yu.png',
+  darkPreviewUrl: '/jin-xiang-yu.png',
+  css: `/* 
 ========================
 金镶玉 (Jin-xiang-yu)
 ========================

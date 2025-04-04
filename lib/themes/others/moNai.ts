@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const moNai: Theme = {
-    id: "mo-nai",
-    name: "莫奈",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/mo-nai.png",
-    darkPreviewUrl: "/mo-nai.png",
-    css: `/* 
+  id: 'mo-nai',
+  name: '莫奈',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/mo-nai.png',
+  darkPreviewUrl: '/mo-nai.png',
+  css: `/* 
 ========================
 莫奈 (Mo-nai)
 ========================
@@ -74,5 +74,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(76, 118, 134, 0.06);
 
     --color-white: #F4FAFB;
-}`
+}`,
 }

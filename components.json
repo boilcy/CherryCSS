@@ -18,5 +18,5 @@
     "hooks": "@/hooks",
     "i18n": "@/i18n"
   },
-  "iconLibrary": "lucide"
+  "iconLibrary": "iconify"
 }

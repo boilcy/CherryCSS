@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const naiCha: Theme = {
-    id: "nai-cha",
-    name: "奶茶",
-    description: "Light theme inspired by brown and traditional pottery",
-    lightPreviewUrl: "/nai-cha.png",
-    darkPreviewUrl: "/nai-cha.png",
-    css: `/* 
+  id: 'nai-cha',
+  name: '奶茶',
+  description: 'Light theme inspired by brown and traditional pottery',
+  lightPreviewUrl: '/nai-cha.png',
+  darkPreviewUrl: '/nai-cha.png',
+  css: `/* 
 ========================
 奶茶 (Nai-cha)
 ========================
@@ -69,5 +69,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(56, 39, 32, 0.06);
 
     --color-white: #FBF7F2;
-}`
-  }
+}`,
+}

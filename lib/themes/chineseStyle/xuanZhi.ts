@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const xuanZhi: Theme = {
-    id: "xuan-zhi",
-    name: "宣纸",
-    description: "Light theme inspired by traditional Chinese paper",
-    lightPreviewUrl: "/xuan-zhi.png",
-    darkPreviewUrl: "/xuan-zhi.png",
-    css: `/* 
+  id: 'xuan-zhi',
+  name: '宣纸',
+  description: 'Light theme inspired by traditional Chinese paper',
+  lightPreviewUrl: '/xuan-zhi.png',
+  darkPreviewUrl: '/xuan-zhi.png',
+  css: `/* 
 ========================
 宣纸 (Xuan-zhi)
 ========================

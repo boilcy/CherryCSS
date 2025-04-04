@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const chanZong: Theme = {
-    id: "chan-zong",
-    name: "禅棕",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/chan-zong.png",
-    darkPreviewUrl: "/chan-zong.png",
-    css: `/* 
+  id: 'chan-zong',
+  name: '禅棕',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/chan-zong.png',
+  darkPreviewUrl: '/chan-zong.png',
+  css: `/* 
 ========================
 禅棕 (Chan-zong)
 ========================
@@ -74,5 +74,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(93, 64, 55, 0.06);
 
     --color-white: #FAF8F7;
-}`
+}`,
 }

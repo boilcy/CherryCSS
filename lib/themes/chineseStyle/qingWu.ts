@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const qingWu: Theme = {
-    id: "qing-wu",
-    name: "青雾",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/qing-wu.png",
-    darkPreviewUrl: "/qing-wu.png",
-    css: `/* 
+  id: 'qing-wu',
+  name: '青雾',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/qing-wu.png',
+  darkPreviewUrl: '/qing-wu.png',
+  css: `/* 
 ========================
 青雾 (Qing-wu)
 ========================
@@ -121,4 +121,4 @@ body[theme-mode="light"] .ant-collapse-content {
     backdrop-filter: blur(3px);                 /* Light frosted effect */
     -webkit-backdrop-filter: blur(3px);
 }`,
-  }
+}

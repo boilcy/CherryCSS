@@ -1,178 +1,198 @@
 {
-    "navigation": {
-        "github": "GitHub"
+  "navigation": {
+    "github": "GitHub",
+    "to-renderer": "レンダラープレビューへ",
+    "to-image-preview": "画像プレビューへ戻る"
+  },
+  "home": {
+    "title": "Cherry Studioのライブラリです",
+    "description": "Cherry Studioの好きなテーマを選んでコピーします!"
+  },
+  "filters": {
+    "colors": "色",
+    "styles": "スタイル",
+    "no-results": "選択したフィルターに一致するテーマはありません。",
+    "style": {
+      "chineseStyle": "中国風",
+      "others": "その他"
     },
-    "home": {
-        "title": "Cherry Studioのライブラリです",
-        "description": "Cherry Studioの好きなテーマを選んでコピーします!"
-    },
-    "filters": {
-        "colors": "色",
-        "styles": "スタイル",
-        "no-results": "選択したフィルターに一致するテーマはありません。",
-        "style": {
-            "chineseStyle": "中国風",
-            "others": "その他"
-        },
-        "color": {
-            "red": "赤",
-            "orange": "オレンジ",
-            "brown": "茶色",
-            "yellow": "黄色",
-            "green": "緑",
-            "turquoise": "ターコイズ",
-            "blue": "青",
-            "violet": "紫",
-            "pink": "ピンク",
-            "gray": "グレー",
-            "black": "黒",
-            "white": "白"
-        }
-    },
-    "locale": {
-        "select": "言語を選択",
-        "en-US": "English",
-        "ja-JP": "日本語",
-        "ru-RU": "Русский",
-        "zh-CN": "简体中文",
-        "ar-SA": "العربية"
-    },
-    "toast": {
-        "copy-success": "{themeName} のテーマをコピーしました!",
-        "copy-error": "コピーに失敗しました。Githubリポジトリから手動でコピーしてください!"
-    },
-    "themes": {
-        "chang-an": {
-            "name": "長安",
-            "description": "中国風カラーテーマ: 長安"
-        },
-        "xuan-zhi": {
-            "name": "宣紙",
-            "description": "中国風カラーテーマ: 宣紙"
-        },
-        "yang-pi-zhi": {
-            "name": "羊皮紙",
-            "description": "中国風カラーテーマ: 羊皮紙"
-        },
-        "jin-xiang-yu": {
-            "name": "金玉",
-            "description": "中国風カラーテーマ: 金玉"
-        },
-        "pi-pa": {
-            "name": "琵琶",
-            "description": "中国風カラーテーマ: 琵琶"
-        },
-        "yan-yu": {
-            "name": "煙雨",
-            "description": "中国風カラーテーマ: 煙雨"
-        },
-        "tian-shui": {
-            "name": "天水",
-            "description": "中国風カラーテーマ: 天水"
-        },
-        "shan-shui": {
-            "name": "山水",
-            "description": "中国風カラーテーマ: 山水"
-        },
-        "yu-shi": {
-            "name": "玉石",
-            "description": "中国風カラーテーマ: 玉石"
-        },
-        "zi-tao": {
-            "name": "紫陶",
-            "description": "中国風カラーテーマ: 紫陶"
-        },
-        "qing-wu": {
-            "name": "青霧",
-            "description": "中国風カラーテーマ: 青霧"
-        },
-        "su-xuan": {
-            "name": "素宣",
-            "description": "中国風カラーテーマ: 素宣"
-        },
-        "yan-zhi": {
-            "name": "胭脂",
-            "description": "中国風カラーテーマ: 胭脂"
-        },
-        "yan-hui": {
-            "name": "雁灰",
-            "description": "中国風カラーテーマ: 雁灰"
-        },
-        "yao-huo": {
-            "name": "窯火",
-            "description": "中国風カラーテーマ: 窯火"
-        },
-        "nai-cha": {
-            "name": "ミルクティー",
-            "description": "中国風カラーテーマ: ミルクティー"
-        },
-        "qing-ci": {
-            "name": "青磁",
-            "description": "中国風カラーテーマ: 青磁"
-        },
-        "liu-yun": {
-            "name": "流雲",
-            "description": "中国風カラーテーマ: 流雲"
-        },
-        "ru-yao-lan": {
-            "name": "汝窯青",
-            "description": "中国風カラーテーマ: 汝窯青"
-        },
-        "ru-yao-lv": {
-            "name": "汝窯緑",
-            "description": "中国風カラーテーマ: 汝窯緑"
-        },
-        "han-bai-yu": {
-            "name": "漢白玉",
-            "description": "中国風カラーテーマ: 漢白玉"
-        },
-        "mo-nai": {
-            "name": "モネ",
-            "description": "モネスタイル"
-        },
-        "hu-guang": {
-            "name": "湖光",
-            "description": "中国風カラーテーマ: 湖光"
-        },
-        "chun-mei": {
-            "name": "春梅",
-            "description": "中国風カラーテーマ: 春梅"
-        },
-        "dan-xia": {
-            "name": "丹霞",
-            "description": "中国風カラーテーマ: 丹霞"
-        },
-        "chan-zong": {
-            "name": "禅棕",
-            "description": "中国風カラーテーマ: 禅棕"
-        },
-        "qing-hua": {
-            "name": "青花",
-            "description": "中国風カラーテーマ: 青花"
-        },
-        "claude": {
-            "name": "Claude",
-            "description": "Claude风格"
-        },
-        "gladiia": {
-            "name": "歌蕾蒂娅-返航",
-            "description": "歌蕾蒂娅-返航 主题"
-        },
-        "dracula": {
-            "name": "Dracula",
-            "description": "Dracula风格"
-        },
-        "dopamine": {
-            "name": "ドーパミン",
-            "description": "鮮やかな黄色を中心とした活気あふれるカラフルなテーマ"
-        },
-        "starry-night": {
-            "name": "Mac-星月夜",
-            "description": "Macスタイルのモックアップ"
-        },
-        "mint": {
-            "name": "ミント",
-            "description": "ミント緑スタイル"
-        }
+    "color": {
+      "red": "赤",
+      "orange": "オレンジ",
+      "brown": "茶色",
+      "yellow": "黄色",
+      "green": "緑",
+      "turquoise": "ターコイズ",
+      "blue": "青",
+      "violet": "紫",
+      "pink": "ピンク",
+      "gray": "グレー",
+      "black": "黒",
+      "white": "白"
     }
+  },
+  "locale": {
+    "select": "言語を選択",
+    "en-US": "English",
+    "ja-JP": "日本語",
+    "ru-RU": "Русский",
+    "zh-CN": "简体中文",
+    "ar-SA": "العربية"
+  },
+  "toast": {
+    "copy-success": "{themeName} のテーマをコピーしました!",
+    "copy-error": "コピーに失敗しました。Githubリポジトリから手動でコピーしてください!"
+  },
+  "render": {
+    "loading": "読み込み中...",
+    "title": "Cherry Studio",
+    "tab-assistant": "アシスタント",
+    "tab-topic": "トピック",
+    "tab-settings": "設定",
+    "user-name": "ユーザー",
+    "user-message": "昔ながらのジョークを教えて",
+    "model-name": "DeepSeek Chat",
+    "model-message": "鶏と豚がバーに入るジョークです。鶏はビールを注文し、豚はおんぶを注文しました。",
+    "input-placeholder": "メッセージを入力してください...",
+    "assistant-default-prompt": "こんにちは、デフォルトアシスタントです。すぐにチャットを始められます。",
+    "assistant-default": "デフォルトアシスタント",
+    "assistant-tour-guide": "バーチャル観光ガイド",
+    "assistant-english-teacher": "英語語彙アシスタント",
+    "assistant-math-teacher": "数学教師",
+    "add-assistant": "アシスタントを追加"
+  },
+  "themes": {
+    "chang-an": {
+      "name": "長安",
+      "description": "中国風カラーテーマ: 長安"
+    },
+    "xuan-zhi": {
+      "name": "宣紙",
+      "description": "中国風カラーテーマ: 宣紙"
+    },
+    "yang-pi-zhi": {
+      "name": "羊皮紙",
+      "description": "中国風カラーテーマ: 羊皮紙"
+    },
+    "jin-xiang-yu": {
+      "name": "金玉",
+      "description": "中国風カラーテーマ: 金玉"
+    },
+    "pi-pa": {
+      "name": "琵琶",
+      "description": "中国風カラーテーマ: 琵琶"
+    },
+    "yan-yu": {
+      "name": "煙雨",
+      "description": "中国風カラーテーマ: 煙雨"
+    },
+    "tian-shui": {
+      "name": "天水",
+      "description": "中国風カラーテーマ: 天水"
+    },
+    "shan-shui": {
+      "name": "山水",
+      "description": "中国風カラーテーマ: 山水"
+    },
+    "yu-shi": {
+      "name": "玉石",
+      "description": "中国風カラーテーマ: 玉石"
+    },
+    "zi-tao": {
+      "name": "紫陶",
+      "description": "中国風カラーテーマ: 紫陶"
+    },
+    "qing-wu": {
+      "name": "青霧",
+      "description": "中国風カラーテーマ: 青霧"
+    },
+    "su-xuan": {
+      "name": "素宣",
+      "description": "中国風カラーテーマ: 素宣"
+    },
+    "yan-zhi": {
+      "name": "胭脂",
+      "description": "中国風カラーテーマ: 胭脂"
+    },
+    "yan-hui": {
+      "name": "雁灰",
+      "description": "中国風カラーテーマ: 雁灰"
+    },
+    "yao-huo": {
+      "name": "窯火",
+      "description": "中国風カラーテーマ: 窯火"
+    },
+    "nai-cha": {
+      "name": "ミルクティー",
+      "description": "中国風カラーテーマ: ミルクティー"
+    },
+    "qing-ci": {
+      "name": "青磁",
+      "description": "中国風カラーテーマ: 青磁"
+    },
+    "liu-yun": {
+      "name": "流雲",
+      "description": "中国風カラーテーマ: 流雲"
+    },
+    "ru-yao-lan": {
+      "name": "汝窯青",
+      "description": "中国風カラーテーマ: 汝窯青"
+    },
+    "ru-yao-lv": {
+      "name": "汝窯緑",
+      "description": "中国風カラーテーマ: 汝窯緑"
+    },
+    "han-bai-yu": {
+      "name": "漢白玉",
+      "description": "中国風カラーテーマ: 漢白玉"
+    },
+    "mo-nai": {
+      "name": "モネ",
+      "description": "モネスタイル"
+    },
+    "hu-guang": {
+      "name": "湖光",
+      "description": "中国風カラーテーマ: 湖光"
+    },
+    "chun-mei": {
+      "name": "春梅",
+      "description": "中国風カラーテーマ: 春梅"
+    },
+    "dan-xia": {
+      "name": "丹霞",
+      "description": "中国風カラーテーマ: 丹霞"
+    },
+    "chan-zong": {
+      "name": "禅棕",
+      "description": "中国風カラーテーマ: 禅棕"
+    },
+    "qing-hua": {
+      "name": "青花",
+      "description": "中国風カラーテーマ: 青花"
+    },
+    "claude": {
+      "name": "Claude",
+      "description": "Claude风格"
+    },
+    "gladiia": {
+      "name": "歌蕾蒂娅-返航",
+      "description": "歌蕾蒂娅-返航 主题"
+    },
+    "dracula": {
+      "name": "Dracula",
+      "description": "Dracula风格"
+    },
+    "dopamine": {
+      "name": "ドーパミン",
+      "description": "鮮やかな黄色を中心とした活気あふれるカラフルなテーマ"
+    },
+    "starry-night": {
+      "name": "Mac-星月夜",
+      "description": "Macスタイルのモックアップ"
+    },
+    "mint": {
+      "name": "ミント",
+      "description": "ミント緑スタイル"
+    }
+  }
 }

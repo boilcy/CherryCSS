@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const yaoHuo: Theme = {
-    id: "yao-huo",
-    name: "窑火",
-    description: "Light theme inspired by brown and traditional pottery",
-    lightPreviewUrl: "/yao-huo.png",
-    darkPreviewUrl: "/yao-huo.png",
-    css: `/* 
+  id: 'yao-huo',
+  name: '窑火',
+  description: 'Light theme inspired by brown and traditional pottery',
+  lightPreviewUrl: '/yao-huo.png',
+  darkPreviewUrl: '/yao-huo.png',
+  css: `/* 
 ========================
 窑火 (Yao-huo)
 ========================
@@ -109,4 +109,4 @@ body[theme-mode="light"] .ant-collapse {
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #E8C696; /* Rich clay tone */
 }`,
-  }
+}

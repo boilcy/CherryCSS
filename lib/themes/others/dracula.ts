@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const dracula: Theme = {
-    id: "dracula",
-    name: "Dracula",
-    description: "Light theme inspired by Dracula Theme",
-    lightPreviewUrl: "/dracula.png",
-    darkPreviewUrl: "/dracula.png",
-    css: `/* Dracula主题 */
+  id: 'dracula',
+  name: 'Dracula',
+  description: 'Light theme inspired by Dracula Theme',
+  lightPreviewUrl: '/dracula.png',
+  darkPreviewUrl: '/dracula.png',
+  css: `/* Dracula主题 */
 :root {
     /* 基础色板 */
     --color-white: #F8F8F2;       /* Dracula Foreground */
@@ -67,5 +67,5 @@ export const dracula: Theme = {
     --chat-background-user: #44475A;       /* Current Line */
     --chat-background-assistant: #343746;  /* 深灰 */
     --chat-text-user: #F8F8F2;
-}`
+}`,
 }

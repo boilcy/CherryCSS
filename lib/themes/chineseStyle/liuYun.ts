@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const liuYun: Theme = {
-    id: "liu-yun",
-    name: "流云",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/liu-yun.png",
-    darkPreviewUrl: "/liu-yun.png",
-    css: `/* 
+  id: 'liu-yun',
+  name: '流云',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/liu-yun.png',
+  darkPreviewUrl: '/liu-yun.png',
+  css: `/* 
 ========================
 流云 (Liu-yun)
 ========================
@@ -74,5 +74,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(21, 41, 68, 0.06);
 
     --color-white: #F7FAFD;
-}`
-  }
+}`,
+}

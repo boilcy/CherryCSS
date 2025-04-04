@@ -6,8 +6,9 @@ A short description of your theme inspiration
 */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 /* 深度思考展开字体颜色 */
@@ -31,7 +32,7 @@ body {
 }
 
 /* ===== DARK MODE VARIABLES ===== */
-body[theme-mode="dark"] {
+body[theme-mode='dark'] {
   /* Main background colors - from darkest to lightest */
   --color-background: #2c2420;
   /* Main background color */
@@ -72,7 +73,7 @@ body[theme-mode="dark"] {
 }
 
 /* Content container background - important! */
-body[theme-mode="dark"] {
+body[theme-mode='dark'] {
   #content-container {
     background-color: var(--chat-background-assistant) !important;
     /* Usually matches chat-background-user */
@@ -115,7 +116,7 @@ body[theme-mode="dark"] {
   }
 }
 
-body[theme-mode="dark"] {
+body[theme-mode='dark'] {
   .bubble {
     background-color: var(--chat-background);
 
@@ -151,7 +152,7 @@ body[theme-mode="dark"] {
 }
 
 /* ===== LIGHT MODE VARIABLES ===== */
-body[theme-mode="light"] {
+body[theme-mode='light'] {
   /* Main background colors - from lightest to medium */
   --color-background: #f2e6d5;
   /* Main background color */
@@ -192,7 +193,7 @@ body[theme-mode="light"] {
 }
 
 /* Content container background - important! */
-body[theme-mode="light"] {
+body[theme-mode='light'] {
   #content-container {
     background-color: #f6ebdc !important;
     /* Usually matches chat-background or slightly lighter */
@@ -236,7 +237,7 @@ body[theme-mode="light"] {
   }
 }
 
-body[theme-mode="light"] {
+body[theme-mode='light'] {
   .bubble {
     background-color: var(--chat-background);
 

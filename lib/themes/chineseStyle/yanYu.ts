@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const yanYu: Theme = {
-    id: "yan-yu",
-    name: "烟雨",
-    description: "Light theme inspired by misty rain landscapes",
-    lightPreviewUrl: "/yan-yu.png",
-    darkPreviewUrl: "/yan-yu.png",
-    css: `/* 
+  id: 'yan-yu',
+  name: '烟雨',
+  description: 'Light theme inspired by misty rain landscapes',
+  lightPreviewUrl: '/yan-yu.png',
+  darkPreviewUrl: '/yan-yu.png',
+  css: `/* 
 ========================
 烟雨 (Yan-yu)
 ========================
@@ -109,4 +109,4 @@ body[theme-mode="light"] .ant-collapse {
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #C9D9DE; /* Between ant-collapse and background-soft */
 }`,
-  }
+}

@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const hanBaiYu: Theme = {
-    id: "han-bai-yu",
-    name: "汉白玉",
-    description: "Light theme inspired by white and traditional pottery",
-    lightPreviewUrl: "/han-bai-yu.png",
-    darkPreviewUrl: "/han-bai-yu.png",
-    css: `/* 
+  id: 'han-bai-yu',
+  name: '汉白玉',
+  description: 'Light theme inspired by white and traditional pottery',
+  lightPreviewUrl: '/han-bai-yu.png',
+  darkPreviewUrl: '/han-bai-yu.png',
+  css: `/* 
 ========================
 汉白玉 (Han-bai-yu)
 ========================
@@ -74,5 +74,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(43, 41, 38, 0.06);
 
     --color-white: #FFFFFF;
-}`
-  }
+}`,
+}

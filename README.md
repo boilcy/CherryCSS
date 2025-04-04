@@ -13,10 +13,12 @@ Cherry Studio 自定义主题库, 点击复制即用!
 ## 🗺️ Roadmap
 
 ### Theme Renderer (In Progress)
-- [ ] 实时 CSS 预览渲染器
+
+- [x] 实时 CSS 预览渲染器
 - [ ] 实时主题编辑
 
 ### Stateful Web (Planned)
+
 - [ ] 用户登录
 - [ ] 个人主题合集
 - [ ] 主题点赞和收藏
@@ -49,11 +51,12 @@ Cherry Studio 自定义主题库, 点击复制即用!
 3. 提供简明的主题描述
 
 ### 贡献步骤
+
 1. Fork 仓库
 2. 创建你的功能分支（`git checkout -b feature/AmazingTheme`）
-    - 在lib/themes/*/下添加你的主题, 注意在index.ts中import
-    - 添加预览图片到public/light, public/dark下
-    - 添加i18n(messages文件夹下)
+   - 在lib/themes/\*/下添加你的主题, 注意在index.ts中import
+   - 添加预览图片到public/light, public/dark下
+   - 添加i18n(messages文件夹下)
 3. 提交你的更改（`git commit -m 'add new AmazingTheme'`）
 4. 推送到分支（`git push origin feature/AmazingTheme`）
 5. 提交Pull Request

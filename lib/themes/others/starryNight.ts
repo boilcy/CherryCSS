@@ -1,11 +1,11 @@
-import type { Theme } from "@/lib/types";
+import type { Theme } from '@/lib/types'
 
 export const starryNight: Theme = {
-  id: "starry-night",
-  name: "Mac-星月夜",
-  description: "Mac风格磨砂玻璃主题 - 星月夜背景",
-  lightPreviewUrl: "/starry-night.png",
-  darkPreviewUrl: "/starry-night.png",
+  id: 'starry-night',
+  name: 'Mac-星月夜',
+  description: 'Mac风格磨砂玻璃主题 - 星月夜背景',
+  lightPreviewUrl: '/starry-night.png',
+  darkPreviewUrl: '/starry-night.png',
   css: `/* 磨砂玻璃主题 - 星月夜背景 (Deeper & High Contrast)*/
 .bubble {
     background-color: transparent !important;
@@ -691,4 +691,4 @@ body[theme-mode="dark"] [role="tooltip"], body[theme-mode="dark"] div[class*="to
     font-size: 0.95em !important;
     border: 1px solid var(--tooltip-code-border) !important;
 }`,
-};
+}

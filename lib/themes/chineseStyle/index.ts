@@ -1,4 +1,4 @@
-const STYLE = "chineseStyle"
+const STYLE = 'chineseStyle'
 
 import { changAn } from './changAn'
 import { chanZong } from './chanZong'
@@ -28,37 +28,37 @@ import { ziTao } from './ziTao'
 
 // 为所有中国风主题设置style属性
 const chineseStyleThemes = [
-    changAn,
-    chanZong,
-    chunMei,
-    danXia,
-    hanBaiYu,
-    huGuang,
-    jinXiangYu,
-    liuYun,
-    piPa,
-    qingCi,
-    qingHua,
-    qingWu,
-    ruYaoLan,
-    ruYaoLv,
-    shanShui,
-    suXuan,
-    tianShui,
-    xuanZhi,
-    yangPiZhi,
-    yanHui,
-    yanYu,
-    yanZhi,
-    yaoHuo,
-    yuShi,
-    ziTao
+  changAn,
+  chanZong,
+  chunMei,
+  danXia,
+  hanBaiYu,
+  huGuang,
+  jinXiangYu,
+  liuYun,
+  piPa,
+  qingCi,
+  qingHua,
+  qingWu,
+  ruYaoLan,
+  ruYaoLv,
+  shanShui,
+  suXuan,
+  tianShui,
+  xuanZhi,
+  yangPiZhi,
+  yanHui,
+  yanYu,
+  yanZhi,
+  yaoHuo,
+  yuShi,
+  ziTao,
 ]
 
 // 为每个主题添加style属性
-export const themes = chineseStyleThemes.map(theme => ({
-    ...theme,
-    style: STYLE
+export const themes = chineseStyleThemes.map((theme) => ({
+  ...theme,
+  style: STYLE,
 }))
 
 // 单独导出每个带有style属性的主题

@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const shanShui: Theme = {
-    id: "shan-shui",
-    name: "山水",
-    description: "Light theme inspired by misty rain landscapes",
-    lightPreviewUrl: "/shan-shui.png",
-    darkPreviewUrl: "/shan-shui.png",
-    css: `/* 
+  id: 'shan-shui',
+  name: '山水',
+  description: 'Light theme inspired by misty rain landscapes',
+  lightPreviewUrl: '/shan-shui.png',
+  darkPreviewUrl: '/shan-shui.png',
+  css: `/* 
 ========================
 山水 (Shan-shui)
 ========================
@@ -108,4 +108,4 @@ body[theme-mode="light"] .ant-collapse {
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #CEDBE0; /* Between ant-collapse and background-soft */
 }`,
-  }
+}

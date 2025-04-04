@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const claude: Theme = {
-    id: "claude",
-    name: "Claude",
-    description: "Theme inspired by Claude",
-    lightPreviewUrl: "/claude.png",
-    darkPreviewUrl: "/claude.png",
-    css: `/* 
+  id: 'claude',
+  name: 'Claude',
+  description: 'Theme inspired by Claude',
+  lightPreviewUrl: '/claude.png',
+  darkPreviewUrl: '/claude.png',
+  css: `/* 
 ========================
 Claude
 ========================
@@ -155,5 +155,5 @@ body[theme-mode="light"] code {
 
 body[theme-mode="light"] pre code {
     color: #000000;
-}`
+}`,
 }
