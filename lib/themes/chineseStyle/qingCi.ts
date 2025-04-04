@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const qingCi: Theme = {
-    id: "qing-ci",
-    name: "青瓷",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/qing-ci.png",
-    darkPreviewUrl: "/qing-ci.png",
-    css: `/* 
+  id: 'qing-ci',
+  name: '青瓷',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/qing-ci.png',
+  darkPreviewUrl: '/qing-ci.png',
+  css: `/* 
 ========================
 青瓷 (Qing-ci)
 ========================
@@ -73,5 +73,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(44, 54, 53, 0.06);
 
     --color-white: #F5F9F7;
-}`
-  }
+}`,
+}

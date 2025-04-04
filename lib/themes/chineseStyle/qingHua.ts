@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const qingHua: Theme = {
-    id: "qing-hua",
-    name: "青花",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/qing-hua.png",
-    darkPreviewUrl: "/qing-hua.png",
-    css: `/* 
+  id: 'qing-hua',
+  name: '青花',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/qing-hua.png',
+  darkPreviewUrl: '/qing-hua.png',
+  css: `/* 
 ========================
 青花 (Qing-hua)
 ========================
@@ -69,5 +69,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(16, 35, 73, 0.06);
 
     --color-white: #F7FBFF;
-}`
-  }
+}`,
+}

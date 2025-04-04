@@ -1,178 +1,198 @@
 {
-    "navigation": {
-        "github": "GitHub"
+  "navigation": {
+    "github": "GitHub",
+    "to-renderer": "前往渲染预览",
+    "to-image-preview": "返回图片预览"
+  },
+  "home": {
+    "title": "Cherry Studio 主题库",
+    "description": "选择并复制你喜欢的Cherry Studio主题!"
+  },
+  "filters": {
+    "colors": "颜色",
+    "styles": "风格",
+    "no-results": "没有符合你选择过滤器的主题。",
+    "style": {
+      "chineseStyle": "中国风",
+      "others": "其他"
     },
-    "home": {
-        "title": "Cherry Studio 主题库",
-        "description": "选择并复制你喜欢的Cherry Studio主题!"
-    },
-    "filters": {
-        "colors": "颜色",
-        "styles": "风格",
-        "no-results": "没有符合你选择过滤器的主题。",
-        "style": {
-            "chineseStyle": "中国风",
-            "others": "其他"
-        },
-        "color": {
-            "red": "红色",
-            "orange": "橙色",
-            "brown": "棕色",
-            "yellow": "黄色",
-            "green": "绿色",
-            "turquoise": "青色",
-            "blue": "蓝色",
-            "violet": "紫色",
-            "pink": "粉色",
-            "gray": "灰色",
-            "black": "黑色",
-            "white": "白色"
-        }
-    },
-    "locale": {
-        "select": "选择语言",
-        "en-US": "English",
-        "ja-JP": "日本語",
-        "ru-RU": "Русский",
-        "zh-CN": "简体中文",
-        "ar-SA": "العربية"
-    },
-    "toast": {
-        "copy-success": "{themeName} 主题已复制到剪贴板!",
-        "copy-error": "复制失败, 您可前往Github仓库手动复制!"
-    },
-    "themes": {
-        "chang-an": {
-            "name": "长安",
-            "description": "主题以唐朝美学和古都长安为灵感，采用温暖的土色调，令人联想到传统的中国建筑、书法和丝绸画"
-        },
-        "xuan-zhi": {
-            "name": "宣纸",
-            "description": "主题以传统的中国宣纸为灵感，宣纸以其柔软的质地、独特的暖色调和持久的质量而闻名"
-        },
-        "yang-pi-zhi": {
-            "name": "羊皮纸",
-            "description": "主题灵感来自古老的羊皮纸手稿，以温暖的琥珀色调和丰富的棕色为特点"
-        },
-        "jin-xiang-yu": {
-            "name": "金镶玉",
-            "description": "主题以传统中国的金玉饰品为灵感，采用优雅的奶油色调和浓郁的棕色"
-        },
-        "pi-pa": {
-            "name": "琵琶",
-            "description": "主题灵感来自传统中国乐器琵琶，采用温暖的金棕色调"
-        },
-        "yan-yu": {
-            "name": "烟雨",
-            "description": "以传统中国的迷雾雨景为灵感，采用柔和的蓝灰色调，唤起被雾雨笼罩的山脉的宁静美丽"
-        },
-        "tian-shui": {
-            "name": "天水",
-            "description": "以唐朝水性美学为灵感的主题，展现天空与水的交响"
-        },
-        "shan-shui": {
-            "name": "山水",
-            "description": "主题灵感来自唐朝山水画，采用深绿松石色和墨色调"
-        },
-        "yu-shi": {
-            "name": "玉石",
-            "description": "以古代中国玉器为灵感的主题，采用丰富的翡翠绿和青铜绿，捕捉到优质玉石的独特颜色和半透明质感"
-        },
-        "zi-tao": {
-            "name": "紫陶",
-            "description": "主题以传统中国紫砂陶器为灵感，采用深紫茄和温暖的紫罗兰色调，让人联想到珍贵的宜兴紫砂陶壶和器皿"
-        },
-        "qing-wu": {
-            "name": "青雾",
-            "description": "主题以唐代山水画中空灵的青蓝色雾气为灵感。"
-        },
-        "su-xuan": {
-            "name": "素宣",
-            "description": "中国风配色: 素宣"
-        },
-        "yan-zhi": {
-            "name": "胭脂",
-            "description": "以传统中国胭脂为灵感的主题，采用了古典化妆品和绘画中使用的优雅红色调"
-        },
-        "yan-hui": {
-            "name": "雁灰",
-            "description": "主题的灵感来自于野鹅羽毛鲜明的对比，特点是浅银灰色的胸部羽毛和较暗的石板灰色的翅膀羽毛之间的相互作用"
-        },
-        "yao-huo": {
-            "name": "窑火",
-            "description": "主题以传统中国窑炉丰富的色彩为灵感，采用木烧造出的温暖的棕色和琥珀色调"
-        },
-        "nai-cha": {
-            "name": "奶茶",
-            "description": "以奶茶为灵感的主题，采用丰富、温暖的棕色和奶油色调，唤起人们对完美冲泡的奶茶中分层色彩的联想"
-        },
-        "qing-ci": {
-            "name": "青瓷",
-            "description": "以经典中国青釉陶瓷为灵感，颜色反映了青釉釉料的微妙变化和陶瓷的精致优雅"
-        },
-        "liu-yun": {
-            "name": "流云",
-            "description": "主题灵感来自传统中国画中的云朵，采用空灵的蓝色色调，捕捉了云朵在山景中动态移动的样子"
-        },
-        "ru-yao-lan": {
-            "name": "汝窑蓝",
-            "description": "以著名的汝窑陶瓷为主题，具有其独特的天蓝釉"
-        },
-        "ru-yao-lv": {
-            "name": "汝窑绿",
-            "description": "汝窑釉绿色变奏为主题，以陶瓷中呈现的微妙玉石般的绿色调为特色"
-        },
-        "han-bai-yu": {
-            "name": "汉白玉",
-            "description": "主题灵感来自于中国古典建筑中使用的纯白大理石"
-        },
-        "mo-nai": {
-            "name": "莫奈",
-            "description": "莫奈风格"
-        },
-        "hu-guang": {
-            "name": "湖光",
-            "description": "主题以湖面上闪烁的光芒为灵感，采用水晶般的蓝绿色调，捕捉到阳光和水的嬉戏"
-        },
-        "chun-mei": {
-            "name": "春梅",
-            "description": "主题以早春梅花为灵感，采用精致的粉色调，捕捉到梅花在冬雪中的初绽"
-        },
-        "dan-xia": {
-            "name": "丹霞",
-            "description": "主题以日落时分发光的红云和传统中国艺术中常用的朱红为灵感"
-        },
-        "chan-zong": {
-            "name": "禅棕",
-            "description": "主题灵感来自禅宗佛教美学，以温暖的棕色为特色，让人想起木制的寺庙建筑和冥想大厅"
-        },
-        "qing-hua": {
-            "name": "青花",
-            "description": "以传统的青花瓷为主题，具有鲜明的钴蓝色设计在纯白色的背景下，具有这种标志性的中国陶瓷风格"
-        },
-        "claude": {
-            "name": "Claude",
-            "description": "Claude风格"
-        },
-        "gladiia": {
-            "name": "歌蕾蒂娅-返航",
-            "description": "歌蕾蒂娅-返航 主题"
-        },
-        "dracula": {
-            "name": "Dracula",
-            "description": "Dracula风格"
-        },
-        "dopamine": {
-            "name": "多巴胺",
-            "description": "主题以五彩缤纷的多巴胺色彩板为灵感，采用鲜活的黄色、蓝色、绿色、粉色和红色"
-        },
-        "starry-night": {
-            "name": "星月夜",
-            "description": "星月夜风格"
-        },
-        "mint": {
-            "name": "薄荷",
-            "description": "薄荷绿风格"
-        }
+    "color": {
+      "red": "红色",
+      "orange": "橙色",
+      "brown": "棕色",
+      "yellow": "黄色",
+      "green": "绿色",
+      "turquoise": "青色",
+      "blue": "蓝色",
+      "violet": "紫色",
+      "pink": "粉色",
+      "gray": "灰色",
+      "black": "黑色",
+      "white": "白色"
     }
+  },
+  "locale": {
+    "select": "选择语言",
+    "en-US": "English",
+    "ja-JP": "日本語",
+    "ru-RU": "Русский",
+    "zh-CN": "简体中文",
+    "ar-SA": "العربية"
+  },
+  "toast": {
+    "copy-success": "{themeName} 主题已复制到剪贴板!",
+    "copy-error": "复制失败, 您可前往Github仓库手动复制!"
+  },
+  "render": {
+    "loading": "加载中...",
+    "title": "Cherry Studio",
+    "tab-assistant": "助手",
+    "tab-topic": "话题",
+    "tab-settings": "设置",
+    "user-name": "用户",
+    "user-message": "Give me a old fashion joke",
+    "model-name": "DeepSeek Chat | 深度求索",
+    "model-message": "A joke about a chicken and a pig walking into a bar. The chicken orders a beer and the pig orders a piggy back ride.",
+    "input-placeholder": "在这里输入消息...",
+    "assistant-default-prompt": "你好, 我是默认助手。你可以立刻开始跟我聊天。",
+    "assistant-default": "默认助手",
+    "assistant-tour-guide": "虚拟导游 - Virtual Tour Guide",
+    "assistant-english-teacher": "英语单词背诵助手",
+    "assistant-math-teacher": "数学老师 - Math Teacher",
+    "add-assistant": "添加助手"
+  },
+  "themes": {
+    "chang-an": {
+      "name": "长安",
+      "description": "主题以唐朝美学和古都长安为灵感，采用温暖的土色调，令人联想到传统的中国建筑、书法和丝绸画"
+    },
+    "xuan-zhi": {
+      "name": "宣纸",
+      "description": "主题以传统的中国宣纸为灵感，宣纸以其柔软的质地、独特的暖色调和持久的质量而闻名"
+    },
+    "yang-pi-zhi": {
+      "name": "羊皮纸",
+      "description": "主题灵感来自古老的羊皮纸手稿，以温暖的琥珀色调和丰富的棕色为特点"
+    },
+    "jin-xiang-yu": {
+      "name": "金镶玉",
+      "description": "主题以传统中国的金玉饰品为灵感，采用优雅的奶油色调和浓郁的棕色"
+    },
+    "pi-pa": {
+      "name": "琵琶",
+      "description": "主题灵感来自传统中国乐器琵琶，采用温暖的金棕色调"
+    },
+    "yan-yu": {
+      "name": "烟雨",
+      "description": "以传统中国的迷雾雨景为灵感，采用柔和的蓝灰色调，唤起被雾雨笼罩的山脉的宁静美丽"
+    },
+    "tian-shui": {
+      "name": "天水",
+      "description": "以唐朝水性美学为灵感的主题，展现天空与水的交响"
+    },
+    "shan-shui": {
+      "name": "山水",
+      "description": "主题灵感来自唐朝山水画，采用深绿松石色和墨色调"
+    },
+    "yu-shi": {
+      "name": "玉石",
+      "description": "以古代中国玉器为灵感的主题，采用丰富的翡翠绿和青铜绿，捕捉到优质玉石的独特颜色和半透明质感"
+    },
+    "zi-tao": {
+      "name": "紫陶",
+      "description": "主题以传统中国紫砂陶器为灵感，采用深紫茄和温暖的紫罗兰色调，让人联想到珍贵的宜兴紫砂陶壶和器皿"
+    },
+    "qing-wu": {
+      "name": "青雾",
+      "description": "主题以唐代山水画中空灵的青蓝色雾气为灵感。"
+    },
+    "su-xuan": {
+      "name": "素宣",
+      "description": "中国风配色: 素宣"
+    },
+    "yan-zhi": {
+      "name": "胭脂",
+      "description": "以传统中国胭脂为灵感的主题，采用了古典化妆品和绘画中使用的优雅红色调"
+    },
+    "yan-hui": {
+      "name": "雁灰",
+      "description": "主题的灵感来自于野鹅羽毛鲜明的对比，特点是浅银灰色的胸部羽毛和较暗的石板灰色的翅膀羽毛之间的相互作用"
+    },
+    "yao-huo": {
+      "name": "窑火",
+      "description": "主题以传统中国窑炉丰富的色彩为灵感，采用木烧造出的温暖的棕色和琥珀色调"
+    },
+    "nai-cha": {
+      "name": "奶茶",
+      "description": "以奶茶为灵感的主题，采用丰富、温暖的棕色和奶油色调，唤起人们对完美冲泡的奶茶中分层色彩的联想"
+    },
+    "qing-ci": {
+      "name": "青瓷",
+      "description": "以经典中国青釉陶瓷为灵感，颜色反映了青釉釉料的微妙变化和陶瓷的精致优雅"
+    },
+    "liu-yun": {
+      "name": "流云",
+      "description": "主题灵感来自传统中国画中的云朵，采用空灵的蓝色色调，捕捉了云朵在山景中动态移动的样子"
+    },
+    "ru-yao-lan": {
+      "name": "汝窑蓝",
+      "description": "以著名的汝窑陶瓷为主题，具有其独特的天蓝釉"
+    },
+    "ru-yao-lv": {
+      "name": "汝窑绿",
+      "description": "汝窑釉绿色变奏为主题，以陶瓷中呈现的微妙玉石般的绿色调为特色"
+    },
+    "han-bai-yu": {
+      "name": "汉白玉",
+      "description": "主题灵感来自于中国古典建筑中使用的纯白大理石"
+    },
+    "mo-nai": {
+      "name": "莫奈",
+      "description": "莫奈风格"
+    },
+    "hu-guang": {
+      "name": "湖光",
+      "description": "主题以湖面上闪烁的光芒为灵感，采用水晶般的蓝绿色调，捕捉到阳光和水的嬉戏"
+    },
+    "chun-mei": {
+      "name": "春梅",
+      "description": "主题以早春梅花为灵感，采用精致的粉色调，捕捉到梅花在冬雪中的初绽"
+    },
+    "dan-xia": {
+      "name": "丹霞",
+      "description": "主题以日落时分发光的红云和传统中国艺术中常用的朱红为灵感"
+    },
+    "chan-zong": {
+      "name": "禅棕",
+      "description": "主题灵感来自禅宗佛教美学，以温暖的棕色为特色，让人想起木制的寺庙建筑和冥想大厅"
+    },
+    "qing-hua": {
+      "name": "青花",
+      "description": "以传统的青花瓷为主题，具有鲜明的钴蓝色设计在纯白色的背景下，具有这种标志性的中国陶瓷风格"
+    },
+    "claude": {
+      "name": "Claude",
+      "description": "Claude风格"
+    },
+    "gladiia": {
+      "name": "歌蕾蒂娅-返航",
+      "description": "歌蕾蒂娅-返航 主题"
+    },
+    "dracula": {
+      "name": "Dracula",
+      "description": "Dracula风格"
+    },
+    "dopamine": {
+      "name": "多巴胺",
+      "description": "主题以五彩缤纷的多巴胺色彩板为灵感，采用鲜活的黄色、蓝色、绿色、粉色和红色"
+    },
+    "starry-night": {
+      "name": "星月夜",
+      "description": "星月夜风格"
+    },
+    "mint": {
+      "name": "薄荷",
+      "description": "薄荷绿风格"
+    }
+  }
 }

@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const danXia: Theme = {
-    id: "dan-xia",
-    name: "丹霞",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/dan-xia.png",
-    darkPreviewUrl: "/dan-xia.png",
-    css: `/* 
+  id: 'dan-xia',
+  name: '丹霞',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/dan-xia.png',
+  darkPreviewUrl: '/dan-xia.png',
+  css: `/* 
 ========================
 丹霞 (Dan-xia)
 ========================
@@ -74,5 +74,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(74, 28, 28, 0.06);
 
     --color-white: #FFFAFA;
-}`
+}`,
 }

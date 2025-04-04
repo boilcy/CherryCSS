@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const dopamine: Theme = {
-    id: "dopamine",
-    name: "Dopamine",
-    description: "A vibrant and energetic theme with high-contrast colors",
-    lightPreviewUrl: "/dopamine.png",
-    darkPreviewUrl: "/dopamine.png",
-    css: `/* 
+  id: 'dopamine',
+  name: 'Dopamine',
+  description: 'A vibrant and energetic theme with high-contrast colors',
+  lightPreviewUrl: '/dopamine.png',
+  darkPreviewUrl: '/dopamine.png',
+  css: `/* 
 ========================
 Dopamine
 ========================
@@ -165,5 +165,5 @@ button:hover, .ant-btn:hover {
 
 .message-content em, .message-content i {
     color: #FF6B3D; /* Orange from image for italics */
-}`
+}`,
 }

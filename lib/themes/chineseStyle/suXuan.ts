@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const suXuan: Theme = {
-    id: "su-xuan",
-    name: "素宣",
-    description: "Light theme inspired by white and traditional paper",
-    lightPreviewUrl: "/su-xuan.png",
-    darkPreviewUrl: "/su-xuan.png",
-    css: `body[theme-mode="dark"] {
+  id: 'su-xuan',
+  name: '素宣',
+  description: 'Light theme inspired by white and traditional paper',
+  lightPreviewUrl: '/su-xuan.png',
+  darkPreviewUrl: '/su-xuan.png',
+  css: `body[theme-mode="dark"] {
   --color-background: #1F2428;
   --color-background-soft: #353B41;
   --color-background-mute: #242A2E;

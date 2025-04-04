@@ -1,4 +1,4 @@
-const STYLE = "others"
+const STYLE = 'others'
 
 import { claude } from './claude'
 import { dopamine } from './dopamine'
@@ -10,21 +10,12 @@ import { starryNight } from './starryNight'
 import { mint } from './mintyLavender'
 
 // 为所有其他风格主题设置style属性
-const othersThemes = [
-  claude,
-  dopamine,
-  dracula,
-  gladiia,
-  moNai,
-  naiCha,
-  starryNight,
-  mint
-]
+const othersThemes = [claude, dopamine, dracula, gladiia, moNai, naiCha, mint]
 
 // 为每个主题添加style属性
-export const themes = othersThemes.map(theme => ({
+export const themes = othersThemes.map((theme) => ({
   ...theme,
-  style: STYLE
+  style: STYLE,
 }))
 
 // 单独导出每个带有style属性的主题

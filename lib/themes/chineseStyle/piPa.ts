@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const piPa: Theme = {
-    id: "pi-pa",
-    name: "琵琶",
-    description: "Light theme inspired by bamboo and traditional instruments",
-    lightPreviewUrl: "/pi-pa.png",
-    darkPreviewUrl: "/pi-pa.png",
-    css: `/* 
+  id: 'pi-pa',
+  name: '琵琶',
+  description: 'Light theme inspired by bamboo and traditional instruments',
+  lightPreviewUrl: '/pi-pa.png',
+  darkPreviewUrl: '/pi-pa.png',
+  css: `/* 
 ========================
 琵琶 (Pi-pa)
 ========================
@@ -108,4 +108,4 @@ body[theme-mode="light"] .ant-collapse {
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #E5D6CA; /* Between ant-collapse and background-soft */
 }`,
-  }
+}

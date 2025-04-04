@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const chunMei: Theme = {
-    id: "chun-mei",
-    name: "春梅",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/chun-mei.png",
-    darkPreviewUrl: "/chun-mei.png",
-    css: `/* 
+  id: 'chun-mei',
+  name: '春梅',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/chun-mei.png',
+  darkPreviewUrl: '/chun-mei.png',
+  css: `/* 
 ========================
 春梅 (Chun-mei)
 ========================
@@ -69,5 +69,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(140, 67, 86, 0.06);
 
     --color-white: #FFF6F9;
-}`
+}`,
 }

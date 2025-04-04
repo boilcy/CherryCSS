@@ -1,12 +1,12 @@
-"use client"
+'use client'
 
-import { useState } from "react"
-import type { Theme } from "@/lib/types"
-import { ThemeCard } from "@/components/theme-preview-card"
-import { ThemeColorFilter } from "@/components/theme-color-filter"
-import { ThemeStyleFilter } from "@/components/theme-style-filter"
-import { toast } from "sonner"
-import { useTranslations } from "next-intl"
+import { ThemeColorFilter } from '@/components/theme-color-filter'
+import { ThemeCard } from '@/components/theme-preview-card'
+import { ThemeStyleFilter } from '@/components/theme-style-filter'
+import type { Theme } from '@/lib/types'
+import { useTranslations } from 'next-intl'
+import { useState } from 'react'
+import { toast } from 'sonner'
 
 interface ThemeGridProps {
   themes: Theme[]
@@ -17,7 +17,7 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
   const [selectedColors, setSelectedColors] = useState<string[]>([])
   const [selectedStyle, setSelectedStyle] = useState<string | null>(null)
   const [showDebug, setShowDebug] = useState(false)
-  const t = useTranslations();
+  const t = useTranslations()
 
   const copyToClipboard = async (css: string, themeId: string) => {
     try {
@@ -26,44 +26,38 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
       toast.success(t('toast.copy-success', { themeName: t(`themes.${themeId}.name`) }))
       setTimeout(() => setCopiedTheme(null), 1000)
     } catch (err) {
-      console.error("Failed to copy: ", err)
+      console.error('Failed to copy: ', err)
       toast.error(t('toast.copy-error'))
     }
   }
 
   // Count themes with colors for debugging
-  const themesWithColors = themes.filter(theme => theme.colors && theme.colors.length > 0).length;
+  const themesWithColors = themes.filter((theme) => theme.colors && theme.colors.length > 0).length
 
   // Filter themes based on selected colors and styles
-  const filteredThemes = themes.filter(theme => {
+  const filteredThemes = themes.filter((theme) => {
     // If no filters are selected, show all themes
     if (selectedColors.length === 0 && !selectedStyle) {
-      return true;
+      return true
     }
 
     // Check for color match if colors are selected
-    const colorMatch = selectedColors.length === 0 ||
-      (theme.colors?.some(color => selectedColors.includes(color)));
+    const colorMatch =
+      selectedColors.length === 0 || theme.colors?.some((color) => selectedColors.includes(color))
 
     // Check theme style based on the style property
-    const styleMatch = !selectedStyle || theme.style === selectedStyle;
+    const styleMatch = !selectedStyle || theme.style === selectedStyle
 
     // Theme must match both color AND style filters if both are applied
-    return colorMatch && styleMatch;
-  });
+    return colorMatch && styleMatch
+  })
 
   return (
     <>
-      <div className="flex flex-col xl:flex-row gap-4 xl:gap-16">
-        <ThemeColorFilter
-          selectedColors={selectedColors}
-          onChange={setSelectedColors}
-        />
+      <div className="flex flex-col gap-4 xl:flex-row xl:gap-16">
+        <ThemeColorFilter selectedColors={selectedColors} onChange={setSelectedColors} />
 
-        <ThemeStyleFilter
-          selectedStyle={selectedStyle}
-          onChange={setSelectedStyle}
-        />
+        <ThemeStyleFilter selectedStyle={selectedStyle} onChange={setSelectedStyle} />
       </div>
 
       {/* <div className="flex justify-between items-center mb-2">
@@ -79,7 +73,7 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
         </button>
       </div> */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3">
         {filteredThemes.map((theme) => (
           <ThemeCard
             key={theme.id}
@@ -92,11 +86,10 @@ export default function ThemeGrid({ themes }: ThemeGridProps) {
       </div>
 
       {(selectedColors.length > 0 || selectedStyle) && filteredThemes.length === 0 && (
-        <div className="text-center py-8">
+        <div className="py-8 text-center">
           <p className="text-gray-500">{t('filters.no-results')}</p>
         </div>
       )}
     </>
   )
 }
-

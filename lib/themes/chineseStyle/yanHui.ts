@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const yanHui: Theme = {
-    id: "yan-hui",
-    name: "雁灰",
-    description: "Light theme inspired by gray and traditional pottery",
-    lightPreviewUrl: "/yan-hui.png",
-    darkPreviewUrl: "/yan-hui.png",
-    css: `/* 
+  id: 'yan-hui',
+  name: '雁灰',
+  description: 'Light theme inspired by gray and traditional pottery',
+  lightPreviewUrl: '/yan-hui.png',
+  darkPreviewUrl: '/yan-hui.png',
+  css: `/* 
 ========================
 雁灰 (Yan-hui)
 ========================
@@ -108,4 +108,5 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #CDD1D9;    /* Clear mid-tone */
-}`}
+}`,
+}

@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const huGuang: Theme = {
-    id: "hu-guang",
-    name: "湖光",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/hu-guang.png",
-    darkPreviewUrl: "/hu-guang.png",
-    css: `/* 
+  id: 'hu-guang',
+  name: '湖光',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/hu-guang.png',
+  darkPreviewUrl: '/hu-guang.png',
+  css: `/* 
 ========================
 湖光 (Hu-guang)
 ========================
@@ -74,5 +74,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(42, 82, 84, 0.06);
 
     --color-white: #F0F7F8;
-}`
+}`,
 }

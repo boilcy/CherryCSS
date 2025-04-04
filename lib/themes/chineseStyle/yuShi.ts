@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const yuShi: Theme = {
-    id: "yu-shi",
-    name: "玉石",
-    description: "Light theme inspired by jade and traditional ornaments",
-    lightPreviewUrl: "/yu-shi.png",
-    darkPreviewUrl: "/yu-shi.png",
-    css: `/* 
+  id: 'yu-shi',
+  name: '玉石',
+  description: 'Light theme inspired by jade and traditional ornaments',
+  lightPreviewUrl: '/yu-shi.png',
+  darkPreviewUrl: '/yu-shi.png',
+  css: `/* 
 ========================
 玉石 (Yu-shi)
 ========================
@@ -109,4 +109,4 @@ body[theme-mode="light"] .ant-collapse {
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #C7E5D6; /* Between ant-collapse and background-soft */
 }`,
-  }
+}

@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const ruYaoLan: Theme = {
-    id: "ru-yao-lan",
-    name: "汝窑蓝",
-    description: "Light theme inspired by blue and traditional pottery",
-    lightPreviewUrl: "/ru-yao-lan.png",
-    darkPreviewUrl: "/ru-yao-lan.png",
-    css: `/* 
+  id: 'ru-yao-lan',
+  name: '汝窑蓝',
+  description: 'Light theme inspired by blue and traditional pottery',
+  lightPreviewUrl: '/ru-yao-lan.png',
+  darkPreviewUrl: '/ru-yao-lan.png',
+  css: `/* 
 ========================
 汝窑蓝 (Ru-yao-lan)
 ========================
@@ -73,5 +73,5 @@ body[theme-mode="light"] {
     --color-border-soft: rgba(26, 44, 61, 0.06);
 
     --color-white: #F2F7F8;
-}`
-  }
+}`,
+}

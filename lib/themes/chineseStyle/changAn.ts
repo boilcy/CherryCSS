@@ -1,11 +1,11 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const changAn: Theme = {
-  id: "chang-an",
-  name: "长安",
-  description: "Light theme inspired by traditional Chinese aesthetics",
-  lightPreviewUrl: "/chang-an.png",
-  darkPreviewUrl: "/chang-an.png",
+  id: 'chang-an',
+  name: '长安',
+  description: 'Light theme inspired by traditional Chinese aesthetics',
+  lightPreviewUrl: '/chang-an.png',
+  darkPreviewUrl: '/chang-an.png',
   css: `/* 
 ========================
 长安 (Chang'an)
@@ -107,5 +107,5 @@ body[theme-mode="light"] .ant-collapse {
 
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #D9C7B1; /* Between ant-collapse and background-soft */
-}`
-} 
+}`,
+}

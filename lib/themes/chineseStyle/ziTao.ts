@@ -1,12 +1,12 @@
-import type { Theme } from "@/lib/types"
+import type { Theme } from '@/lib/types'
 
 export const ziTao: Theme = {
-    id: "zi-tao",
-    name: "紫陶",
-    description: "Light theme inspired by purple and traditional pottery",
-    lightPreviewUrl: "/zi-tao.png",
-    darkPreviewUrl: "/zi-tao.png",
-    css: `/* 
+  id: 'zi-tao',
+  name: '紫陶',
+  description: 'Light theme inspired by purple and traditional pottery',
+  lightPreviewUrl: '/zi-tao.png',
+  darkPreviewUrl: '/zi-tao.png',
+  css: `/* 
 ========================
 紫陶 (Zi-tao)
 ========================
@@ -109,4 +109,4 @@ body[theme-mode="light"] .ant-collapse {
 body[theme-mode="light"] .ant-collapse-content {
     background-color: #D5C6D8; /* Between ant-collapse and background-soft */
 }`,
-  }
+}

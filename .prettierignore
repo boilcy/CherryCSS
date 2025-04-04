@@ -1,0 +1,23 @@
+# Dependency directories
+node_modules/
+.pnpm-store/
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Cache
+.cache/
+.vercel/
+.turbo/
+
+# Misc
+.DS_Store
+*.lock
+*.log
+pnpm-lock.yaml
+
+# Generated files
+next-env.d.ts

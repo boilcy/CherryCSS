@@ -1,47 +1,95 @@
-import GradientText from "@/components/GradientText"
-import { Toaster } from "@/components/ui/sonner"
-import ThemeGrid from "@/components/theme-preview-grid"
-import { ThemePreviewSwitch } from "@/components/theme-preview-switch"
-import { themes } from "@/lib/themes"
-import { Icon } from "@iconify/react"
-import { useTranslations } from 'next-intl';
-import LocaleSelect from "@/components/locale-select"
+'use client'
 
-export default function Home() {
-  const t = useTranslations();
+import { PageLayout } from '@/components/layout'
+import ThemeRenderGrid from '@/components/theme-render-grid'
+import { themes } from '@/lib/themes'
+import { useTranslations } from 'next-intl'
+import { useEffect, useRef, useState } from 'react'
+
+// Number of themes to display initially
+const INITIAL_VISIBLE_COUNT = 8
+
+export default function RenderPage() {
+  const [selectedStyle, setSelectedStyle] = useState<string | null>(null)
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT)
+  const [isLoading, setIsLoading] = useState(false)
+  const loaderRef = useRef<HTMLDivElement>(null)
+  const t = useTranslations()
+
+  // Filter themes based on selected style
+  const filteredThemes = themes.filter((theme) => {
+    // If no style filter is selected, show all themes
+    if (!selectedStyle) {
+      return true
+    }
+
+    // Check theme style based on the style property
+    return theme.style === selectedStyle
+  })
+
+  // Get the portion of themes to display
+  const visibleThemes = filteredThemes.slice(0, Math.min(visibleCount, filteredThemes.length))
+
+  // Setup intersection observer for infinite scrolling
+  useEffect(() => {
+    // Handle loading more themes
+    const handleLoadMore = () => {
+      if (isLoading || visibleCount >= filteredThemes.length) return
+
+      setIsLoading(true)
+      // Use setTimeout to simulate loading and prevent multiple rapid loads
+      setTimeout(() => {
+        setVisibleCount((prevCount) => prevCount + INITIAL_VISIBLE_COUNT)
+        setIsLoading(false)
+      }, 300)
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries
+        if (entry.isIntersecting) {
+          handleLoadMore()
+        }
+      },
+      { rootMargin: '200px' } // Start loading before the user reaches the bottom
+    )
+
+    // Capture the current ref value
+    const currentLoaderRef = loaderRef.current
+
+    if (currentLoaderRef) {
+      observer.observe(currentLoaderRef)
+    }
+
+    return () => {
+      if (currentLoaderRef) {
+        observer.unobserve(currentLoaderRef)
+      }
+    }
+  }, [visibleCount, isLoading, filteredThemes.length])
+
   return (
-    <main className="min-h-screen p-4 md:p-8 bg-gray-50">
-      <div className="max-w-full mx-auto relative">
-        <div className="flex items-center justify-center lg:justify-end gap-4 sticky top-0 z-50 backdrop-blur bg-white/50">
-          <LocaleSelect />
-          <a
-            href="https://github.com/boilcy/cherrycss"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            <Icon icon="mdi:github" className="w-6 h-6" />
-            <span className="hidden sm:inline">{t('navigation.github')}</span>
-          </a>
-          <ThemePreviewSwitch />
+    <PageLayout forwardLink={{ href: '/imgpre', textKey: 'to-image-preview' }}>
+      <ThemeRenderGrid themes={visibleThemes} />
+
+      {/* Infinite scroll loading indicator */}
+      {visibleCount < filteredThemes.length && (
+        <div ref={loaderRef} className="mt-8 mb-12 flex justify-center">
+          {isLoading ? (
+            <div className="animate-pulse rounded-md bg-gray-500 px-4 py-2 text-transparent">
+              {t('render.loading')}
+            </div>
+          ) : (
+            <div className="h-4" />
+          )}
         </div>
+      )}
 
-        <header className="mt-8 mb-8 text-center">
-          <GradientText
-            colors={["#ff0000", "#ff7f00", "#ffff00", "#00ff00", "#0000ff", "#4b0082", "#8b00ff"]}
-            animationSpeed={2}
-            showBorder={false}
-            className="text-3xl md:text-4xl font-bold mb-2"
-          >
-            {t('home.title')}
-          </GradientText>
-          <p className="text-gray-600">{t('home.description')}</p>
-        </header>
-
-        <ThemeGrid themes={themes} />
-        <Toaster />
-      </div>
-    </main>
+      {selectedStyle && filteredThemes.length === 0 && (
+        <div className="py-8 text-center">
+          <p className="text-gray-500">No themes found with the selected filter.</p>
+        </div>
+      )}
+    </PageLayout>
   )
 }
-
