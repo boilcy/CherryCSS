@@ -28,7 +28,7 @@ export const gladiia: Theme = {
 }
 
 #inputbar {
-  margin: -15px 10px 15px 10px;
+  margin: 0px 10px 10px 10px;
   background: rgba(255,255,255,0.96) !important;
   border: 2px solid var(--color-border) !important;
   border-radius: 20px !important;
