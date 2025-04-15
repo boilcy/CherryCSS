@@ -193,6 +193,10 @@
     "mint": {
       "name": "薄荷",
       "description": "薄荷绿风格"
+    },
+    "vitesse-soft": {
+      "name": "Vitesse Soft",
+      "description": "灵感来自 Vitesse 主题"
     }
   }
 }

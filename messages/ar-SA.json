@@ -193,6 +193,10 @@
     "mint": {
       "name": "المينت",
       "description": "نمط المينت"
+    },
+    "vitesse-soft": {
+      "name": "Vitesse Soft",
+      "description": "سمة مستوحاة من سمة Vitesse"
     }
   }
 }
