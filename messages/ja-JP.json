@@ -193,6 +193,10 @@
     "mint": {
       "name": "ミント",
       "description": "ミント緑スタイル"
+    },
+    "vitesse-soft": {
+      "name": "Vitesse Soft",
+      "description": "Vitesse テーマにインスパイアされたテーマ"
     }
   }
 }
