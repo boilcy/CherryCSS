@@ -193,6 +193,10 @@
     "mint": {
       "name": "Mint",
       "description": "Mint style"
+    },
+    "vitesse-soft": {
+      "name": "Vitesse Soft",
+      "description": "Theme inspired by Vitesse Theme"
     }
   }
 }
