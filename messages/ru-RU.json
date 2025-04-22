@@ -193,6 +193,10 @@
     "mint": {
       "name": "Мята",
       "description": "Стиль Мята"
+    },
+    "vitesse-soft": {
+      "name": "Vitesse Soft",
+      "description": "Тема, вдохновлённая Vitesse Theme"
     }
   }
 }
