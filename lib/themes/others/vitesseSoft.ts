@@ -46,9 +46,9 @@ body[theme-mode=dark]  {
   --color-reference-background: #f1f7ff;
   --navbar-background-mac: var(--color-background-accent);
   --navbar-background: var(--color-background-accent);
-  --chat-background: #f3f3f3;
-  --chat-background-user: #95ec69;
-  --chat-background-assistant: #ffffff;
+  --chat-background: #292929;
+  --chat-background-user: #333333;
+  --chat-background-assistant: #222222;
   --chat-text-user: var(--color-text);
 
   background: var(--color-background-accent) !important;
