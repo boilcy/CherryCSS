@@ -7,7 +7,7 @@ import { prefixScssThemeCSS } from '@/lib/cssTransformer'
 import originCss from '@/lib/themes/origin'
 import type { Theme } from '@/lib/types'
 import { useTranslations } from 'next-intl'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { toast } from 'sonner'
 
 interface ThemeRenderGridProps {
@@ -30,38 +30,49 @@ export default function ThemeRenderGrid({ themes }: ThemeRenderGridProps) {
     setTransformedCSS(css)
   }, [uniqueWrapperClass])
 
-  const copyToClipboard = async (css: string, themeId: string) => {
-    try {
-      await navigator.clipboard.writeText(css)
-      setCopiedTheme(themeId)
-      toast.success(t('toast.copy-success', { themeName: t(`themes.${themeId}.name`) }))
-      setTimeout(() => setCopiedTheme(null), 1000)
-    } catch (err) {
-      console.error('Failed to copy: ', err)
-      toast.error(t('toast.copy-error'))
-    }
-  }
+  const copyToClipboard = useCallback(
+    async (css: string, themeId: string) => {
+      try {
+        await navigator.clipboard.writeText(css)
+        setCopiedTheme(themeId)
+        toast.success(t('toast.copy-success', { themeName: t(`themes.${themeId}.name`) }))
+        setTimeout(() => setCopiedTheme(null), 1000)
+      } catch (err) {
+        console.error('Failed to copy: ', err)
+        toast.error(t('toast.copy-error'))
+      }
+    },
+    [t]
+  )
 
   // Count themes with colors for debugging
-  const themesWithColors = themes.filter((theme) => theme.colors && theme.colors.length > 0).length
+  const themesWithColors = useMemo(
+    () => themes.filter((theme) => theme.colors && theme.colors.length > 0).length,
+    [themes]
+  )
 
   // Filter themes based on selected colors and styles
-  const filteredThemes = themes.filter((theme) => {
-    // If no filters are selected, show all themes
-    if (selectedColors.length === 0 && !selectedStyle) {
-      return true
-    }
+  const filteredThemes = useMemo(
+    () =>
+      themes.filter((theme) => {
+        // If no filters are selected, show all themes
+        if (selectedColors.length === 0 && !selectedStyle) {
+          return true
+        }
 
-    // Check for color match if colors are selected
-    const colorMatch =
-      selectedColors.length === 0 || theme.colors?.some((color) => selectedColors.includes(color))
+        // Check for color match if colors are selected
+        const colorMatch =
+          selectedColors.length === 0 ||
+          theme.colors?.some((color) => selectedColors.includes(color))
 
-    // Check theme style based on the style property
-    const styleMatch = !selectedStyle || theme.style === selectedStyle
+        // Check theme style based on the style property
+        const styleMatch = !selectedStyle || theme.style === selectedStyle
 
-    // Theme must match both color AND style filters if both are applied
-    return colorMatch && styleMatch
-  })
+        // Theme must match both color AND style filters if both are applied
+        return colorMatch && styleMatch
+      }),
+    [themes, selectedColors, selectedStyle]
+  )
 
   return (
     <>
