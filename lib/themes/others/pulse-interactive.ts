@@ -86,13 +86,11 @@ export const pulseinteractive: Theme = {
     transition: border-radius var(--short-timer) var(--animation);
   }
   
-  [class^="Icon"]:active,
+  [class^="IconItem"]:active,
   [class^="ant-avatar"]:active,
   [class^="ant-btn"]:active,
   [class^="ant-segmented-item"]:active,
   [class^="anticon"]:active,
-  [class^="ant-flex"]:active,
-  [class^="ant-collapse"]:active,
   [class^="ant-upload"]:active,
   [class^="ant-divider"]:active,
   [class^="ant-tooltip"]:active,
