@@ -197,6 +197,10 @@
     "pulse-interactive": {
       "name": "Pulse Interactive",
       "description": "A theme that improves the interactive experience by adding animations and enhancing the overall look and feel of the interface."
-    } 
+    },
+    "vitesse-soft": {
+      "name": "Vitesse Soft",
+      "description": "Theme inspired by Vitesse Theme"
+    }
   }
 }

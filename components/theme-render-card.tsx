@@ -4,6 +4,7 @@ import { useDarkPreview } from '@/hooks/useDarkPreview'
 import type { Theme } from '@/lib/types'
 import { Icon } from '@iconify/react'
 import { useTranslations } from 'next-intl'
+import React from 'react'
 import ThemeRenderer from './render/theme-renderer'
 import { ThemePalette } from './theme-palette'
 
@@ -15,7 +16,7 @@ interface ThemeRenderCardProps {
   originThemeClassName: string
 }
 
-export function ThemeRenderCard({
+function ThemeRenderCardBase({
   theme,
   copiedTheme,
   onCopy,
@@ -70,3 +71,16 @@ export function ThemeRenderCard({
     </div>
   )
 }
+
+// Custom comparison function to only re-render when necessary
+function arePropsEqual(prevProps: ThemeRenderCardProps, nextProps: ThemeRenderCardProps) {
+  return (
+    prevProps.theme.id === nextProps.theme.id &&
+    prevProps.theme.css === nextProps.theme.css &&
+    prevProps.copiedTheme === nextProps.copiedTheme &&
+    prevProps.showColors === nextProps.showColors &&
+    prevProps.originThemeClassName === nextProps.originThemeClassName
+  )
+}
+
+export const ThemeRenderCard = React.memo(ThemeRenderCardBase, arePropsEqual)

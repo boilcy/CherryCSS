@@ -197,6 +197,10 @@
     "pulse-interactive": {
       "name": "パルス・インタラクティブ",
       "description": "インタラクティブな体験を向上させるテーマで、アニメーションを追加し、インターフェースの全体的な見た目と感触を強化します。"
+    },
+    "vitesse-soft": {
+      "name": "Vitesse Soft",
+      "description": "Vitesse テーマにインスパイアされたテーマ"
     }
   }
 }

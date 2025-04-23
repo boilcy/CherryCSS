@@ -21,7 +21,7 @@ interface ThemeRendererProps {
 export default function ThemeRenderer({ theme, originThemeClassName }: ThemeRendererProps) {
   const uniqueWrapperClass = `wrapper-${theme.id}`
   const { isDarkPreview } = useDarkPreview()
-  const [themeMode, setThemeMode] = useState<'light' | 'dark'>('light')
+  const [themeMode, setThemeMode] = useState<'light' | 'dark'>(isDarkPreview ? 'dark' : 'light')
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
   const [transformedCSS, setTransformedCSS] = useState('')
   const containerRef = useRef<HTMLDivElement>(null)
@@ -35,11 +35,6 @@ export default function ThemeRenderer({ theme, originThemeClassName }: ThemeRend
     }
     setTransformedCSS(css)
   }, [theme.css, uniqueWrapperClass])
-
-  // Initialize themeMode from global preference on mount
-  useEffect(() => {
-    setThemeMode(isDarkPreview ? 'dark' : 'light')
-  }, [])
 
   // Always sync with global theme preference
   useEffect(() => {
