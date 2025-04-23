@@ -61,6 +61,15 @@ export const pulseinteractive: Theme = {
     --long-timer: 0.5s;
   }
   
+  [class^="MessageLineContainer"] {
+    background: var(--chat-background);
+    border-radius: var(--button-border-radius);
+
+    [class^="MessageItem"]:active {
+    animation: clickAnimation var(--long-timer) var(--animation);
+    }
+  }
+
   [class^="SettingHelpTextRow"] {
     display: inline-block;
   }
