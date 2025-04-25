@@ -110,6 +110,15 @@ export const pulseinteractive: Theme = {
     animation: clickAnimation var(--long-timer) var(--animation);
   }
   
+  /* Adapted to v1.2.8 */
+  [class^="Menus"] {
+    [class^="Icon"]:active {
+      border-radius: var(--button-border-radius-active) !important;
+      transition: border-radius var(--short-timer) var(--animation);
+      animation: clickAnimation var(--long-timer) var(--animation);
+    }
+  }
+
   [class^="Icon"],
   [class^="ant"],
   [class^="ActionButton"],
