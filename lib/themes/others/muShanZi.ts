@@ -1,6 +1,6 @@
 import type { Theme } from '@/lib/types'
 
-export const moNai: Theme = {
+export const muShanZi: Theme = {
   id: 'mu-shan-zi',
   name: '暮山紫',
   description: 'Light theme inspired by traditional Chinese aesthetics',
