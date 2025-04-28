@@ -197,6 +197,10 @@
     "vitesse-soft": {
       "name": "Vitesse Soft",
       "description": "Тема, вдохновлённая Vitesse Theme"
+    },
+    "mu-shan-zi": {
+      "name": "Сумеречный фиолетовый",
+      "description": "Вдохновленный далекой горой, пропитанной закатом"
     }
   }
 }

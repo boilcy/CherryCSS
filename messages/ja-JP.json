@@ -197,6 +197,10 @@
     "vitesse-soft": {
       "name": "Vitesse Soft",
       "description": "Vitesse テーマにインスパイアされたテーマ"
+    },
+    "mu-shan-zi": {
+      "name": "暮山紫",
+      "description": "夕焼けに染まった遠山からインスピレーションを得た"
     }
   }
 }
