@@ -11,10 +11,16 @@ body {
     'Helvetica Neue', sans-serif;
 }
 
-/* 深度思考展开字体颜色 */
-.ant-collapse-content-box .markdown {
-  color: red;
-}
+/* Extracted Palette from Image (Reference) */
+/* --color-deep-teal: #0e3a3a; */
+/* --color-medium-teal: #1a4e4e; */
+/* --color-light-teal: #246c6c; */
+/* --color-leaf-green-main: #a0c8a0; */
+/* --color-leaf-green-light: #b4d4b4; */
+/* --color-leaf-green-muted: #8fb08f; */
+/* --color-leaf-stem: #789878; */
+/* --color-highlight-soft: #e0e0e0; */
+/* --color-highlight-bright: #ffffff; */
 
 /* Root variables (global across light/dark modes) */
 :root {
@@ -80,7 +86,7 @@ body[theme-mode='dark'] {
   }
 
   #content-container #messages {
-    background-color: var(--chat-background-assistant);
+    background-color: var(--chat-background);
     /* 消息背景色 */
   }
 
@@ -195,12 +201,12 @@ body[theme-mode='light'] {
 /* Content container background - important! */
 body[theme-mode='light'] {
   #content-container {
-    background-color: #f6ebdc !important;
+    background-color: var(--chat-background-assistant) !important;
     /* Usually matches chat-background or slightly lighter */
   }
 
   #content-container #messages {
-    background-color: var(--chat-background-assistant);
+    background-color: var(--chat-background);
     /* 消息背景色 */
   }
 
@@ -271,6 +277,3 @@ body[theme-mode='light'] {
     }
   }
 }
-
-/* ===== ADDITIONAL CUSTOM STYLES (OPTIONAL) ===== */
-/* Add any additional custom styles here if needed */

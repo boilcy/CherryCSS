@@ -11,9 +11,18 @@ import { naiCha } from './naiCha'
 import { starryNight } from './starryNight'
 import { vitesseSoft } from './vitesseSoft'
 
-
 // 为所有其他风格主题设置style属性
-const othersThemes = [claude, dopamine, dracula, gladiia, moNai, naiCha, mint, vitesseSoft,muShanZi]
+const othersThemes = [
+  claude,
+  dopamine,
+  dracula,
+  gladiia,
+  moNai,
+  naiCha,
+  mint,
+  vitesseSoft,
+  muShanZi,
+]
 
 // 为每个主题添加style属性
 export const themes = othersThemes.map((theme) => ({
