@@ -1,6 +1,6 @@
 import type { Theme } from '@/lib/types'
 
-export const pulseinteractive: Theme = {
+export const pulseInteractive: Theme = {
   id: 'pulse-interactive',
   name: 'Pulse Interactive Theme',
   description: 'A theme that improves the interactive experience by adding animations and enhancing the overall look and feel of the interface.',
