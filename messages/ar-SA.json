@@ -194,6 +194,10 @@
       "name": "المينت",
       "description": "نمط المينت"
     },
+    "pulse-interactive": {
+      "name": "بولس إنتراكتيف",
+      "description": "موضوع يحسن من التجربة التفاعلية عن طريق إضافة الحركات وتحسين المظهر العام للواجهة."
+    },
     "vitesse-soft": {
       "name": "Vitesse Soft",
       "description": "سمة مستوحاة من سمة Vitesse"

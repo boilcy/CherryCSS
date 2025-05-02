@@ -194,6 +194,10 @@
       "name": "薄荷",
       "description": "薄荷绿风格"
     },
+    "pulse-interactive": {
+      "name": "脉动交互",
+      "description": "一个通过添加动画来改善互动体验的主题，增强界面的整体外观和感觉。"
+    },
     "vitesse-soft": {
       "name": "Vitesse Soft",
       "description": "灵感来自 Vitesse 主题"

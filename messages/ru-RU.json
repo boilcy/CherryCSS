@@ -194,6 +194,10 @@
       "name": "Мята",
       "description": "Стиль Мята"
     },
+    "pulse-interactive": {
+      "name": "Пульс-Интерактив",
+      "description": "Тема, которая улучшает интерактивный опыт, добавляя анимации и улучшая общий внешний вид и восприятие интерфейса."
+    },
     "vitesse-soft": {
       "name": "Vitesse Soft",
       "description": "Тема, вдохновлённая Vitesse Theme"
