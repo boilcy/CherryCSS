@@ -98,7 +98,7 @@ body[theme-mode="light"] {
     --color-background-soft: #CBC7BE;  /* Medium background for contrast elements */
 
     /* Chat interface colors */
-    --navbar-background: var(--color-white-soft);  /* Navigation bar background */
+    --navbar-background: #e8e6dc;  /* Navigation bar background */
     --chat-background: #EBE8E2;        /* Main chat area background */
     --chat-background-user: #e8e6dc;   /* User message bubble background */
     --chat-background-assistant: #fefefd; /* Assistant message bubble background */

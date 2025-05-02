@@ -6,13 +6,25 @@ import { dracula } from './dracula'
 import { gladiia } from './gladiia'
 import { mint } from './mintyLavender'
 import { moNai } from './moNai'
+import { muShanZi } from './muShanZi'
 import { naiCha } from './naiCha'
 import { starryNight } from './starryNight'
 import { vitesseSoft } from './vitesseSoft'
 import { pulseInteractive } from './pulse-interactive'
 
 // 为所有其他风格主题设置style属性
-const othersThemes = [claude, dopamine, dracula, gladiia, moNai, naiCha, mint, vitesseSoft, starryNight, pulseInteractive]
+const othersThemes = [
+  claude,
+  dopamine,
+  dracula,
+  gladiia,
+  moNai,
+  naiCha,
+  mint,
+  vitesseSoft,
+  muShanZi,
+  pulseInteractive,
+]
 
 // 为每个主题添加style属性
 export const themes = othersThemes.map((theme) => ({
@@ -31,3 +43,4 @@ export const starryNightWithStyle = { ...starryNight, style: STYLE }
 export const mintyLavenderWithStyle = { ...mint, style: STYLE }
 export const vitesseSoftWithStyle = { ...vitesseSoft, style: STYLE }
 export const pulseInteractiveWithStyle = { ...pulseInteractive, style: STYLE }
+export const muShanZitWithStyle = { ...muShanZi, style: STYLE }

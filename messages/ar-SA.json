@@ -201,6 +201,10 @@
     "vitesse-soft": {
       "name": "Vitesse Soft",
       "description": "سمة مستوحاة من سمة Vitesse"
+    },
+    "mu-shan-zi": {
+      "name": "الشفق الأرجواني",
+      "description": "مستوحاة من تلال الغروب"
     }
   }
 }
