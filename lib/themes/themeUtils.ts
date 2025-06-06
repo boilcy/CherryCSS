@@ -4,6 +4,14 @@ export const bugfixCss = `
 .bubble .message-user .message-action-button:hover {
   background-color: var(--color-background-mute);
 }
+body[theme-mode="dark"]{
+    --color-list-item: var(--color-background-soft) !important;
+    --color-list-item-hover: var(--color-background-soft) !important;
+}
+body[theme-mode="light"]{
+    --color-list-item: var(--color-background-soft) !important;
+    --color-list-item-hover: var(--color-background-soft) !important;
+}
 `
 
 // Utility function to detect primary colors in theme CSS
