@@ -97,9 +97,8 @@ code,
   }
 }
 
-/* v1.4.0, DEPRECATED in v1.4.5 */
+/* v1.4.0 */
 
-/*
 [theme-mode="light"] .message-content-container-user {
   background-color: var(--chat-background-user-light) !important;
 }
@@ -107,15 +106,6 @@ code,
 [theme-mode="dark"] .message-content-container-user {
   background-color: var(--chat-background-user-dark) !important;
 }
-
-[theme-mode="light"] .bubble .message-user .message-action-button:hover {
-  background-color: var(--button-hover-light) !important;
-}
-
-[theme-mode="dark"] .bubble .message-user .message-action-button:hover {
-  background-color: var(--button-hover-dark) !important;
-}
-*/
 
 /* v1.4.2-ui-preview */
 [class^="MainMenuItem"]:active,
