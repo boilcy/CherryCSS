@@ -286,7 +286,6 @@ body[theme-mode="dark"] {
 [class^="ant-tooltip"]:active,
 [class^="ant-message"]:active,
 [class^="ActionButton"]:active,
-[class^="MenuItem"]:active,
 [class^="MenuButton"]:active,
 [class^="EmojiBackground"]:active,
 [class~="ant-dropdown-menu-item"]:active,
