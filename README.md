@@ -53,13 +53,22 @@ Cherry Studio 自定义主题库, 点击复制即用!
 ### 贡献步骤
 
 1. Fork 仓库
-2. 创建你的功能分支（`git checkout -b feature/AmazingTheme`）
-   - 在lib/themes/\*/下添加你的主题, 注意在index.ts中import
-   - 添加预览图片到public/light, public/dark下
-   - 添加i18n(messages文件夹下)
-3. 提交你的更改（`git commit -m 'add new AmazingTheme'`）
-4. 推送到分支（`git push origin feature/AmazingTheme`）
-5. 提交Pull Request
+2. 克隆fork后的仓库而非本仓库
+3. 在本地创建你的功能分支（`git checkout -b feature/AmazingTheme`）
+   - 在lib/themes/others/下添加你的主题, 注意在index.ts中import
+     格式可参考现有的theme，记住你设置的id
+   - 添加预览图片到public/light, public/dark下，图片名与上一步设置的id一致
+   - 添加i18n(messages文件夹下)，在json文件中themes属性下添加内容；如：
+     ```typescript
+     "chang-an": {
+         "name": "长安",
+         "description": "主题以唐朝美学和古都长安为灵感，采用温暖的土色调"
+     }
+     ```
+     这里的key`chang-an`同样替换为之前设置的id
+4. 提交你的更改（`git add .` `git commit -m 'add new AmazingTheme'`）
+5. 推送到分支（`git push origin feature/AmazingTheme`）
+6. 提交Pull Request
 
 ## 📄 许可证
 
