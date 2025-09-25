@@ -7,17 +7,18 @@ export const pulseInteractive: Theme = {
   lightPreviewUrl: '/pulse-interactive.gif',
   darkPreviewUrl: '/pulse-interactive.gif',
   css: `
-/* Added User Style */
+/* Pulse Interactive User Style v4.0.0 */
 
 /*  Font */
 * {
   font-family: Product Sans, Noto Sans SC, Maple Mono NF CN Medium, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  font-feature-settings: 'calt', 'cv07', 'cv40', 'ss03', 'ss07', 'ss08', 'ss09', 'ss10', 'ss11';
 }
 
 [class^="CodeBlockWrapper"],
 [class^="cm"] {
   * {
-    font-family: Maple Mono NF CN Medium !important;
+    font-family: Maple Mono NF CN Medium, monospace !important;
   }
 }
 
@@ -117,9 +118,20 @@ code,
   animation: clickAnimation var(--long-timer) var(--animation);
 }
 
+/* v1.5.11 */
+[class^="AboutHeader"] {
+  span.ant-avatar-css-var {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
+  }
+}
+
 [theme-mode="light"] [class^="PageContainer"],
 [theme-mode="light"] [class^="MainMenu"],
 [theme-mode="light"] [class^="UserMenu"],
+[theme-mode="light"] [class^="ScrollContainer"],
 [theme-mode="light"] [class^="NavbarContainer"],
 [theme-mode="light"] [class^="MainMenusContainer"],
 [theme-mode="light"] [class^="ContentContainer"],
@@ -136,6 +148,7 @@ code,
 [theme-mode="dark"] [class^="PageContainer"],
 [theme-mode="dark"] [class^="MainMenu"],
 [theme-mode="dark"] [class^="UserMenu"],
+[theme-mode="dark"] [class^="ScrollContainer"],
 [theme-mode="dark"] [class^="NavbarContainer"],
 [theme-mode="dark"] [class^="MainMenusContainer"],
 [theme-mode="dark"] [class^="ContentContainer"],
@@ -163,6 +176,84 @@ code,
 [theme-mode="dark"] [class^="ProviderListItem"] {
   background-color: var(--background-dark-aero) !important;
   backdrop-filter: blur(16px);
+}
+
+/* Fix some paddings and background colors */
+[class^="MainMenusContainer"] {
+  padding: 2px;
+}
+
+[class^="ContentContainer"] {
+  margin: 5px;
+  max-height: calc(100vh - var(--navbar-height) - 15px) !important;
+  max-width: calc(100vw - var(--sidebar-width) - 15px) !important;
+}
+
+.inputbar {
+  margin: 1.5em 0;
+  background-color: transparent !important;
+}
+
+#chat {
+  margin: 1em;
+}
+
+#messages {
+  margin-left: 1.5em !important; /* Adjust margin to prevent overlap with input bar */
+}
+
+[class^="SettingGroup"] {
+  padding: 1em;
+}
+
+[class^="SettingContainer"],
+[class^="ProviderListContainer"] {
+  height: 100% !important; /* Ensure it matches the height of the parent element */
+}
+
+[theme-mode=light].bubble #messages,
+[theme-mode=light] #chat{
+  background-color: var(--background-light-aero) !important;
+}
+[theme-mode=dark].bubble #messages,
+[theme-mode=dark] #chat {
+  background-color: var(--background-dark-aero) !important;
+}
+
+/*  v1.5.2 */
+[theme-mode="light"] [class^="Tab-"]:hover,
+[theme-mode="light"] [class^="AddTabButton"]:hover,
+[theme-mode="light"] [class^="ThemeButton"]:hover,
+[theme-mode="light"] [class^="SettingsButton"]:hover {
+  backdrop-filter: blur(16px);
+  border-radius: var(--button-border-radius-hover);
+  background: var(--background-assistant-light-new) !important;
+}
+
+[theme-mode="light"] [class^="Tab-"],
+[theme-mode="light"] [class^="AddTabButton"],
+[theme-mode="light"] [class^="ThemeButton"],
+[theme-mode="light"] [class^="SettingsButton"] {
+  backdrop-filter: blur(16px);
+  border-radius: var(--button-border-radius);
+  background: var(--background-light-aero) !important;
+}
+
+[theme-mode="dark"] [class^="Tab-"]:hover,
+[theme-mode="dark"] [class^="AddTabButton"]:hover,
+[theme-mode="dark"] [class^="ThemeButton"]:hover,
+[theme-mode="dark"] [class^="SettingsButton"]:hover {
+  backdrop-filter: blur(16px);
+  border-radius: var(--button-border-radius-hover);
+  background: var(--background-dark-aero) !important;
+}
+
+[class^="Tab-"]:active,
+[class^="AddTabButton"]:active,
+[class^="ThemeButton"]:active,
+[class^="SettingsButton"]:active {
+  border-radius: var(--button-border-radius-active);
+  animation: clickAnimation var(--long-timer) var(--animation);
 }
 
 /*  MAIN */
@@ -286,6 +377,10 @@ body[theme-mode="dark"] {
 [class^="ant-tooltip"]:active,
 [class^="ant-message"]:active,
 [class^="ActionButton"]:active,
+[class^="TopicListItem"]:active,
+[class^="IconItem"]:active,
+[class^="ProviderListItem"]:active,
+[class^="MenuItem"]:active,
 [class^="MenuButton"]:active,
 [class^="EmojiBackground"]:active,
 [class~="ant-dropdown-menu-item"]:active,
