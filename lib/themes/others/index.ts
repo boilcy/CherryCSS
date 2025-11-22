@@ -8,9 +8,10 @@ import { mint } from './mintyLavender'
 import { moNai } from './moNai'
 import { muShanZi } from './muShanZi'
 import { naiCha } from './naiCha'
+import { peppa } from './peppa'
+import { pulseInteractive } from './pulse-interactive'
 import { starryNight } from './starryNight'
 import { vitesseSoft } from './vitesseSoft'
-import { pulseInteractive } from './pulse-interactive'
 
 // 为所有其他风格主题设置style属性
 const othersThemes = [
@@ -24,6 +25,7 @@ const othersThemes = [
   vitesseSoft,
   muShanZi,
   pulseInteractive,
+  peppa
 ]
 
 // 为每个主题添加style属性
@@ -44,3 +46,4 @@ export const mintyLavenderWithStyle = { ...mint, style: STYLE }
 export const vitesseSoftWithStyle = { ...vitesseSoft, style: STYLE }
 export const pulseInteractiveWithStyle = { ...pulseInteractive, style: STYLE }
 export const muShanZitWithStyle = { ...muShanZi, style: STYLE }
+export const peppaWithStype = { ...peppa, style: STYLE}
