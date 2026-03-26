@@ -4,13 +4,22 @@ import { compileString } from 'sass'
 
 export function prefixThemeCSS(name: string = '', css: string, wrapperClass: string) {
   try {
+    // Pre-process CSS to handle attribute selectors at the beginning
+    // This ensures [theme-mode="..."] selectors are properly prefixed
+    const processedCss = css.replace(
+      /(\[theme-mode=["']?(?:light|dark)["']?\])([\s{])/g,
+      `$1.${wrapperClass}$2`
+    )
+
     const out = postcss()
       .use(
         prefixer({
           prefix: `.${wrapperClass}`,
+          // Exclude attribute-only selectors from being double-prefixed
+          exclude: /^\[theme-mode/,
         })
       )
-      .process(css).css
+      .process(processedCss).css
     return out
   } catch (error) {
     console.log(`Error processing ${name}`)
