@@ -1,5 +1,7 @@
 const STYLE = 'chineseStyle'
 
+import { moyunYaji } from './moyun-yaji'
+
 import { changAn } from './changAn'
 import { chanZong } from './chanZong'
 import { chunMei } from './chunMei'
@@ -28,6 +30,7 @@ import { ziTao } from './ziTao'
 
 // 为所有中国风主题设置style属性
 const chineseStyleThemes = [
+  moyunYaji,
   changAn,
   chanZong,
   chunMei,
@@ -62,6 +65,7 @@ export const themes = chineseStyleThemes.map((theme) => ({
 }))
 
 // 单独导出每个带有style属性的主题
+export const moyunYajiWithStyle = { ...moyunYaji, style: STYLE }
 export const changAnWithStyle = { ...changAn, style: STYLE }
 export const chanZongWithStyle = { ...chanZong, style: STYLE }
 export const chunMeiWithStyle = { ...chunMei, style: STYLE }
