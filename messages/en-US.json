@@ -209,6 +209,14 @@
     "peppa": {
       "name": "Peppa Pig",
       "description": "Peppa Pig cartoon color scheme"
+    },
+    "vercel": {
+      "name": "Vercel",
+      "description": "A precise monochrome theme inspired by the Vercel Geist design system, with crisp hierarchy and restrained blue interactions"
+    },
+    "codex": {
+      "name": "Codex",
+      "description": "A focused engineering theme inspired by the official Codex terminal interface, with cyan controls and magenta identity accents"
     }
   }
 }

@@ -209,6 +209,14 @@
     "peppa": {
       "name": "小猪佩奇",
       "description": "小猪佩奇卡通配色"
+    },
+    "vercel": {
+      "name": "Vercel",
+      "description": "灵感来自 Vercel Geist 设计系统的精准黑白主题，以清晰层级和克制的蓝色交互为特色"
+    },
+    "codex": {
+      "name": "Codex",
+      "description": "灵感来自 Codex 官方终端界面的专注工程主题，采用青色操作状态与洋红色品牌点缀"
     }
   }
 }
