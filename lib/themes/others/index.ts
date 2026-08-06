@@ -1,6 +1,7 @@
 const STYLE = 'others'
 
 import { claude } from './claude'
+import { codex } from './codex'
 import { dopamine } from './dopamine'
 import { dracula } from './dracula'
 import { gladiia } from './gladiia'
@@ -11,11 +12,13 @@ import { naiCha } from './naiCha'
 import { peppa } from './peppa'
 import { pulseInteractive } from './pulse-interactive'
 import { starryNight } from './starryNight'
+import { vercel } from './vercel'
 import { vitesseSoft } from './vitesseSoft'
 
 // 为所有其他风格主题设置style属性
 const othersThemes = [
   claude,
+  codex,
   dopamine,
   dracula,
   gladiia,
@@ -25,7 +28,8 @@ const othersThemes = [
   vitesseSoft,
   muShanZi,
   pulseInteractive,
-  peppa
+  peppa,
+  vercel,
 ]
 
 // 为每个主题添加style属性
@@ -36,6 +40,7 @@ export const themes = othersThemes.map((theme) => ({
 
 // 单独导出每个带有style属性的主题
 export const claudeWithStyle = { ...claude, style: STYLE }
+export const codexWithStyle = { ...codex, style: STYLE }
 export const dopamineWithStyle = { ...dopamine, style: STYLE }
 export const draculaWithStyle = { ...dracula, style: STYLE }
 export const gladiiaWithStyle = { ...gladiia, style: STYLE }
@@ -46,4 +51,5 @@ export const mintyLavenderWithStyle = { ...mint, style: STYLE }
 export const vitesseSoftWithStyle = { ...vitesseSoft, style: STYLE }
 export const pulseInteractiveWithStyle = { ...pulseInteractive, style: STYLE }
 export const muShanZitWithStyle = { ...muShanZi, style: STYLE }
-export const peppaWithStype = { ...peppa, style: STYLE}
+export const peppaWithStype = { ...peppa, style: STYLE }
+export const vercelWithStyle = { ...vercel, style: STYLE }

@@ -209,6 +209,14 @@
     "peppa": {
       "name": "ペッパピッグ",
       "description": "「ペッパピッグ」のカートゥーン配色"
+    },
+    "vercel": {
+      "name": "Vercel",
+      "description": "Vercel Geist デザインシステムに着想を得た、明快な階層と控えめな青の操作色を備えた精密なモノクロテーマ"
+    },
+    "codex": {
+      "name": "Codex",
+      "description": "Codex 公式ターミナル UI に着想を得た、シアンの操作色とマゼンタのアクセントを備えた開発者向けテーマ"
     }
   }
 }
