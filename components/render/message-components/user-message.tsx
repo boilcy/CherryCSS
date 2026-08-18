@@ -21,7 +21,8 @@ export function UserMessage({
         <div className="overflow-y-visible rounded-[6px]">
           <div className="flex flex-col gap-4">
             <div
-              className="message message-user relative flex flex-col items-center pt-[15px]"
+              data-ui="chat.message"
+              className="relative flex flex-col items-center pt-[15px]"
               style={{
                 transition: 'background-color 0.3s ease',
                 padding: '0 20px',
@@ -48,7 +49,7 @@ export function UserMessage({
                       style={{
                         fontSize: '14px',
                         fontWeight: 600,
-                        color: 'var(--color-text)',
+                        color: 'var(--foreground)',
                       }}
                     >
                       {username}
@@ -56,7 +57,7 @@ export function UserMessage({
                     <div
                       style={{
                         fontSize: '10px',
-                        color: 'var(--color-text-3)',
+                        color: 'var(--foreground-tertiary, var(--muted-foreground))',
                       }}
                     >
                       {timestamp}
@@ -65,15 +66,10 @@ export function UserMessage({
                 </div>
               </div>
               <div
-                className="message-content-container flex flex-1 flex-col justify-between"
+                data-ui="part:message-content"
+                className="my-[5px] flex flex-1 flex-col justify-between rounded-lg bg-[var(--chat-user,var(--card))] px-[15px] py-[10px] text-sm text-[var(--foreground)]"
                 style={{
-                  fontFamily: `Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif`,
-                  fontSize: '14px',
                   overflowY: 'visible',
-                  margin: '5px 0',
-                  borderRadius: '8px',
-                  padding: '10px 15px 10px 15px',
-                  background: 'var(--chat-background-user)',
                 }}
               >
                 <div className="mb-[10px] hidden gap-[8px]"></div>

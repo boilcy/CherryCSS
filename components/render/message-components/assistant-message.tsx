@@ -1,5 +1,6 @@
 'use client'
 
+import { Copy, RotateCcw } from 'lucide-react'
 import Image from 'next/image'
 
 interface AssistantMessageProps {
@@ -21,7 +22,8 @@ export function AssistantMessage({
         <div className="overflow-y-visible rounded-[6px]">
           <div className="flex flex-col gap-4">
             <div
-              className="message message-assistant relative flex flex-col items-center pt-[15px]"
+              data-ui="chat.message"
+              className="relative flex flex-col items-center pt-[15px]"
               style={{
                 transition: 'background-color 0.3s ease',
                 padding: '0 20px',
@@ -48,7 +50,7 @@ export function AssistantMessage({
                       style={{
                         fontSize: '14px',
                         fontWeight: 600,
-                        color: 'var(--color-text)',
+                        color: 'var(--foreground)',
                       }}
                     >
                       {assistantName}
@@ -56,7 +58,7 @@ export function AssistantMessage({
                     <div
                       style={{
                         fontSize: '10px',
-                        color: 'var(--color-text-3)',
+                        color: 'var(--foreground-tertiary, var(--muted-foreground))',
                       }}
                     >
                       {timestamp}
@@ -65,19 +67,32 @@ export function AssistantMessage({
                 </div>
               </div>
               <div
-                className="message-content-container flex flex-1 flex-col justify-between"
+                data-ui="part:message-content"
+                className="my-[5px] flex flex-1 flex-col justify-between rounded-lg bg-[var(--card,var(--background))] px-[15px] py-[10px] text-sm text-[var(--card-foreground,var(--foreground))]"
                 style={{
-                  fontFamily: `Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif`,
-                  fontSize: '14px',
                   overflowY: 'visible',
-                  margin: '5px 0',
-                  borderRadius: '8px',
-                  padding: '10px 15px 10px 15px',
-                  background: 'var(--chat-background-assistant)',
                 }}
               >
                 <div className="mb-[10px] hidden gap-[8px]"></div>
                 <p className="mb-[5px] whitespace-pre-wrap">{content}</p>
+                <pre
+                  data-ui="part:code-block"
+                  className="mt-1 overflow-hidden rounded-md p-2 text-xs"
+                  style={{ background: 'var(--code-block, var(--muted))' }}
+                >
+                  <code>{"const theme = 'v2'"}</code>
+                </pre>
+              </div>
+              <div
+                data-ui="part:message-actions"
+                className="mt-1 flex items-center gap-1 text-[var(--muted-foreground,var(--foreground))]"
+              >
+                <button type="button" className="rounded p-1 hover:bg-[var(--accent)]">
+                  <Copy size={12} />
+                </button>
+                <button type="button" className="rounded p-1 hover:bg-[var(--accent)]">
+                  <RotateCcw size={12} />
+                </button>
               </div>
             </div>
           </div>

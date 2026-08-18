@@ -2,9 +2,9 @@
 'use client'
 
 import { useDarkPreview } from '@/hooks/useDarkPreview'
-import { prefixThemeCSS } from '@/lib/cssTransformer'
+import { scopeThemeCssForPreview } from '@/lib/cssTransformer'
 import { Theme } from '@/lib/types'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { AppSidebar } from './app-sidebar'
 import { ContentContainer } from './content-container'
 import { Navbar } from './navbar'
@@ -13,28 +13,80 @@ import { Navbar } from './navbar'
 const SIDEBAR_COLLAPSE_THRESHOLD = 666
 const SIDEBAR_COLLAPSE_DISABLE_THRESHOLD = 512
 
-interface ThemeRendererProps {
-  theme: Theme
-  originThemeClassName: string
+type PreviewDefaults = Record<`--${string}`, string>
+
+// Partial overlay themes intentionally inherit any missing tokens from the host application.
+// Provide valid v2-like host defaults here so the gallery models that contract instead of
+// inheriting this site's legacy, space-separated HSL variables.
+const V2_PREVIEW_DEFAULTS: Record<'light' | 'dark', PreviewDefaults> = {
+  light: {
+    '--background': '#ffffff',
+    '--foreground': '#09090b',
+    '--card': '#ffffff',
+    '--card-foreground': '#09090b',
+    '--primary': '#18181b',
+    '--primary-foreground': '#fafafa',
+    '--secondary': '#f4f4f5',
+    '--secondary-foreground': '#18181b',
+    '--muted': '#f4f4f5',
+    '--muted-foreground': '#71717a',
+    '--accent': '#f4f4f5',
+    '--accent-foreground': '#18181b',
+    '--border': '#e4e4e7',
+    '--input': '#e4e4e7',
+    '--sidebar': '#fafafa',
+    '--sidebar-foreground': '#09090b',
+    '--chat-user': '#f4f4f5',
+  },
+  dark: {
+    '--background': '#09090b',
+    '--foreground': '#fafafa',
+    '--card': '#09090b',
+    '--card-foreground': '#fafafa',
+    '--primary': '#fafafa',
+    '--primary-foreground': '#18181b',
+    '--secondary': '#27272a',
+    '--secondary-foreground': '#fafafa',
+    '--muted': '#27272a',
+    '--muted-foreground': '#a1a1aa',
+    '--accent': '#27272a',
+    '--accent-foreground': '#fafafa',
+    '--border': '#27272a',
+    '--input': '#27272a',
+    '--sidebar': '#18181b',
+    '--sidebar-foreground': '#fafafa',
+    '--chat-user': '#27272a',
+  },
 }
 
-export default function ThemeRenderer({ theme, originThemeClassName }: ThemeRendererProps) {
+interface ThemeRendererProps {
+  theme: Theme
+}
+
+export default function ThemeRenderer({ theme }: ThemeRendererProps) {
   const uniqueWrapperClass = `wrapper-${theme.id}`
   const { isDarkPreview } = useDarkPreview()
   const [themeMode, setThemeMode] = useState<'light' | 'dark'>(isDarkPreview ? 'dark' : 'light')
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
-  const [transformedCSS, setTransformedCSS] = useState('')
   const containerRef = useRef<HTMLDivElement>(null)
   const [containerWidth, setContainerWidth] = useState(0)
 
-  // Transform CSS to use wrapper class instead of global selectors
-  useEffect(() => {
-    const css = prefixThemeCSS(theme.id, theme.css, uniqueWrapperClass)
-    if (theme.id == 'chang-an') {
-      console.log(css)
-    }
-    setTransformedCSS(css)
-  }, [theme.css, uniqueWrapperClass])
+  const transformedCSS = useMemo(
+    () => scopeThemeCssForPreview(theme.css, uniqueWrapperClass),
+    [theme.css, uniqueWrapperClass]
+  )
+  const previewDefaultsCSS = useMemo(
+    () =>
+      (['light', 'dark'] as const)
+        .map((mode) => {
+          const declarations = Object.entries(V2_PREVIEW_DEFAULTS[mode])
+            .map(([property, value]) => `  ${property}: ${value};`)
+            .join('\n')
+          return `.${uniqueWrapperClass}.${mode} {\n${declarations}\n}`
+        })
+        .join('\n\n'),
+    [uniqueWrapperClass]
+  )
 
   // Always sync with global theme preference
   useEffect(() => {
@@ -97,22 +149,21 @@ export default function ThemeRenderer({ theme, originThemeClassName }: ThemeRend
   return (
     <div
       ref={containerRef}
-      className={`${uniqueWrapperClass} ${originThemeClassName} flex flex-row overflow-hidden rounded-lg border bg-[var(--navbar-background)] shadow-md`}
-      theme-mode={themeMode}
+      className={`${uniqueWrapperClass} ${themeMode} flex flex-row overflow-hidden rounded-lg border bg-[var(--background)] shadow-md`}
+      data-ui="app.window"
       style={{
-        color: 'var(--color-text)',
+        borderColor: 'var(--border)',
+        color: 'var(--foreground)',
         minHeight: '392px',
       }}
     >
-      <style jsx>{`
-        ${transformedCSS}
-      `}</style>
+      <style>{`${previewDefaultsCSS}\n\n${transformedCSS}`}</style>
 
       {/* App sidebar */}
       <AppSidebar themeMode={themeMode} setThemeMode={handleThemeToggle} />
 
       {/* Main container */}
-      <div id="home-page" className="flex flex-1 flex-col">
+      <div className="flex flex-1 flex-col">
         {/* App Navbar */}
         <Navbar
           theme={theme}

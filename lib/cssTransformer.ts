@@ -1,45 +1,39 @@
 import postcss from 'postcss'
-import prefixer from 'postcss-prefix-selector'
-import { compileString } from 'sass'
+import { isExactV2SemanticRule } from './themes/v2Compatibility'
 
-export function prefixThemeCSS(name: string = '', css: string, wrapperClass: string) {
-  try {
-    const out = postcss()
-      .use(
-        prefixer({
-          prefix: `.${wrapperClass}`,
-        })
-      )
-      .process(css).css
-    return out
-  } catch (error) {
-    console.log(`Error processing ${name}`)
-    console.log(error)
-    return ''
+export function scopeThemeCssForPreview(css: string, wrapperClass: string): string {
+  if (!/^[A-Za-z_][A-Za-z0-9_-]*$/.test(wrapperClass)) {
+    throw new Error(`Invalid preview wrapper class: ${wrapperClass}`)
   }
-}
 
-/**
- * Converts SCSS to CSS and then applies the prefix
- * @param scss The SCSS string to convert and prefix
- * @param prefix The class prefix to add
- * @returns Prefixed CSS string
- */
-export function prefixScssThemeCSS(name: string = '', scss: string, prefix: string): string {
-  try {
-    // Compile SCSS to CSS
-    const compiledCss = compileString(scss).css
+  const root = postcss.parse(css)
+  root.walkRules((rule) => {
+    if (
+      rule.parent?.type === 'atrule' &&
+      'name' in rule.parent &&
+      typeof rule.parent.name === 'string' &&
+      /keyframes$/i.test(rule.parent.name)
+    ) {
+      return
+    }
 
-    // Fix theme-mode attribute selectors by adding quotes
-    // Only handle light/dark values for better performance
-    const normalizedCss = compiledCss.replace(
-      /\[theme-mode=(light|dark)\]/g,
-      (match, value) => `[theme-mode="${value}"]`
-    )
-
-    return prefixThemeCSS(name, normalizedCss, prefix)
-  } catch (error) {
-    console.error(`Error processing ${name}`, error)
-    return ''
-  }
+    const transformed = rule.selectors.map((selector) => {
+      const normalized = selector.trim()
+      if (normalized === 'html.light' || normalized === 'body.light') {
+        return `.${wrapperClass}.light`
+      }
+      if (normalized === 'html.dark' || normalized === 'body.dark') {
+        return `.${wrapperClass}.dark`
+      }
+      if (normalized === ':root') return `.${wrapperClass}`
+      if (isExactV2SemanticRule(rule)) {
+        return normalized.startsWith("[data-ui~='app.window']")
+          ? `.${wrapperClass}${normalized}`
+          : `.${wrapperClass} ${normalized}`
+      }
+      throw new Error(`Unsupported selector in compiled preview CSS: ${normalized}`)
+    })
+    rule.selectors = [...new Set(transformed)]
+  })
+  return root.toString()
 }
