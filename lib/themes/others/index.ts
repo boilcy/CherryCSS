@@ -25,7 +25,7 @@ const othersThemes = [
   vitesseSoft,
   muShanZi,
   pulseInteractive,
-  peppa
+  peppa,
 ]
 
 // 为每个主题添加style属性
@@ -46,4 +46,4 @@ export const mintyLavenderWithStyle = { ...mint, style: STYLE }
 export const vitesseSoftWithStyle = { ...vitesseSoft, style: STYLE }
 export const pulseInteractiveWithStyle = { ...pulseInteractive, style: STYLE }
 export const muShanZitWithStyle = { ...muShanZi, style: STYLE }
-export const peppaWithStype = { ...peppa, style: STYLE}
+export const peppaWithStype = { ...peppa, style: STYLE }

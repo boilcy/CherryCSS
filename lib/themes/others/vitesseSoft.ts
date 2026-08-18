@@ -139,7 +139,7 @@ body[theme-mode=light]  {
   --color-background: #f1f0e9;
   --color-background-accent: #e6e4de;
   --color-background-soft: #eae8e0;
-  --color-background-mute: #f1f0n9;
+  --color-background-mute: #f1f0e9;
   --color-background-opacity: rgba(255, 255, 255, 0.7);
   --color-primary: #1c6b48;
   --color-primary-soft: #00b96b99;
