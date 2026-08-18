@@ -9,7 +9,8 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "vitest run"
   },
   "dependencies": {
     "@next/third-parties": "^15.2.4",
@@ -28,14 +29,12 @@
     "next": "14.2.16",
     "next-intl": "^4.0.2",
     "next-themes": "^0.4.4",
-    "postcss-prefix-selector": "^2.1.1",
     "react": "^18",
     "react-day-picker": "8.10.1",
     "react-dom": "^18",
     "react-hook-form": "^7.54.1",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
-    "sass": "^1.86.3",
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
@@ -46,7 +45,6 @@
     "@iconify/react": "^5.2.0",
     "@tailwindcss/postcss": "^4.0.15",
     "@types/node": "^22",
-    "@types/postcss-prefix-selector": "^1.16.3",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
@@ -55,7 +53,8 @@
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.0.15",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^3.2.4"
   },
   "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }

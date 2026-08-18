@@ -21,3 +21,7 @@ pnpm-lock.yaml
 
 # Generated files
 next-env.d.ts
+
+# Preserved legacy palette sources
+lib/themes/others/peppa.ts
+lib/themes/others/pulse-interactive.ts
