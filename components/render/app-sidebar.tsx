@@ -40,8 +40,9 @@ export function AppSidebar({ themeMode, setThemeMode }: AppSidebarProps) {
 
   return (
     <div
-      id="app-sidebar"
-      className="mt-[32px] flex w-[36px] min-w-[36px] flex-col items-center bg-[var(--navbar-background)] py-2 pb-3"
+      data-ui="app.sidebar"
+      className="mt-[32px] flex w-[36px] min-w-[36px] flex-col items-center border-r bg-[var(--sidebar,var(--background))] py-2 pb-3 text-[var(--sidebar-foreground,var(--foreground))]"
+      style={{ borderColor: 'var(--sidebar-border, var(--border))' }}
     >
       {/* Avatar */}
       <div className="mb-3 flex h-[30px] w-[30px] items-center justify-center rounded-full">
@@ -53,58 +54,46 @@ export function AppSidebar({ themeMode, setThemeMode }: AppSidebarProps) {
         {/* Menus */}
         <div className="flex flex-col items-center gap-1">
           {/* chat */}
-          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-            <Icon icon="ant-design:message-outlined" className="h-4 w-4" />
+          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--sidebar-border,var(--border))]">
+            <Icon icon="lucide:message-circle" className="h-4 w-4" />
           </div>
-          {/* agent */}
-          {/* <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-            <Icon icon="ant-design:star-outlined" className="h-4 w-4" />
-          </div> */}
           {/* paint */}
-          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-            <Icon icon="ant-design:picture-outlined" className="h-4 w-4" />
+          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--sidebar-border,var(--border))]">
+            <Icon icon="lucide:image" className="h-4 w-4" />
           </div>
           {/* translate */}
-          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-            <Icon icon="ant-design:translation-outlined" className="h-4 w-4" />
+          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--sidebar-border,var(--border))]">
+            <Icon icon="lucide:languages" className="h-4 w-4" />
           </div>
-          {/* miniprogram */}
-          {/* <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-            <Icon icon="ant-design:appstore-outlined" className="h-4 w-4" />
-          </div> */}
           {/* knowledge base */}
-          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-            <Icon icon="ant-design:file-search-outlined" className="h-4 w-4" />
+          <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--sidebar-border,var(--border))]">
+            <Icon icon="lucide:file-search" className="h-4 w-4" />
           </div>
-          {/* files */}
-          {/* <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-            <Icon icon="ant-design:folder-outlined" className="h-4 w-4" />
-          </div> */}
         </div>
       </div>
 
       <div className="mt-auto flex flex-col gap-4">
         {/* about */}
-        <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-          <Icon icon="ant-design:question-circle-outlined" className="h-4 w-4" />
+        <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--sidebar-border,var(--border))]">
+          <Icon icon="lucide:circle-help" className="h-4 w-4" />
         </div>
         {/* theme */}
         <div
-          className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]"
+          className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--sidebar-border,var(--border))]"
           onClick={(e) => {
             e.stopPropagation()
             setThemeMode(themeMode === 'dark' ? 'light' : 'dark')
           }}
         >
           {themeMode === 'dark' ? (
-            <Icon icon="ant-design:moon-filled" className="h-4 w-4" />
+            <Icon icon="lucide:moon" className="h-4 w-4" />
           ) : (
-            <Icon icon="ant-design:sun-outlined" className="h-4 w-4" />
+            <Icon icon="lucide:sun" className="h-4 w-4" />
           )}
         </div>
         {/* setting */}
-        <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--color-border)]">
-          <Icon icon="ant-design:setting-outlined" className="h-4 w-4" />
+        <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full border border-transparent hover:opacity-80 active:border-[var(--sidebar-border,var(--border))]">
+          <Icon icon="lucide:settings" className="h-4 w-4" />
         </div>
       </div>
     </div>

@@ -16,7 +16,8 @@ export function Navbar({ theme, sidebarCollapsed, setSidebarCollapsed }: NavbarP
   const { isRtl } = useRTL()
   return (
     <div
-      className={`wrap-break-word ${!isRtl ? 'ml-[-42px]' : 'mr-[-42px]'} flex h-[32px] items-center justify-between overflow-visible bg-[var(--navbar-background)] px-4 py-3`}
+      data-ui="app.tab-bar"
+      className={`wrap-break-word ${!isRtl ? 'ml-[-42px]' : 'mr-[-42px]'} flex h-[32px] items-center justify-between overflow-visible bg-[var(--sidebar,var(--background))] px-4 py-3`}
     >
       <div className="flex items-center gap-3">
         <div className="flex items-center gap-1.5">

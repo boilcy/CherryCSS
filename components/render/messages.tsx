@@ -8,19 +8,19 @@ export function Messages() {
 
   return (
     <div
-      id="messages"
+      data-ui="chat.message-list"
       className="flex flex-col overflow-y-auto"
       style={{
         padding: '10px 0 20px',
         overflow: 'hidden',
-        backgroundColor: 'var(--chat-background)',
+        backgroundColor: 'var(--background)',
       }}
     >
       {/* System message */}
       <SystemMessage message={t('assistant-default-prompt')} />
 
       {/* Fake Scroll container */}
-      <div className="flex flex-col">
+      <div data-ui="chat.message.group" className="flex flex-col">
         {/* User message */}
         <UserMessage content={t('user-message')} username={t('user-name')} />
 

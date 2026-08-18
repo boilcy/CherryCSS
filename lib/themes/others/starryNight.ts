@@ -655,12 +655,6 @@ body[theme-mode="dark"] [role="tooltip"], body[theme-mode="dark"] div[class*="to
     /* 深色模式覆盖 */
     --tooltip-bg: oklch(30% 0.015 265 / 0.96);
     --tooltip-text: oklch(95% 0.005 270);
-    --tooltip-border: rgba(255, 255
-body[theme-mode="dark"] .hover-contents, body[theme-mode="dark"] .monaco-hover,
-body[theme-mode="dark"] [role="tooltip"], body[theme-mode="dark"] div[class*="tooltip"] {
-    /* 深色模式覆盖 */
-    --tooltip-bg: oklch(30% 0.015 265 / 0.96);
-    --tooltip-text: oklch(95% 0.005 270);
     --tooltip-border: rgba(255, 255, 255, 0.18);
     --tooltip-shadow: rgba(0, 0, 0, 0.35);
     --tooltip-code-bg: rgba(255, 255, 255, 0.12);

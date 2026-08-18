@@ -12,21 +12,21 @@ interface ContentContainerProps {
 export function ContentContainer({ sidebarCollapsed }: ContentContainerProps) {
   return (
     <div
-      id="content-container"
+      data-ui="app.content"
       className="flex max-h-full flex-1"
       style={{
-        backgroundColor: 'var(--color-background)',
-        borderTop: '0.5px solid var(--color-border)',
+        backgroundColor: 'var(--background)',
+        borderTop: '0.5px solid var(--border)',
         borderTopLeftRadius: '10px',
-        borderLeft: '0.5px solid var(--color-border)',
+        borderLeft: '0.5px solid var(--border)',
       }}
     >
       {/* Home Tab */}
       {!sidebarCollapsed && (
         <div
-          className="home-tabs flex max-w-[256px] flex-1 flex-col overflow-hidden border-r bg-[var(--color-background)]"
+          className="flex max-w-[256px] flex-1 flex-col overflow-hidden border-r bg-[var(--background)]"
           style={{
-            borderRight: '0.5px solid var(--color-border)',
+            borderRight: '0.5px solid var(--border)',
           }}
         >
           <RadioGroup />
@@ -35,13 +35,13 @@ export function ContentContainer({ sidebarCollapsed }: ContentContainerProps) {
       )}
 
       {/* Chat Container */}
-      <div id="chat" className="bubble flex flex-1 flex-col justify-between">
+      <div data-ui="chat.view" className="flex flex-1 flex-col justify-between">
         <div
-          id="chat-main"
+          data-ui="part:conversation-main"
           className="m-0 flex flex-col items-stretch justify-between overflow-auto p-0"
           style={{
             flex: '1 1 0%',
-            backgroundColor: 'var(--chat-background)',
+            backgroundColor: 'var(--background)',
           }}
         >
           {/* Messages */}

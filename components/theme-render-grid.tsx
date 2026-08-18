@@ -3,11 +3,9 @@
 import { ThemeColorFilter } from '@/components/theme-color-filter'
 import { ThemeRenderCard } from '@/components/theme-render-card'
 import { ThemeStyleFilter } from '@/components/theme-style-filter'
-import { prefixScssThemeCSS } from '@/lib/cssTransformer'
-import originCss from '@/lib/themes/origin'
 import type { Theme } from '@/lib/types'
 import { useTranslations } from 'next-intl'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { toast } from 'sonner'
 
 interface ThemeRenderGridProps {
@@ -20,15 +18,6 @@ export default function ThemeRenderGrid({ themes }: ThemeRenderGridProps) {
   const [selectedStyle, setSelectedStyle] = useState<string | null>(null)
   const [showDebug, setShowDebug] = useState(false)
   const t = useTranslations()
-
-  // inject the origin css to all render
-  const uniqueWrapperClass = `cherrystudio-origin-css`
-  const [transformedCSS, setTransformedCSS] = useState('')
-  useEffect(() => {
-    const css = prefixScssThemeCSS('origin', originCss, uniqueWrapperClass)
-    console.log(css)
-    setTransformedCSS(css)
-  }, [uniqueWrapperClass])
 
   const copyToClipboard = useCallback(
     async (css: string, themeId: string) => {
@@ -96,11 +85,6 @@ export default function ThemeRenderGrid({ themes }: ThemeRenderGridProps) {
       </div> */}
 
       <div className={'grid grid-cols-1 gap-6 xl:grid-cols-2 2xl:grid-cols-3'}>
-        <style jsx>
-          {`
-            ${transformedCSS}
-          `}
-        </style>
         {filteredThemes.map((theme) => (
           <ThemeRenderCard
             key={theme.id}
@@ -108,7 +92,6 @@ export default function ThemeRenderGrid({ themes }: ThemeRenderGridProps) {
             copiedTheme={copiedTheme}
             onCopy={copyToClipboard}
             showColors={showDebug}
-            originThemeClassName={uniqueWrapperClass}
           />
         ))}
       </div>

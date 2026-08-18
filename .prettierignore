@@ -21,3 +21,8 @@ pnpm-lock.yaml
 
 # Generated files
 next-env.d.ts
+
+# External skill package and preserved legacy palette sources
+SKILL/
+lib/themes/others/peppa.ts
+lib/themes/others/pulse-interactive.ts

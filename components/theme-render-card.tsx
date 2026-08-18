@@ -13,7 +13,6 @@ interface ThemeRenderCardProps {
   copiedTheme: string | null
   onCopy: (css: string, themeId: string) => void
   showColors?: boolean
-  originThemeClassName: string
 }
 
 function ThemeRenderCardBase({
@@ -21,7 +20,6 @@ function ThemeRenderCardBase({
   copiedTheme,
   onCopy,
   showColors = false,
-  originThemeClassName,
 }: ThemeRenderCardProps) {
   const { isDarkPreview } = useDarkPreview()
   const t = useTranslations('themes')
@@ -32,7 +30,7 @@ function ThemeRenderCardBase({
       className="mx-auto h-auto w-full cursor-pointer overflow-hidden rounded-lg bg-white text-left shadow-md transition-all duration-300 hover:shadow-lg lg:max-w-full"
       aria-label={`Copy ${t(`${theme.id}.name`)} theme`}
     >
-      <ThemeRenderer theme={theme} originThemeClassName={originThemeClassName} />
+      <ThemeRenderer theme={theme} />
 
       <div className="p-4">
         <div className="mb-2 flex items-center justify-between">
@@ -78,8 +76,7 @@ function arePropsEqual(prevProps: ThemeRenderCardProps, nextProps: ThemeRenderCa
     prevProps.theme.id === nextProps.theme.id &&
     prevProps.theme.css === nextProps.theme.css &&
     prevProps.copiedTheme === nextProps.copiedTheme &&
-    prevProps.showColors === nextProps.showColors &&
-    prevProps.originThemeClassName === nextProps.originThemeClassName
+    prevProps.showColors === nextProps.showColors
   )
 }
 
