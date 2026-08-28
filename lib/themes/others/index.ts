@@ -12,6 +12,7 @@ import { peppa } from './peppa'
 import { pulseInteractive } from './pulse-interactive'
 import { starryNight } from './starryNight'
 import { vitesseSoft } from './vitesseSoft'
+import { clearling } from './clearling'
 
 // 为所有其他风格主题设置style属性
 const othersThemes = [
