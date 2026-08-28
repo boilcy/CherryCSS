@@ -62,6 +62,10 @@
     "add-assistant": "アシスタントを追加"
   },
   "themes": {
+    "moyun-yaji": {
+      "name": "墨韻・雅集",
+      "description": "伝統的な中国水墨画の美学に着想を得たテーマ"
+    },
     "chang-an": {
       "name": "長安",
       "description": "中国風カラーテーマ: 長安"

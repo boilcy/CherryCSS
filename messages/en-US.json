@@ -62,6 +62,10 @@
     "add-assistant": "Add Assistant"
   },
   "themes": {
+    "moyun-yaji": {
+      "name": "Moyun Yaji",
+      "description": "Theme inspired by traditional Chinese ink painting aesthetics, featuring the elegant interplay of ink wash, bamboo green, and indigo blue on rice paper backgrounds"
+    },
     "chang-an": {
       "name": "Chang'an",
       "description": "Theme inspired by Tang Dynasty aesthetics and the ancient capital Chang'an, featuring warm earth tones reminiscent of traditional Chinese architecture, calligraphy, and silk paintings"
